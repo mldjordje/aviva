@@ -182,7 +182,7 @@ const HeaderOne = () => {
 										</span>
 									</span>
 								</div>
-								<DarkLightToggle />
+								
 							</div>
 						</div>
 					</div>
