@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 import UseSticky from "@/hooks/UseSticky";
 import React, { useEffect, useState } from "react";
 
-
+import DarkLightToggle from '@/components/common/DarkLightToggle';
 import Image from "next/image";
 import logo from "@/assets/img1/logo3.png";
 import Logo_white from "@/assets/img1/logo3.png";
@@ -182,6 +182,7 @@ const HeaderOne = () => {
 										</span>
 									</span>
 								</div>
+								<DarkLightToggle />
 							</div>
 						</div>
 					</div>
@@ -218,6 +219,7 @@ const HeaderOne = () => {
 												)}
 											</li>
 										))}
+										
 									</ul>
 								</div>
 							</div>

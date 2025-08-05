@@ -41,10 +41,11 @@ const Wrapper = ({ children }: any) => {
 
 
   return <>
+  
     <MouseMove />
     {children}
     <ScrollToTop />
-    <DarkLight />
+   
 
   </>;
 };

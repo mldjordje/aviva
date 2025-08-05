@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
+import DarkLightToggle from '@/components/common/DarkLightToggle'; 
+
 
 
 
@@ -110,7 +112,10 @@ const MobileMenu = ({active, navTitle, openMobileMenu} : any) => {
         ))} 
       </ul>
 
-       
+         {/* Toggle dugme za dark/light temu u mobilnom meniju */}
+      <div style={{ padding: '1rem', borderTop: '1px solid #ccc', marginTop: '1rem' }}>
+        
+      </div>
     </>
   );
 };
