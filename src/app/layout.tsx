@@ -6,7 +6,7 @@ export const metadata = {
   icons: [
     {
       rel: "icon",
-      url: "/assets/img1/logo1.png",
+      url: "/assets/img1/logo3.png",
     },
     {
       rel: "shortcut icon",

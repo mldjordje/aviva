@@ -38,6 +38,7 @@ const index = () => {
             <MarqueeAreaHomeOne />
             <AboutHomeOne />
             <ServiceHomeOne />
+            <MarqueeAreaHomeOne />
             <PortfolioHomeOne />
             <AwardsHomeOne />
             <Testimonial />

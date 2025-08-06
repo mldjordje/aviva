@@ -24,27 +24,28 @@ const award_data: DataType[] = [
     id: 1,
     ward_img: award_img_1,
     img: award_thumb_1,
-    brand: `Dribbbble`,
-    title: `IOS App Design Award`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design.`,
+    brand: `Estetica Awards`,
+    title: `Najbolja Anti-Age Klinika 2024.`,
+    des: `Nagrađeni za vrhunski kvalitet tretmana podmlađivanja i visok nivo zadovoljstva klijenata.`,
   },
   {
     id: 2,
     ward_img: award_img_2,
     img: award_thumb_2,
-    brand: `Envato`,
-    title: `Elite Author Award`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design.`,
+    brand: `Dermal Excellence`,
+    title: `Zlatna igla za preciznost u aplikaciji botoksa`,
+    des: `Priznanje za stručnost i preciznost u estetskoj medicini dodeljeno od strane međunarodnog udruženja estetskih terapeuta.`,
   },
   {
     id: 3,
     ward_img: award_img_3,
     img: award_thumb_3,
-    brand: `Awwward`,
-    title: `CSS Design Award`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design.`,
+    brand: `SkinCare Forum`,
+    title: `Top 10 Klinika za Hijaluronske Filere`,
+    des: `Uvršteni među vodeće estetske centre zahvaljujući prirodnim rezultatima i bezbednosti tretmana.`,
   },
-]
+];
+
 
 const AwardsHomeOne = ({style_2}: any) => {
 

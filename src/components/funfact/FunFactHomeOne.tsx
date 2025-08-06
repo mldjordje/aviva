@@ -13,25 +13,26 @@ interface DataType {
 const counter_data: DataType[] = [
   {
     id: 1,
-    title: `Project Completed`,
-    number: 91,
+    title: `Zadovoljnih pacijenata`,
+    number: 2248,
   },
   {
     id: 2,
-    title: `Happy customers`,
-    number: 2,
+    title: `Izvedenih tretmana`,
+    number: 3890,
   },
   {
     id: 3,
-    title: `Years Experiences`,
-    number: 21,
+    title: `Godina iskustva`,
+    number: 8,
   },
   {
     id: 4,
-    title: `Awards Achievement`,
-    number: 42,
+    title: `Osvojenih nagrada`,
+    number: 12,
   },
 ]
+
 
 const FunFactHomeOne = ({style_2, style_3} :any) => {
   return (
@@ -45,8 +46,8 @@ const FunFactHomeOne = ({style_2, style_3} :any) => {
                   <div className="amin_auto_count">
                     <Count number={item.number} add_style={true} />
                   </div>
-                  {i === 0 && <span>K</span>}
-                  {i === 1 && <span>K</span>}
+                  {i === 0 && <span></span>}
+                  {i === 1 && <span></span>}
                 </div>
                 <div className={`cs_funfact_text cs_primary_font ${style_2 ? 'cs_color_1' : ''}`}>
                   <p>{item.title}</p>

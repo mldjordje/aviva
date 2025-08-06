@@ -82,7 +82,7 @@ const menu_data: DataType[] = [
   {
     id: 9,
     title: "Kontakt",
-    link: "/kontakt",
+    link: "/contact",
     has_dropdown: false
   }
 ];

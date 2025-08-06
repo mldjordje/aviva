@@ -50,7 +50,7 @@ const HeroHomeOne = () => {
               <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: `url(${item.img})` }}></div>
               <div className="container">
                 <div className="cs_hero_text">
-                  <div className="cs_hero_mini_title">
+                  <div className="cs_hero_mini_title cs_hero_text_in">
                     <svg width="134" height="12" viewBox="0 0 134 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path

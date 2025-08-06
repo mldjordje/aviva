@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 
 import DarkLightToggle from '@/components/common/DarkLightToggle';
 import Image from "next/image";
-import logo from "@/assets/img1/logo3.png";
+import logo from "@/assets/img1/logo4.png";
 import Logo_white from "@/assets/img1/logo3.png";
 
 interface DataType {

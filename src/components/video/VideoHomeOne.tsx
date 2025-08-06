@@ -12,7 +12,7 @@ const VideoHomeOne = ({style_2, setIsVideoOpen} : any) => {
           <a
             onClick={() => setIsVideoOpen(true)}
             className="cs_video_block cs_style1 cs_video_open cs_bg cs_parallax_bg"
-            style={{ backgroundImage: 'url(/assets/img/video_block.jpg)', cursor: "pointer" }}>
+            style={{ backgroundImage: 'url(/assets/img1/2.jpg)', cursor: "pointer" }}>
             <span className="cs_player_btn cs_accent_color">
               <span></span>
             </span>
