@@ -50,11 +50,24 @@
 /*--------------------------------------------------------------
 1. Basic Color Variable
 ----------------------------------------------------------------*/
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../../fonts/BAHNSCHRIFT.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Gaela";
+  src: url("../../fonts/GAELA.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Root promenljive */
 :root {
-    --body-font-family: "Kanit", sans-serif;
-    --heading-font-family: "Inter Tight", sans-serif;
+    --body-font-family: "Bahnschrift", sans-serif;
+    --heading-font-family: "Gaela", sans-serif;
     --accent-color: #ff6b00;
     --body-color: #454545;
     --heading-color: #101010;
@@ -76,7 +89,6 @@
     --common-color-white: #000000;
     --common-color-black: #ffffff;
 }
-
 
 /*--------------------------------------------------------------
 2. Typography
@@ -106,11 +118,13 @@ h6 {
     font-weight: 700;
     line-height: 1.2em;
     color: var(--heading-color);
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--heading-font-family);
+
 }
 
 .cs_primary_font {
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--heading-font-family);
+
 }
 
 .cs_secondary_font {
@@ -4886,13 +4900,13 @@ label {
 .cs_round_btn {
     position: relative;
     overflow: hidden;
-    height: 155px;
-    min-width: 155px;
+    height: 155px;          /* možeš prilagoditi visinu */
+    min-width: 155px;       /* možeš prilagoditi širinu */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--heading-color);
-    border-radius: 50%;
+    border-radius: 0;       /* kockasto/pravougaono */
     padding: 30px 15px;
     color: var(--heading-color);
 }
@@ -4905,7 +4919,7 @@ label {
     top: 0;
     background-color: var(--heading-color);
     z-index: -1;
-    border-radius: 100%;
+    border-radius: 0;       /* hover efekat takođe kockast */
     transition: all 0.7s;
     transform: translate(-50%, -50%);
 }
@@ -4915,10 +4929,11 @@ label {
 }
 
 .cs_round_btn:hover span {
-    height: 400px;
+    height: 400px;          /* ako želiš možeš smanjiti da bolje izgleda */
     width: 400px;
     opacity: 1;
 }
+
 
 .swiper-slide .cs_hero.cs_style1 .cs_hero_mini_title {
     -webkit-clip-path: inset(0 100% 0 0);
@@ -6733,13 +6748,14 @@ label {
 }
 
 .cs_our_agency_Par_color {
-    font-family: "Kanit";
+    font-family: var(--body-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #c1c1c1;
 }
+
 
 .cs_image_size_frist {
     width: 409px;

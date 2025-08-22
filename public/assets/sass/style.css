@@ -46,45 +46,60 @@
 /*--------------------------------------------------------------
 1. Basic Color Variable
 ----------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../../fonts/BAHNSCHRIFT.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gaela";
+  src: url("../../fonts/GAELA.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Root promenljive */
 :root {
-  --body-font-family: "Kanit", sans-serif;
-  --heading-font-family: "Inter Tight", sans-serif;
-  --accent-color: #ff6b00;
-  --body-color: #454545;
-  --heading-color: #101010;
-  --primary-color: #101010;
-  --cr_banner-color: #f4f4f4;
-  --border-color: #c1c1c1;
-  --common-color-white: #ffffff;
-  --common-color-black: #000000;
-  --drak-color: #ffffff;
+    --body-font-family: "Bahnschrift", sans-serif;
+    --heading-font-family: "Gaela", sans-serif;
+    --accent-color: #ff6b00;
+    --body-color: #454545;
+    --heading-color: #101010;
+    --primary-color: #101010;
+    --cr_banner-color: #f4f4f4;
+    --border-color: #c1c1c1;
+    --common-color-white: #ffffff;
+    --common-color-black: #000000;
+    --drak-color: #ffffff;
 }
 
 .dark {
-  --drak-color: #181818;
-  --cr_banner-color: #181818;
-  --accent-color: #ff6b00;
-  --body-color: #e0e0e0;
-  --heading-color: #ffffff;
-  --primary-color: #ffffff;
-  --common-color-white: #000000;
-  --common-color-black: #ffffff;
+    --drak-color: #181818;
+    --cr_banner-color: #181818;
+    --accent-color: #ff6b00;
+    --body-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --primary-color: #ffffff;
+    --common-color-white: #000000;
+    --common-color-black: #ffffff;
 }
 
 /*--------------------------------------------------------------
 2. Typography
 ----------------------------------------------------------------*/
+
 html,
 body {
-  color: var(--body-color);
-  background-color: var(--drak-color);
-  font-family: var(--body-font-family);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6em;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+    color: var(--body-color);
+    background-color: var(--drak-color);
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -93,21 +108,23 @@ h3,
 h4,
 h5,
 h6 {
-  clear: both;
-  padding: 0px;
-  margin: 0px 0px 20px 0px;
-  font-weight: 700;
-  line-height: 1.2em;
-  color: var(--heading-color);
-  font-family: "Inter Tight", sans-serif;
+    clear: both;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--heading-color);
+    font-family: var(--heading-font-family);
+
 }
 
 .cs_primary_font {
-  font-family: "Inter Tight", sans-serif;
+    font-family: var(--heading-font-family);
+
 }
 
 .cs_secondary_font {
-  font-family: var(--body-font-family);
+    font-family: var(--body-font-family);
 }
 
 h1 {
@@ -4504,43 +4521,46 @@ label {
 
 /* end hero 5 */
 .cs_round_btn_wrap {
-  padding: 15px;
-  margin: -15px;
-  display: inline-block;
+    padding: 15px;
+    margin: -15px;
+    display: inline-block;
 }
 
 .cs_round_btn {
-  position: relative;
-  overflow: hidden;
-  height: 155px;
-  min-width: 155px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--heading-color);
-  border-radius: 50%;
-  padding: 30px 15px;
-  color: var(--heading-color);
+    position: relative;
+    overflow: hidden;
+    height: 55px;          /* možeš prilagoditi visinu */
+    min-width: 155px;       /* možeš prilagoditi širinu */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--heading-color);
+    border-radius: 15px;       /* kockasto/pravougaono */
+    padding: 30px 15px;
+    color: var(--heading-color);
 }
+
 .cs_round_btn span {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  left: 0;
-  top: 0;
-  background-color: var(--heading-color);
-  z-index: -1;
-  border-radius: 100%;
-  transition: all 0.7s;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 0;
+    top: 0;
+    background-color: var(--heading-color);
+    z-index: -1;
+    border-radius: 0;       /* hover efekat takođe kockast */
+    transition: all 0.7s;
+    transform: translate(-50%, -50%);
 }
+
 .cs_round_btn:hover {
-  color: var(--drak-color);
+    color: var(--drak-color);
 }
+
 .cs_round_btn:hover span {
-  height: 400px;
-  width: 400px;
-  opacity: 1;
+    height: 400px;          /* ako želiš možeš smanjiti da bolje izgleda */
+    width: 400px;
+    opacity: 1;
 }
 
 .swiper-slide .cs_hero.cs_style1 .cs_hero_mini_title {
