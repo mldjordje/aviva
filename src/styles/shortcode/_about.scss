@@ -5,6 +5,7 @@
 .cs_about.cs_style_1 {
     padding: 140px 0;
     position: relative;
+
     .cs_about_bg {
         position: absolute;
         top: 0;
@@ -12,20 +13,21 @@
         height: 100%;
         width: 55%;
     }
-    >*:not(.cs_about_bg) {
+
+    > *:not(.cs_about_bg) {
         position: relative;
         z-index: 2;
     }
+
     .cs_about_text {
-    width: 100%;
-    max-width: 840px;
-    background-color: #eed1c8;
-    padding: 55px 40px; /* unutrašnji razmak */
-    border-radius: 40px; /* zakrivljeni uglovi */
-    margin-left: 40px;   /* pomera celu kutiju od leve ivice */
+        width: 100%;
+        max-width: 840px;
+        background-color: #eed1c8;
+        padding: 55px 40px; /* gore/dole 55px, levo/desno 40px */
+        border-radius: 40px; /* zakrivljeni uglovi */
+    }
 }
 
-}
 
 .swiper-slide {
     .cs_about.cs_style_1 {
@@ -52,7 +54,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #c1c1c1;
+    color: #e8c2b6;
 }
 
 .cs_image_size_frist {

@@ -1,15 +1,15 @@
-
-'use client' 
+'use client'
 import Link from 'next/link';
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-
 
 interface DataType {
   img: string;
   sub_title: string;
   title: string;
   des: string;
+  button_text: string;
+  button_link: string;
 }
 
 const hero_slider: DataType[] = [
@@ -18,22 +18,26 @@ const hero_slider: DataType[] = [
     sub_title: "Aviva Ageless",
     title: "Anti-age tretmani",
     des: `Stručnjaci u anti-age medicini sa višegodišnjim iskustvom. Hijaluronski fileri, Botox, Skinboosteri, Lipoliza, PRP tretmani. Otkrijte prirodnu lepotu uz individualan pristup.`,
+    button_text: "Kontaktiraj nas",
+    button_link: "/contact",
   },
   {
     img: `/assets/img1/4.jpg`, // slika klinike
     sub_title: "Anti-Age Klinika",
     title: "Savremena ordinacija u centru Niša",
     des: `Nalazimo se u srcu grada – Bulevar Nemanjića 12. Savremena oprema i prijatna atmosfera za vrhunsko estetsko iskustvo. Posetite nas i obnovite svoj sjaj.`,
+    button_text: "Naše usluge",
+    button_link: "/service",
   },
   {
     img: `/assets/img1/6.jpg`, // doktorke u radu
     sub_title: "Estetski Tretmani",
     title: "Preciznost. Znanje. Rezultati.",
     des: `Naš tim kombinuje stručnost i savremene tehnike za postizanje prirodnih rezultata. Zakoračite u svet zdravog, podmlađenog izgleda uz Aviva Ageless.`,
+    button_text: "Naš tim",
+    button_link: "/team",
   },
 ];
-
-
 
 const HeroHomeOne = () => {
   return (
@@ -43,11 +47,15 @@ const HeroHomeOne = () => {
         slidesPerView={1}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
-        className="cs_slider cs_slider_1">
+        className="cs_slider cs_slider_1"
+      >
         {hero_slider.map((item, index) =>
           <SwiperSlide key={index} className="swiper-slide">
             <div className="cs_hero cs_style1 cs_center cs_parallax">
-              <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: `url(${item.img})` }}></div>
+              <div
+                className="cs_hero_bg cs_bg cs_parallax_bg"
+                style={{ backgroundImage: `url(${item.img})` }}
+              ></div>
               <div className="container">
                 <div className="cs_hero_text">
                   <div className="cs_hero_mini_title cs_hero_text_in">
@@ -71,10 +79,11 @@ const HeroHomeOne = () => {
                     <div className="cs_height_65 cs_height_lg_40"></div>
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
-                        <Link href="/service"
-                          className="cs_hero_btn cs_round_btn btn-item"><span></span>
-                          Naše
-                          Usluge</Link>
+                        <Link href={item.button_link}
+                          className="cs_hero_btn cs_round_btn btn-item">
+                          <span></span>
+                          {item.button_text}
+                        </Link>
                       </div>
                     </div>
                   </div>

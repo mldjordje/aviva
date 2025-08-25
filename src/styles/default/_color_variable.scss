@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+1. Basic Color Variable - Aviva Ageless
+----------------------------------------------------------------*/
+
+$white: #ffffff;
+$black: #000000;
+$primary: #101010;       // Dark pink
+$secondary: #d07978;     // Pink
+$ternary: #e8c2b6;       // Light pink (pozadina)
+$border: #bb274a;
+$gray: #181818;
+$hrcOlor: #d07978;
+$cr_banner: #e8c2b6;
+$accent: #bb274a;
+$gray_sc: #565656;
+
+:root {
+    --body-font-family: "Kanit", sans-serif;
+    --heading-font-family: "Inter Tight", sans-serif;
+
+    --accent-color: #bb274a;
+    --body-color: #e8c2b6;
+    --heading-color: #bb274a;
+    --primary-color: #bb274a;
+    --cr_banner-color: #e8c2b6;
+    --border-color: #bb274a;
+    --common-color-white: #ffffff;
+    --common-color-black: #000000;
+    --drak-color: #ffffff;
+}
+
+.dark {
+    --drak-color: #181818;
+    --cr_banner-color: #181818;
+    --accent-color: #bb274a;
+    --body-color: #e8c2b6;
+    --heading-color: #ffffff;
+    --primary-color: #ffffff;
+    --common-color-white: #000000;
+    --common-color-black: #ffffff;
+}

@@ -1,19 +1,12 @@
+/* Third-party libraries */
+@import "swiper/css/bundle";
+@import "react-18-image-lightbox/src/style.css";
+@import "node_modules/react-modal-video/scss/modal-video.scss";
 
+/* Plugin styles */
+@import "./plugins/bootstrap.min.css";
+@import "./plugins/fontawesome.min.css";
+@import "./plugins/lightgallery.min.css";
 
-@import "swiper/css/bundle";    
-@import 'react-18-image-lightbox/src/style.css';
-// @import '@/assets/css/plugins/bootstrap.min.css';
-// @import '@/assets/css/plugins/fontawesome.min.css';
-// @import '@/assets/css/plugins/lightgallery.min.css';
-@import 'node_modules/react-modal-video/scss/modal-video.scss';
-
-
-// @import '@/assets/sass/style.scss';
-
-
-
-@import '../../public/assets/css/plugins/bootstrap.min.css';
-@import '../../public/assets/css/plugins/fontawesome.min.css';
-@import '../../public/assets/css/plugins/lightgallery.min.css';
-
-@import '../../public/assets/sass/style.scss';
+/* Template main styles */
+@import "./style.scss";

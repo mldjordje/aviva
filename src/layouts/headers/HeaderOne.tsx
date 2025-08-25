@@ -54,41 +54,26 @@ const menu_data: DataType[] = [
   },
   {
     id: 4,
-    title: "Naš tim",
-    link: "/nas-tim",
-    has_dropdown: false
+    title: "Stranice",
+    link: "#",
+    has_dropdown: true,
+    sub_menu: [
+      { id: 1, title: "Naš tim", link: "/nas-tim" },
+      { id: 2, title: "Galerija", link: "/galerija" },
+      { id: 3, title: "Recenzije", link: "/recenzije" },
+      { id: 4, title: "Česta pitanja", link: "/faq" },
+      { id: 5, title: "Blog", link: "/blog" }
+    ]
   },
   {
     id: 5,
-    title: "Galerija",
-    link: "/galerija",
-    has_dropdown: false
-  },
-  {
-    id: 6,
-    title: "Recenzije",
-    link: "/recenzije",
-    has_dropdown: false
-  },
-  {
-    id: 7,
-    title: "Česta pitanja",
-    link: "/faq",
-    has_dropdown: false
-  },
-  {
-    id: 8,
-    title: "Blog",
-    link: "/blog",
-    has_dropdown: false
-  },
-  {
-    id: 9,
     title: "Kontakt",
     link: "/kontakt",
     has_dropdown: false
   }
 ];
+
+
 
 
 

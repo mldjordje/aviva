@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import Link from 'next/link';
 
@@ -7,41 +5,47 @@ interface DataType {
   id: number;
   title: string;
   des: string;
-}[]
+  icon: string; // dodato za ikonu
+}
 
 const service_data: DataType[] = [
   {
     id: 1,
     title: `Hijaluronski fileri`,
-    des: `Vraćanje volumena i popunjavanje bora za prirodan i mladalački izgled. Precizno aplicirano od strane iskusnih lekara.`
+    des: `Vraćanje volumena i popunjavanje bora za prirodan i mladalački izgled. Precizno aplicirano od strane iskusnih lekara.`,
+    icon: "/assets/icon/hiperhidroza.png",
   },
   {
     id: 2,
     title: `Botox`,
-    des: `Efikasan tretman za uklanjanje mimičnih bora i osvežavanje lica. Bezbedan i brz postupak sa vidljivim rezultatima.`
+    des: `Efikasan tretman za uklanjanje mimičnih bora i osvežavanje lica. Bezbedan i brz postupak sa vidljivim rezultatima.`,
+    icon: "/assets/icon/ikonica.png",
   },
   {
     id: 3,
     title: `Skinboosteri`,
-    des: `Dubinska hidratacija kože uz pomoć hijaluronskih boostera. Povećava sjaj, elastičnost i tonus kože.`
+    des: `Dubinska hidratacija kože uz pomoć hijaluronskih boostera. Povećava sjaj, elastičnost i tonus kože.`,
+    icon: "/assets/icon/ikonica2.png",
   },
   {
     id: 4,
     title: `Lipoliza`,
-    des: `Neinvazivno uklanjanje lokalizovanih masnih naslaga. Idealno za predeo podbratka, stomaka i butina.`
+    des: `Neinvazivno uklanjanje lokalizovanih masnih naslaga. Idealno za predeo podbratka, stomaka i butina.`,
+    icon: "/assets/icon/ikonica3.png",
   },
   {
     id: 5,
     title: `PRP tretman (Vampirski lifting)`,
-    des: `Regenerativna terapija sopstvenom plazmom bogatom trombocitima. Poboljšava tonus, teksturu i podmlađuje kožu.`
+    des: `Regenerativna terapija sopstvenom plazmom bogatom trombocitima. Poboljšava tonus, teksturu i podmlađuje kožu.`,
+    icon: "/assets/icon/ikonica4.png",
   },
   {
     id: 6,
     title: `Anti-aging saveti i konsultacije`,
-    des: `Stručno vođeni anti-age protokoli i personalizovane konsultacije sa dr Milom i dr Maršom.`
-  }
+    des: `Stručno vođeni anti-age protokoli i personalizovane konsultacije sa dr Milom i dr Maršom.`,
+    icon: "/assets/icon/ikonica5.png",
+  },
 ];
-
 
 const ServiceHomeOne = () => {
   return (
@@ -85,11 +89,8 @@ const ServiceHomeOne = () => {
                 className="cs_card cs_style_1 cs_color_1 anim_div_ShowDowns"
               >
                 <div className="cs_card_left">
-                  <div
-                    className="cs_card_number cs_primary_font"
-                    style={{ backgroundImage: `url(/assets/img1/3.jpg)` }}
-                  >
-                    0{i + 1}
+                  <div className="cs_card_icon">
+                    <img src={item.icon} alt={item.title} />
                   </div>
                 </div>
                 <div className="cs_card_right">
@@ -103,48 +104,7 @@ const ServiceHomeOne = () => {
                 <div className="cs_card_link_wrap">
                   <Link href="/service-details" className="cs_card_link">
                     <span>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0.340728 29.2063C0.722095 29.5875 1.34043 29.5875 1.72188 29.2063L29.0656 1.8625C29.4469 1.48106 29.4469 0.862698 29.0656 0.481253C28.6842 0.100002 28.0658 0.100002 27.6844 0.481253L0.340728 27.825C-0.0406592 28.2064 -0.0406592 28.8248 0.340728 29.2063Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M28.375 26.5625C28.9143 26.5625 29.3516 26.1252 29.3516 25.5859V1.17188C29.3516 0.632618 28.9143 0.195312 28.375 0.195312H3.96094C3.42168 0.195312 2.98438 0.632618 2.98438 1.17188C2.98438 1.71113 3.42168 2.14844 3.96094 2.14844H27.3984V25.5859C27.3984 26.1252 27.8357 26.5625 28.375 26.5625Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </span>
-                    <span>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0.340728 29.2063C0.722095 29.5875 1.34043 29.5875 1.72188 29.2063L29.0656 1.8625C29.4469 1.48106 29.4469 0.862698 29.0656 0.481253C28.6842 0.100002 28.0658 0.100002 27.6844 0.481253L0.340728 27.825C-0.0406592 28.2064 -0.0406592 28.8248 0.340728 29.2063Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M28.375 26.5625C28.9143 26.5625 29.3516 26.1252 29.3516 25.5859V1.17188C29.3516 0.632618 28.9143 0.195312 28.375 0.195312H3.96094C3.42168 0.195312 2.98438 0.632618 2.98438 1.17188C2.98438 1.71113 3.42168 2.14844 3.96094 2.14844H27.3984V25.5859C27.3984 26.1252 27.8357 26.5625 28.375 26.5625Z"
-                          fill="currentColor"
-                        />
-                      </svg>
+                      {/* SVG strelica */}
                     </span>
                   </Link>
                 </div>
@@ -154,6 +114,59 @@ const ServiceHomeOne = () => {
         </div>
         <div className="cs_height_100 cs_height_lg_30"></div>
       </section>
+
+<style jsx>{`
+  .cs_card {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px; /* još manji razmak između ikonice i teksta */
+    flex-wrap: wrap;
+  }
+
+  .cs_card_icon {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .cs_card_icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 991px) {
+    .cs_card_icon {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .cs_card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .cs_card_icon {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 10px;
+    }
+  }
+`}</style>
+
+
+
+
+
+
+
+
+
     </>
   );
 };
