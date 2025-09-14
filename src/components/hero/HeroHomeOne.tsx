@@ -27,7 +27,7 @@ const hero_slider: DataType[] = [
     title: "Savremena ordinacija u centru Niša",
     des: `Nalazimo se u srcu grada – Bulevar Nemanjića 12. Savremena oprema i prijatna atmosfera za vrhunsko estetsko iskustvo. Posetite nas i obnovite svoj sjaj.`,
     button_text: "Naše usluge",
-    button_link: "/service",
+    button_link: "/nase-usluge",
   },
   {
     img: `/assets/img1/6.jpg`, // doktorke u radu

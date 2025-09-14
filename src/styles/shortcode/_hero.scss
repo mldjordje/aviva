@@ -5,7 +5,7 @@
 .cs_hero.cs_style1 {
 	min-height: 100vh;
 	position: relative;
-	padding: 150px 0 100px;
+	padding: 150px 0 0;
 	overflow: hidden;
 
 	// leva slika
@@ -108,7 +108,14 @@
 		font-size: 150px;
 		font-weight: 900;
 		margin-bottom: 0;
-		line-height: 155px;
+		line-height: 125px;
+	}
+	.cs_hero_title.cs_hero_title_s {
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 0;
+		line-height: 25px;
+		color: $white;
 	}
 	.textupdowns {
 		animation: textupdown 4s ease-in-out infinite;
@@ -273,7 +280,7 @@
 				.cs_round_btn_wrap {
 					.cs_hero_btn {
 						min-width: 144px;
-						height: 144px;
+						height: 44px;
 					}
 				}
 			}

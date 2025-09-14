@@ -28,7 +28,6 @@
     }
 }
 
-
 .swiper-slide {
     .cs_about.cs_style_1 {
         .cs_about_text {
@@ -151,6 +150,12 @@
     text-align: center;
     margin: 0 auto;
 }
+.cs_journey_stary span img {
+  width: 80px;   /* probaj 60px - 100px dok ne nađeš idealno */
+  height: auto;  /* da ostane proporcionalno */
+  display: inline-block;
+  vertical-align: middle; /* da tekst i slike budu poravnati */
+}
 
 @media screen and (max-width: 991px) {
     .cs_about.cs_style_1 {
@@ -158,12 +163,11 @@
             padding: 55px 20px 55px 0;
         }
     }
+
     .cs_modern_needs.cs_style {
         width: 100%;
     }
-    .cs_journey_stary {
-        display: none;
-    }
+
     .cs_modern_needs.cs_style {
         .cs_col_md_778 {
             .text-section {
@@ -173,4 +177,41 @@
             }
         }
     }
+
+    /* ✅ Journey sekcija - smanjenje na tabletima/mobilnim */
+    .cs_journey_stary {
+        display: block; /* ostaje vidljiva */
+        padding: 0 15px;
+    }
+
+    .cs_journey_stary h6 {
+        font-size: 15px;
+    }
+
+    .cs_journey_stary h2 {
+        font-size: 24px;
+        line-height: 1.5;
+        max-width: 90%; /* da tekst ne ide skroz u širinu */
+        margin: 0 auto;
+    }
+
+    .cs_journey_stary span img {
+    width: 28px;
+    height: auto;
+    border-radius: 50%; /* potpuno okrugla slika */
 }
+
+}
+
+@media screen and (max-width: 576px) {
+    .cs_journey_stary h2 {
+        font-size: 22px;
+        line-height: 1.4;
+        max-width: 95%;
+    }
+
+    .cs_journey_stary span img {
+        width: 38px;
+    }
+}
+

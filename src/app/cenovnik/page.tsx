@@ -1,19 +1,18 @@
  
- 'use client'
+'use client'
 
-
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-import HeroService from '@/components/hero/HeroService';
-import Service from '@/components/service/Service';
-import Testimonial from '@/components/testimonial/Testimonial';
+import Cenovnik from '@/components/cenovnik/Cenovnik';
+import FaqArea from '@/components/faq/FaqArea';
+import HeroHomeFive from '@/components/hero/HeroHomeFive';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import React from 'react';
 
 
+
 // export const metadata = {
-//   title: "Service Vixan - Digital  Creative Agency Next js Template",
+//   title: "Faq Vixan - Digital  Creative Agency Next js Template",
 // };
 
 const index = () => {
@@ -23,10 +22,8 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <HeroService />
-            <Service />
-            <Testimonial style_service={true} />
-            <AboutHomeFour />
+            <HeroHomeFive />
+            <Cenovnik />
           </main>
           <FooterOne />
         </div>

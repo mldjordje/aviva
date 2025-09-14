@@ -23,25 +23,37 @@ const footer_data: DataType = {
   links: [
     { title: `POČETNA`, link: "/" },
     { title: `O NAMA`, link: "/about" },
-    { title: `USLUGE`, link: "/service" },
+    { title: `USLUGE`, link: "/nase-usluge" },
     { title: `PROJEKTI`, link: "/portfolio" },
-    { title: `BLOG`, link: "/blog" },
+    { title: `Cenovnik`, link: "/cenovnik" },
     { title: `KONTAKT`, link: "/contact" },
   ]
 }
 
-const { footer_info, email, links, location, phone } = footer_data
+const { footer_info, email, links, location, phone } = footer_data;
 
 const FooterOne = () => {
   return (
     <>
+      {/* Google Maps iframe pre footera */}
+      <div style={{ width: '100%', height: '450px' }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.532095951836!2d21.907158!3d43.3240535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1b2d70f3799%3A0xa36aedab7f24a19a!2sPoliklinika%20Aviva!5e0!3m2!1sen!2srs!4v1757848634854!5m2!1sen!2srs"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
       <footer className="cs_footer cs_primary_bg">
         <div className="cs_height_150 cs_height_lg_60"></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
               <div className="cs_footer_info">
-                {/* Logo sa smanjenom veličinom */}
                 <Image 
                   src={footer_logo} 
                   alt="Logo" 

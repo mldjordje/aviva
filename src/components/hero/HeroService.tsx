@@ -10,35 +10,45 @@ interface DataType {
 }
 
 const banner_data:DataType[] = [
-  {
+ {
     id: 1,
-    title: "Application Development",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "Hijaluronski fileri",
+    description: "Popunjavanje bora i vraćanje volumena licu uz prirodan izgled.",
   },
   {
     id: 2,
-    title: "Web Development",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "Botox",
+    description: "Uklanjanje mimičkih bora i postizanje mladalačkog izgleda.",
   },
   {
     id: 3,
-    title: "Digital Services",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "Skinboosteri",
+    description: "Dubinska hidratacija kože i poboljšanje elastičnosti.",
   },
   {
     id: 4,
-    title: "Digital Product Design",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "PRP tretman",
+    description: "Regeneracija kože pomoću vaše krvne plazme bogate trombocitima.",
   },
   {
     id: 5,
-    title: "Digital Marketing",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "Lipoliza",
+    description: "Nekirurško uklanjanje masnih naslaga sa problematičnih regija.",
   },
   {
     id: 6,
-    title: "IOS App Development",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "Mezoterapija",
+    description: "Unošenje vitamina, minerala i hijalurona za svež i zdrav ten.",
+  },
+  {
+    id: 7,
+    title: "Anti-aging",
+    description: "Savremeni tretmani za usporavanje procesa starenja kože.",
+  },
+  {
+    id: 8,
+    title: "Savetovanja",
+    description: "Stručni pregledi i preporuke za negu i tretmane lica.",
   },
 
 ]
@@ -52,8 +62,9 @@ const HeroService = () => {
           <div className="cs_section_heading cs_style_1">
             <div className="cs_section_heading_text">
               <h2 className="cs_section_title anim_word_writting">
-                Transform Your Online Presence with Our Digital Agency Services
+                Naše Usluge
               </h2>
+              <p>Otkrijte širok spektar estetskih tretmana za zdrav, mladalački i negovan izgled.</p>
             </div>
           </div>
           <div className="cs_height_100 cs_height_lg_60"></div>

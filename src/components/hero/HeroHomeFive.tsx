@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
@@ -7,13 +5,12 @@ import Image, { StaticImageData } from 'next/image';
 import facebook from "@/assets/img/fb_1.png"
 import linedin from "@/assets/img/linedin_1.png"
 import twitter from "@/assets/img/twitter_1.png"
-import dm_banner from "@/assets/img/dm_banner.png"
+import dm_banner from "@/assets/img1/mila1.png"
 
 interface DataType {
   title_1: string;
   title_2: string;
   bt_text: string;
-  des: string;
   social_links: {
       id: number;
       img: StaticImageData;
@@ -22,30 +19,17 @@ interface DataType {
 }
 
 const hero_data: DataType = {
-  title_1: "Digital",
+  title_1: "Cenovnik",
   title_2: "Marketing",
-  bt_text: "Our Projects",
-  des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools.`,
+  bt_text: "Pogleda pre i posle slike",
   social_links: [
-    {
-      id: 1,
-      img: facebook,
-      link: "http://www.facebook.com"
-    },
-    {
-      id: 2,
-      img: linedin,
-      link: "http://www.linedin.com"
-    },
-    {
-      id: 3,
-      img: twitter,
-      link: "http://www.twitter.com"
-    },
+    { id: 1, img: facebook, link: "http://www.facebook.com" },
+    { id: 2, img: linedin, link: "http://www.linedin.com" },
+    { id: 3, img: twitter, link: "http://www.twitter.com" },
   ]
 }
 
-const { title_1, title_2, bt_text, des, social_links } = hero_data
+const { title_1, title_2, bt_text, social_links } = hero_data
 
 const HeroHomeFive = () => {
   return (
@@ -63,7 +47,7 @@ const HeroHomeFive = () => {
                   <Image src={dm_banner} alt="Dmbanner" />
                 </div>
               </div>
-              <div className="cs_height_lg_20"></div>
+
 
               <div className="cs_text_btn anim_div_ShowDowns">
                 <div className="cs_hero_btn_wrap">
@@ -77,19 +61,16 @@ const HeroHomeFive = () => {
                   {title_2}
                 </h1>
               </div>
-              <p className="cs_subtext anim_subtext">
-                {des}
-              </p>
             </div>
           </div>
 
           <div className="cs_icon_section">
-            <p className="cs_font_16 text-uppercase m-0">FOLLOW US</p>
+            <p className="cs_font_16 text-uppercase m-0">Zaprati nas</p>
             <div className="cs_hr_design"></div>
             <div className="cs_icon_img social_link">
               {social_links.map((item, i) =>
                 <a key={i} href={item.link} target='_blank'>
-                  <Image src={item.img} alt="fb_1" className={`${i === 1 ? "social_link_style" : ""}`} />
+                  <Image src={item.img} alt={`social_${i}`} className={`${i === 1 ? "social_link_style" : ""}`} />
                 </a>
               )}
             </div>

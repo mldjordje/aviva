@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import hero_img from '@/assets/img/creative_banner_img.jpg';
+import hero_img from '@/assets/img1/1.jpg';
 
 const hero_data = {
   title_1: "Creative",

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import avatar_img_1 from "@/assets/img/team_detalils.jpg";
+import avatar_img_1 from "@/assets/img1/7.jpg";
 import Image from 'next/image';
 
 interface DataType {
@@ -12,7 +11,16 @@ interface DataType {
 }
 
 const team_content: DataType = {
-  des: `Digital there are many variations of passages of Lorem Ipsum available, but the majority have suffered alter in some form, by injected humour, or randomised words. is a long established fact that a reader will be distrac by the readable content of a page when looking at its layout. The point of using Lorem Ipm i has a more-ornormal.`,
+  des: `Dr Mila Đorđević je završila Srednju medicinsku školu „Dr Milenko Hadžić“ 2016. godine, a Medicinski fakultet u Nišu 2023. godine. 
+Svoje prve profesionalne korake u oblasti medicine započela je još 2022. godine, radeći u poliklinici Aviva, gde je stekla dragoceno iskustvo u radu sa pacijentima.
+
+Svoje znanje i veštine u estetskoj medicini razvijala je kroz brojne edukacije i međunarodne kongrese. 
+Među značajnijim iskustvima su Milano ICAMP kongres 2023, Zem kongres u Skoplju 2024. godine, 
+Paris IMCAs kongres 2025. godine, kao i različite edukacije kod priznatih inostranih, ali i domaćih stručnjaka. 
+Takođe je aktivna članica SESIAM udruženja i učestvovala je na petom i šestom međunarodnom kongresu u Beogradu.
+
+Od 2025. godine, Dr Mila Đorđević je ko-osnivač nove poliklinike Aviva Ageless, gde nastoji da spoji vrhunsku stručnost, 
+inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne i dugoročne rezultate.`,
   info: [
     {
       title: `Address:`,
@@ -24,11 +32,11 @@ const team_content: DataType = {
     },
     {
       title: `Phone:`,
-      des: `+7 (903) 679-96-15`
+      des: `060 1450145`
     },
     {
-      title: `website:`,
-      des: `www.website.com`
+      title: `Website:`,
+      des: `www.avivaageless.com`
     },
   ]
 }
@@ -45,7 +53,7 @@ const TeamDetailsArea = () => {
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text anim_text_writting">
               <h2 className="cs_section_title">
-                Albert Joshef &nbsp;&bull;&nbsp; UI / UX Designer
+                Dr Mila Đorđević &nbsp;&bull;&nbsp; Specijalista estetske medicine
               </h2>
             </div>
           </div>

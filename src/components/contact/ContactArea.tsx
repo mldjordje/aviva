@@ -13,10 +13,10 @@ const ContactArea = () => {
             <div className="cs_contact">
               <div className="cs_contact_text">
                 <p className="cs_contact_subtitle anim_text_upanddowns">
-                  Contact Us
+                  Kontaktirajte nas
                 </p>
                 <h1 className="cs_contact_title anim_text_writting">
-                  Get in Touch
+                  Javite nam se
                 </h1>
               </div>
               <div className="cs_height_80 cs_height_lg_20"></div>
@@ -24,38 +24,38 @@ const ContactArea = () => {
                 <form onClick={e => e.preventDefault()}>
                   <div className="row">
                     <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="test1" placeholder="Name"
-                        name="test" />
-                      <label htmlFor="test1" className="cs_input_label">Name</label>
+                      <input className="cs_input_field" type="text" id="name" placeholder="Ime"
+                        name="name" />
+                      <label htmlFor="name" className="cs_input_label">Ime</label>
                     </div>
                     <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="test2" placeholder="Name"
-                        name="test" />
-                      <label htmlFor="test2" className="cs_input_label">Email</label>
+                      <input className="cs_input_field" type="text" id="email" placeholder="Email"
+                        name="email" />
+                      <label htmlFor="email" className="cs_input_label">Email</label>
                     </div>
                   </div>
                   <div className="cs_height_10 cs_height_lg_20"></div>
                   <div className="row">
                     <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="test3" placeholder="Name"
-                        name="test" />
-                      <label htmlFor="test3" className="cs_input_label">Phone</label>
+                      <input className="cs_input_field" type="text" id="phone" placeholder="Telefon"
+                        name="phone" />
+                      <label htmlFor="phone" className="cs_input_label">Telefon</label>
                     </div>
                     <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="test4" placeholder="Name"
-                        name="test" />
-                      <label htmlFor="test4" className="cs_input_label">Subject</label>
+                      <input className="cs_input_field" type="text" id="subject" placeholder="Tema"
+                        name="subject" />
+                      <label htmlFor="subject" className="cs_input_label">Tema</label>
                     </div>
                   </div>
                   <div className="cs_height_100 cs_height_lg_60"></div>
                   <div className="cs_field_group">
-                    <input className="cs_input_field" type="text" id="test5" placeholder="Message"
-                      name="test" />
-                    <label htmlFor="test5" className="cs_input_label">Message</label>
+                    <input className="cs_input_field" type="text" id="message" placeholder="Poruka"
+                      name="message" />
+                    <label htmlFor="message" className="cs_input_label">Poruka</label>
                   </div>
                   <div className="cs_height_60 cs_height_lg_60"></div>
                   <button type="submit" className="cs_btn cs_style_1 cs_type_btn">
-                    <span>Send Now</span>
+                    <span>Pošalji</span>
                     <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -67,9 +67,9 @@ const ContactArea = () => {
               </div>
             </div>
             <div className="cs_contact_section_2 anim_div_ShowRightSide">
-              <div className="cs_google_map cs_bg" data-src="assets/img/map_img.png">
+              <div className="cs_google_map cs_bg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.532095951836!2d21.907158!3d43.3240535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1b2d70f3799%3A0xa36aedab7f24a19a!2sPoliklinika%20Aviva!5e0!3m2!1sen!2srs!4v1757848634854!5m2!1sen!2srs" 
                   allowFullScreen={true}></iframe>
               </div>
               <div className="cs_height_50 cs_height_lg_50"></div>
@@ -87,32 +87,26 @@ const ContactArea = () => {
                       </i>
                     </a>
                     <div className="cs_icon_text">
-                      <h6 className="cs_icon_title">Address</h6>
-                      <p className="cs_icon_subtitle">El-Mahalla El-Kubra 37</p>
+                      <h6 className="cs_icon_title">Adresa</h6>
+                      <p className="cs_icon_subtitle">📍 Bulevar Nemanjića 12, Niš</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="cs_icon">
-                    <a href="tel:(406) 555-0120" className="cs_icon_style">
+                    <a href="tel:0653502771" className="cs_icon_style">
                       <i>
                         <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M13.6837 11.9266C13.0957 11.3461 12.3616 11.3461 11.7773 11.9266C11.3316 12.3686 10.8859 12.8105 10.4477 13.26C10.3278 13.3836 10.2267 13.4098 10.0806 13.3274C9.79225 13.1701 9.48513 13.0427 9.20797 12.8704C7.91581 12.0577 6.8334 11.0127 5.87458 9.83668C5.39891 9.2524 4.97568 8.62692 4.6798 7.92279C4.61987 7.78046 4.63111 7.68683 4.74721 7.57072C5.19292 7.14 5.62738 6.69805 6.06559 6.25609C6.67609 5.64185 6.67609 4.92273 6.06185 4.30474C5.71353 3.95268 5.3652 3.6081 5.01688 3.25604C4.65733 2.89648 4.30151 2.53318 3.93821 2.17736C3.35018 1.60432 2.61609 1.60432 2.03181 2.18111C1.58236 2.62306 1.15164 3.07626 0.694705 3.51072C0.271476 3.91148 0.0579884 4.40212 0.0130438 4.97517C-0.0581186 5.90777 0.17035 6.78794 0.492454 7.64563C1.15164 9.42095 2.15541 10.9978 3.37266 12.4435C5.01688 14.3986 6.97947 15.9454 9.27539 17.0615C10.3091 17.5634 11.3803 17.9492 12.5451 18.0129C13.3466 18.0578 14.0433 17.8556 14.6013 17.2301C14.9834 16.8031 15.4141 16.4136 15.8186 16.0053C16.4178 15.3986 16.4216 14.6645 15.8261 14.0652C15.1145 13.3499 14.3991 12.6382 13.6837 11.9266Z"
                             fill="white"></path>
-                          <path
-                            d="M12.9672 8.93825L14.3493 8.70229C14.132 7.4326 13.5328 6.28277 12.6227 5.36889C11.6601 4.40633 10.4428 3.79957 9.10199 3.6123L8.90723 5.00184C9.9447 5.14791 10.8885 5.61609 11.6339 6.36142C12.338 7.06555 12.7987 7.95696 12.9672 8.93825Z"
-                            fill="white"></path>
-                          <path
-                            d="M15.1294 2.93344C13.5338 1.33791 11.5151 0.330398 9.28656 0.0195312L9.0918 1.40907C11.0169 1.67874 12.7623 2.55141 14.1406 3.92597C15.4477 5.23311 16.3054 6.88483 16.6163 8.70134L17.9983 8.46538C17.635 6.36047 16.6425 4.45033 15.1294 2.93344Z"
-                            fill="white"></path>
                         </svg>
                       </i>
                     </a>
                     <div className="cs_icon_text">
-                      <h6 className="cs_icon_title">Phone</h6>
-                      <p className="cs_icon_subtitle">(406) 555-0120</p>
+                      <h6 className="cs_icon_title">Telefon</h6>
+                      <p className="cs_icon_subtitle">📲 0653502771</p>
                     </div>
                   </div>
                 </div>
@@ -133,7 +127,7 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Email</h6>
-                      <p className="cs_icon_subtitle">vixan@email.com</p>
+                      <p className="cs_icon_subtitle">aviva@email.com</p>
                     </div>
                   </div>
                 </div>

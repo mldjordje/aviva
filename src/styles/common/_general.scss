@@ -422,6 +422,7 @@ hr {
     padding-left: 32px;
     white-space: nowrap;
     color: var(--heading-color);
+
     &::before {
         content: "";
         position: absolute;
@@ -433,30 +434,44 @@ hr {
         transform: translateY(-50%);
         left: 0px;
         transition: all 0.6s ease-in-out;
+
+        /* DODATO */
+        opacity: 0.5;          // krug je poluprovidan
+        pointer-events: none;  // da ne blokira klik na dugme
+        mix-blend-mode: lighten; // opcionalno, da se bolje vidi tekst ispod
     }
+
     svg {
         margin-left: 15px;
     }
-    >* {
+
+    > * {
         position: relative;
-        z-index: 2;
+        z-index: 2; // tekst iznad kruga
     }
+
     &:hover {
         &::before {
             height: 36px;
             width: 36px;
             left: 100%;
             margin-left: -28px;
+
+            /* Možeš promeniti i opacity na hover ako želiš efekat */
+            opacity: 0.3;
         }
     }
+
     &.cs_color_1 {
         color: #fff;
     }
+
     &.cs_type_btn {
         border: none;
         background-color: transparent;
     }
 }
+
 
 .cs_btn.cs_style_2 {
     display: flex;
@@ -909,7 +924,7 @@ label {
     font-weight: 900;
     line-height: 1.2em;
     color: transparent;
-    -webkit-text-stroke: 1px var(--body-color);
+    -webkit-text-stroke: 1px var(--accent-color);
     &.cs_type_1 {
         -webkit-text-stroke: 1.5px var(--body-color);
         text-align: center;
@@ -930,7 +945,7 @@ label {
     font-weight: 900;
     line-height: 1.2em;
     color: transparent;
-    -webkit-text-stroke: 2px var(--body-color);
+    -webkit-text-stroke: 2px var(--accent-color);
     &.cs_type_1 {
         text-align: center;
         font-size: 265.289px;

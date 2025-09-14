@@ -1,14 +1,16 @@
-'use client'
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { motion, Variants } from 'framer-motion';
 
 interface DataType {
   img: string;
   sub_title: string;
   title: string;
   des: string;
-}[]
+}
 
 const about_slider: DataType[] = [
   {
@@ -31,8 +33,66 @@ const about_slider: DataType[] = [
   },
 ];
 
+const textVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.8, ease: "easeOut" },
+  }),
+};
+
+const imgVariants: Variants = {
+  hidden: { opacity: 0, scale: 1.05 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+};
+
+const AnimatedSlide = ({ item, isActive }: { item: DataType; isActive: boolean }) => {
+  return (
+    <div className="cs_about cs_style_1">
+      <motion.div
+        className="cs_about_bg cs_bg"
+        style={{ backgroundImage: `url(${item.img})` }}
+        initial="hidden"
+        animate={isActive ? "visible" : "hidden"}
+        variants={imgVariants}
+      />
+      <div className="container">
+        <motion.div
+          initial="hidden"
+          animate={isActive ? "visible" : "hidden"}
+          className="cs_about_text"
+        >
+          <motion.div
+            className="cs_section_subtitle"
+            custom={1}
+            variants={textVariants}
+          >
+            {item.sub_title}
+          </motion.div>
+          <motion.h2
+            className="cs_section_title"
+            custom={2}
+            variants={textVariants}
+          >
+            {item.title}
+          </motion.h2>
+          <motion.p
+            className="cs_m0"
+            custom={3}
+            variants={textVariants}
+          >
+            {item.des}
+          </motion.p>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
 
 const AboutHomeOne = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       <div className="cs_height_130 cs_height_lg_60"></div>
@@ -48,57 +108,31 @@ const AboutHomeOne = () => {
           el: ".cs_pagination",
           clickable: true,
           type: "fraction",
-
-          renderFraction: function (currentClass, totalClass) {
-            return `<span class="${currentClass}"></span> 
-             ${' / '}
-             <span class="${totalClass}"></span>`;
-          },
-
+          renderFraction: (currentClass, totalClass) =>
+            `<span class="${currentClass}"></span> / <span class="${totalClass}"></span>`,
         }}
-        className="cs_slider cs_slider_2">
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        className="cs_slider cs_slider_2"
+      >
         {about_slider.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
-            <div className="cs_about cs_style_1">
-              <div className="cs_about_bg cs_bg" style={{ backgroundImage: `url(${item.img})` }}></div>
-              <div className="container">
-                <div className="cs_about_text">
-                  <div className="cs_section_heading cs_style_1">
-                    <div className="cs_section_heading_text">
-                      <div className="cs_section_subtitle">{item.sub_title}</div>
-                      <h2 className="cs_section_title">
-                        {item.title}
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="cs_height_40 cs_height_lg_30"></div>
-                  <p className="cs_m0">
-                    {item.des}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <AnimatedSlide item={item} isActive={index === activeIndex} />
           </SwiperSlide>
         ))}
-
         <div className="container">
           <div className="cs_swiper_controll">
             <div className="cs_pagination cs_style2 cs_primary_font"></div>
             <div className="cs_swiper_navigation_wrap">
-
               <div style={{ cursor: 'pointer' }} className="cs_swiper_button_prev">
-                <svg width="82" height="24" viewBox="0 0 82 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="82" height="24" viewBox="0 0 82 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M82 1H2L24 23" stroke="currentColor" />
                 </svg>
               </div>
               <div style={{ cursor: 'pointer' }} className="cs_swiper_button_next">
-                <svg width="82" height="24" viewBox="0 0 82 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="82" height="24" viewBox="0 0 82 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 23H80L58 1" stroke="currentColor" />
                 </svg>
               </div>
-
             </div>
           </div>
         </div>

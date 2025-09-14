@@ -28,18 +28,18 @@ const menu_data: DataType[] = [
     id: 1,
     title: "Početna",
     link: "/",
-    has_dropdown: false
+    has_dropdown: false,
   },
   {
     id: 2,
     title: "O nama",
     link: "/about",
-    has_dropdown: false
+    has_dropdown: false,
   },
   {
     id: 3,
     title: "Usluge",
-    link: "/service",
+    link: "/nase-usluge",
     has_dropdown: true,
     sub_menu: [
       { id: 1, title: "Hijaluronski fileri", link: "/usluge/hijaluronski-fileri" },
@@ -49,8 +49,8 @@ const menu_data: DataType[] = [
       { id: 5, title: "Lipoliza", link: "/usluge/lipoliza" },
       { id: 6, title: "Mezoterapija", link: "/usluge/mezoterapija" },
       { id: 7, title: "Anti-aging", link: "/usluge/anti-aging" },
-      { id: 8, title: "Savetovanja", link: "/usluge/savetovanja" }
-    ]
+      { id: 8, title: "Savetovanja", link: "/usluge/savetovanja" },
+    ],
   },
   {
     id: 4,
@@ -62,16 +62,23 @@ const menu_data: DataType[] = [
       { id: 2, title: "Galerija", link: "/galerija" },
       { id: 3, title: "Recenzije", link: "/recenzije" },
       { id: 4, title: "Česta pitanja", link: "/faq" },
-      { id: 5, title: "Blog", link: "/blog" }
-    ]
+      { id: 5, title: "Blog", link: "/blog" },
+    ],
   },
   {
     id: 5,
     title: "Kontakt",
-    link: "/kontakt",
-    has_dropdown: false
-  }
+    link: "/contact",
+    has_dropdown: false,
+  },
+  {
+    id: 6,
+    title: "Cenovnik",
+    link: "/cenovnik",
+    has_dropdown: false,
+  },
 ];
+
 
 
 
