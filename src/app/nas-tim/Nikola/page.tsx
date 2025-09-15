@@ -1,20 +1,16 @@
- 
 'use client'
 import React from 'react';
 import Wrapper from '@/layouts/Wrapper';
-import TeamArea from '@/components/team/TeamArea';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-import AboutHomeOne from '@/components/about/AboutHomeOne';
-import About from '@/components/about/About';
-import AboutUs from '@/components/about/AboutUs';
 
+import AboutHomeFour from '@/components/about/AboutHomeFour';
+
+import Nikola from './Nikola';
 
 // export const metadata = {
-//   title: "Team Vixan - Digital  Creative Agency Next js Template",
+//   title: "Team Details Vixan - Digital  Creative Agency Next js Template",
 // };
-
 
 const index = () => {
   return (
@@ -23,8 +19,9 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <TeamArea />
-            <AboutUs />
+            <Nikola />
+            
+            <AboutHomeFour />
           </main>
           <FooterOne />
         </div>

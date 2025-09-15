@@ -16,6 +16,7 @@ import BrandHomeOne from "@/components/brand/BrandHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
 import Wrapper from "@/layouts/Wrapper";
 import Cenovnik from "@/components/cenovnik/Cenovnik";
+import TeamArea from "@/components/team/TeamArea";
 
 const IndexPage = () => {
   return (
@@ -36,7 +37,7 @@ const IndexPage = () => {
             <FunFactHomeOne />
             <VideoHomeOne />
             
-            
+            <TeamArea />
             <BrandHomeOne style_2={true} />
           </main>
           <FooterOne />

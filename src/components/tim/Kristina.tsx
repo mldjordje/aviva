@@ -22,28 +22,19 @@ Takođe je aktivna članica SESIAM udruženja i učestvovala je na petom i šest
 Od 2025. godine, Dr Mila Đorđević je ko-osnivač nove poliklinike Aviva Ageless, gde nastoji da spoji vrhunsku stručnost, 
 inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne i dugoročne rezultate.`,
   info: [
-    {
-      title: `Address:`,
-      des: `Bulevar Nemanjića 12, Niš 18000`
-    },
-    {
-      title: `Email:`,
-      des: `example@example.com`
-    },
-    {
-      title: `Phone:`,
-      des: `060 1450145`
-    },
-    {
-      title: `Website:`,
-      des: `www.avivaageless.com`
-    },
+    { title: `Address:`, des: `📍Bulevar Nemanjića 12, Niš` },
+    { title: `Email:`, des: `office@aviva.com` },
+    { title: `Phone:`, des: `060 1450145` },
+    { title: `Website:`, des: `www.aviva.com` },
   ]
 }
 
-const { des, info } = team_content
+const { des, info } = team_content;
 
-const TeamDetailsArea = () => {
+const Mila = () => {
+  // Random query parametar za osvežavanje slike
+  const imageSrc = `${avatar_img_1.src}?v=${new Date().getTime()}`;
+
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -64,7 +55,13 @@ const TeamDetailsArea = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-5">
-            <Image src={avatar_img_1} alt="team_detalils" />
+            <Image 
+              src={imageSrc} 
+              alt="team_detalils" 
+              width={500} 
+              height={500} 
+              priority 
+            />
             <div className="cs_height_lg_30"></div>
           </div>
           <div className="col-md-7">
@@ -81,13 +78,13 @@ const TeamDetailsArea = () => {
                     <p className="col-md-4 col-10">{item.des}</p>
                   </div>
                 )}
-
               </div>
+
               <div className="cs_height_50 cs_height_lg_50"></div>
               <div className="cs_btn cs_style_2">
-                <a target='_blank' href="https://www.instagram.com/aviva_ageless/?hl=en" className="cs_center">Instagram</a>
-                <a target='_blank' href="https://www.facebook.com/avivaageless/" className="cs_center">Facebook</a>
-                <a target='_blank' href="https://youtube.com" className="cs_center">YouTube</a>
+                <a target='_blank' href="https://behance.com" className="cs_center">Instagram</a>
+                <a target='_blank' href="https://dribbble.com" className="cs_center">Dribbble</a>
+                <a target='_blank' href="https://github.com" className="cs_center">Github</a>
               </div>
             </div>
           </div>
@@ -98,4 +95,4 @@ const TeamDetailsArea = () => {
   );
 };
 
-export default TeamDetailsArea;
+export default Mila;

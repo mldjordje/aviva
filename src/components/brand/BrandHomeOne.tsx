@@ -40,9 +40,10 @@ const BrandHomeOne = ({ style_2 }: any) => {
       {style_2 ? (
         <>
           <div className="cs_height_20 cs_height_lg_60"></div>
-          <p className="text-center cs_font_18 cs_normal">
+          <br />
+          <h2 className="text-center cs_section_title anim_text_writting">
               Naši preparati i brendovi koje koristimo
-          </p>
+            </h2>
           <div className="cs_height_100 cs_height_lg_60"></div>
         </>
       ) : (

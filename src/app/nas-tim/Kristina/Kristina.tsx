@@ -11,39 +11,22 @@ interface DataType {
 }
 
 const team_content: DataType = {
-  des: `Dr Mila Đorđević je završila Srednju medicinsku školu „Dr Milenko Hadžić“ 2016. godine, a Medicinski fakultet u Nišu 2023. godine. 
-Svoje prve profesionalne korake u oblasti medicine započela je još 2022. godine, radeći u poliklinici Aviva, gde je stekla dragoceno iskustvo u radu sa pacijentima.
-
-Svoje znanje i veštine u estetskoj medicini razvijala je kroz brojne edukacije i međunarodne kongrese. 
-Među značajnijim iskustvima su Milano ICAMP kongres 2023, Zem kongres u Skoplju 2024. godine, 
-Paris IMCAs kongres 2025. godine, kao i različite edukacije kod priznatih inostranih, ali i domaćih stručnjaka. 
-Takođe je aktivna članica SESIAM udruženja i učestvovala je na petom i šestom međunarodnom kongresu u Beogradu.
-
-Od 2025. godine, Dr Mila Đorđević je ko-osnivač nove poliklinike Aviva Ageless, gde nastoji da spoji vrhunsku stručnost, 
-inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne i dugoročne rezultate.`,
+  des: `Dr Kristina Stojanovic je diplomirala na Medicinskom fakultetu Univerziteta u Nisu 2023. godine. Nakon zavrsenih studija pocinje rad u privatnoj klinici za estetsku medicinu gde je radila 2 godine. Decembra 2024. upisuje specijalizaciju. 
+Svoje radno iskustvo i vestine stekla je u privatnoj klinici kao i na mnogim edukacijama za estetiku medicinu sirom Srbije ali i u gradovima van nase drzave kao sto su Dubai i Sofia. Aktivni je ucesnik brojnih kongresa i seminara u zemlji i svetu.`,
   info: [
-    {
-      title: `Address:`,
-      des: `Bulevar Nemanjića 12, Niš 18000`
-    },
-    {
-      title: `Email:`,
-      des: `example@example.com`
-    },
-    {
-      title: `Phone:`,
-      des: `060 1450145`
-    },
-    {
-      title: `Website:`,
-      des: `www.avivaageless.com`
-    },
+    { title: `Address:`, des: `📍Bulevar Nemanjića 12, Niš` },
+    { title: `Email:`, des: `office@aviva.com` },
+    { title: `Phone:`, des: `060 1450145` },
+    { title: `Website:`, des: `www.aviva.com` },
   ]
 }
 
-const { des, info } = team_content
+const { des, info } = team_content;
 
-const TeamDetailsArea = () => {
+const Mila = () => {
+  // Random query parametar za osvežavanje slike
+  const imageSrc = `${avatar_img_1.src}?v=${new Date().getTime()}`;
+
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -53,7 +36,7 @@ const TeamDetailsArea = () => {
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text anim_text_writting">
               <h2 className="cs_section_title">
-                Dr Mila Đorđević &nbsp;&bull;&nbsp; Specijalista estetske medicine
+                Dr Kristina Stojanovic &nbsp;&bull;&nbsp; Specijalista estetske medicine
               </h2>
             </div>
           </div>
@@ -64,7 +47,13 @@ const TeamDetailsArea = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-5">
-            <Image src={avatar_img_1} alt="team_detalils" />
+            <Image 
+              src={imageSrc} 
+              alt="team_detalils" 
+              width={500} 
+              height={500} 
+              priority 
+            />
             <div className="cs_height_lg_30"></div>
           </div>
           <div className="col-md-7">
@@ -81,11 +70,11 @@ const TeamDetailsArea = () => {
                     <p className="col-md-4 col-10">{item.des}</p>
                   </div>
                 )}
-
               </div>
+
               <div className="cs_height_50 cs_height_lg_50"></div>
               <div className="cs_btn cs_style_2">
-                <a target='_blank' href="https://www.instagram.com/aviva_ageless/?hl=en" className="cs_center">Instagram</a>
+ <a target='_blank' href="https://www.instagram.com/aviva_ageless/?hl=en" className="cs_center">Instagram</a>
                 <a target='_blank' href="https://www.facebook.com/avivaageless/" className="cs_center">Facebook</a>
                 <a target='_blank' href="https://youtube.com" className="cs_center">YouTube</a>
               </div>
@@ -98,4 +87,4 @@ const TeamDetailsArea = () => {
   );
 };
 
-export default TeamDetailsArea;
+export default Mila;
