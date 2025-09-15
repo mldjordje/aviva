@@ -116,6 +116,7 @@
 		margin-bottom: 0;
 		line-height: 25px;
 		color: $white;
+		padding-left: 44px;
 	}
 	.textupdowns {
 		animation: textupdown 4s ease-in-out infinite;
@@ -522,6 +523,7 @@
 	/* end hero 5 */
 }
 
+
 @media screen and (max-width: 767px) {
 	.cs_hero.cs_style1 {
 		.cs_hero_text_in {
@@ -532,12 +534,19 @@
 			width: 100%;
 		}
 	}
+	.cs_section_heading_right {
+		padding-left: 44px;
+		
+		box-sizing: border-box;
+	}
 	.cs_hero.cs_style2 {
 		min-height: calc(100vh + 50px);
 		.cs_hero_text {
 			.cs_hero_title.cs_hero_title_lg {
 				font-size: 48px;
 				line-height: 60px;
+				padding-left: 44px;/* dovoljno prostora sa leve strane */
+			
 			}
 		}
 	}
