@@ -116,7 +116,8 @@
 		margin-bottom: 0;
 		line-height: 25px;
 		color: $white;
-		padding-left: 44px;
+		padding-left: 14px;
+		margin-left: 20px;
 	}
 	.textupdowns {
 		animation: textupdown 4s ease-in-out infinite;
@@ -538,8 +539,8 @@
   /* Dugme na telefonu u ravni sa tekstom, lako podesivo */
 /* Dugme na telefonu u ravni sa tekstom, lako podesivo */
 .cs_section_heading_right {
-  margin-left: -2px;       // već postavljeno, možeš menjati
-  transform: translateY(-40px);  // pomeraš dugme gore, menjaš vrednost po potrebi
+        // već postavljeno, možeš menjati
+  transform: translateY(-20px);  // pomeraš dugme gore, menjaš vrednost po potrebi
   text-align: left;
   box-sizing: border-box;
 }
@@ -552,7 +553,9 @@
       .cs_hero_title.cs_hero_title_lg {
         font-size: 48px;
         line-height: 60px;
-        padding-left: 12px; // ← isto kao dugme, lako menjaš
+		margin-left: 20px;
+       
+		
       }
     }
   }
