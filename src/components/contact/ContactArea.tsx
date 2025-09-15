@@ -19,61 +19,7 @@ const ContactArea = () => {
                   Javite nam se
                 </h1>
               </div>
-              <div className="cs_height_80 cs_height_lg_20"></div>
-              <div className="cs_from anim_div_ShowDowns">
-                <form onClick={e => e.preventDefault()}>
-                  <div className="row">
-                    <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="name" placeholder="Ime"
-                        name="name" />
-                      <label htmlFor="name" className="cs_input_label">Ime</label>
-                    </div>
-                    <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="email" placeholder="Email"
-                        name="email" />
-                      <label htmlFor="email" className="cs_input_label">Email</label>
-                    </div>
-                  </div>
-                  <div className="cs_height_10 cs_height_lg_20"></div>
-                  <div className="row">
-                    <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="phone" placeholder="Telefon"
-                        name="phone" />
-                      <label htmlFor="phone" className="cs_input_label">Telefon</label>
-                    </div>
-                    <div className="cs_field_group col">
-                      <input className="cs_input_field" type="text" id="subject" placeholder="Tema"
-                        name="subject" />
-                      <label htmlFor="subject" className="cs_input_label">Tema</label>
-                    </div>
-                  </div>
-                  <div className="cs_height_100 cs_height_lg_60"></div>
-                  <div className="cs_field_group">
-                    <input className="cs_input_field" type="text" id="message" placeholder="Poruka"
-                      name="message" />
-                    <label htmlFor="message" className="cs_input_label">Poruka</label>
-                  </div>
-                  <div className="cs_height_60 cs_height_lg_60"></div>
-                  <button type="submit" className="cs_btn cs_style_1 cs_type_btn">
-                    <span>Pošalji</span>
-                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M18.5303 7.03033C18.8232 6.73744 18.8232 6.26256 18.5303 5.96967L13.7574 1.1967C13.4645 0.903806 12.9896 0.903806 12.6967 1.1967C12.4038 1.48959 12.4038 1.96447 12.6967 2.25736L16.9393 6.5L12.6967 10.7426C12.4038 11.0355 12.4038 11.5104 12.6967 11.8033C12.9896 12.0962 13.4645 12.0962 13.7574 11.8033L18.5303 7.03033ZM0 7.25H18V5.75H0V7.25Z"
-                        fill="currentColor"></path>
-                    </svg>
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div className="cs_contact_section_2 anim_div_ShowRightSide">
-              <div className="cs_google_map cs_bg">
-                <iframe
-                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.532095951836!2d21.907158!3d43.3240535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1b2d70f3799%3A0xa36aedab7f24a19a!2sPoliklinika%20Aviva!5e0!3m2!1sen!2srs!4v1757848634854!5m2!1sen!2srs" 
-                  allowFullScreen={true}></iframe>
-              </div>
-              <div className="cs_height_50 cs_height_lg_50"></div>
-              <div className="row">
+                <div className="row">
                 <div className="col-md-4">
                   <div className="cs_icon">
                     <a href="https://www.google.com/maps" className="cs_icon_style">
@@ -132,6 +78,61 @@ const ContactArea = () => {
                   </div>
                 </div>
               </div>
+              <div className="cs_height_80 cs_height_lg_20"></div>
+              <div className="cs_from anim_div_ShowDowns">
+                <form onClick={e => e.preventDefault()}>
+                  <div className="row">
+                    <div className="cs_field_group col">
+                      <input className="cs_input_field" type="text" id="name" placeholder="Ime"
+                        name="name" />
+                      <label htmlFor="name" className="cs_input_label">Ime</label>
+                    </div>
+                    <div className="cs_field_group col">
+                      <input className="cs_input_field" type="text" id="email" placeholder="Email"
+                        name="email" />
+                      <label htmlFor="email" className="cs_input_label">Email</label>
+                    </div>
+                  </div>
+                  <div className="cs_height_10 cs_height_lg_20"></div>
+                  <div className="row">
+                    <div className="cs_field_group col">
+                      <input className="cs_input_field" type="text" id="phone" placeholder="Telefon"
+                        name="phone" />
+                      <label htmlFor="phone" className="cs_input_label">Telefon</label>
+                    </div>
+                    <div className="cs_field_group col">
+                      <input className="cs_input_field" type="text" id="subject" placeholder="Tema"
+                        name="subject" />
+                      <label htmlFor="subject" className="cs_input_label">Tema</label>
+                    </div>
+                  </div>
+                  <div className="cs_height_100 cs_height_lg_60"></div>
+                  <div className="cs_field_group">
+                    <input className="cs_input_field" type="text" id="message" placeholder="Poruka"
+                      name="message" />
+                    <label htmlFor="message" className="cs_input_label">Poruka</label>
+                  </div>
+                  <div className="cs_height_60 cs_height_lg_60"></div>
+                  <button type="submit" className="cs_btn cs_style_1 cs_type_btn">
+                    <span>Pošalji</span>
+                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18.5303 7.03033C18.8232 6.73744 18.8232 6.26256 18.5303 5.96967L13.7574 1.1967C13.4645 0.903806 12.9896 0.903806 12.6967 1.1967C12.4038 1.48959 12.4038 1.96447 12.6967 2.25736L16.9393 6.5L12.6967 10.7426C12.4038 11.0355 12.4038 11.5104 12.6967 11.8033C12.9896 12.0962 13.4645 12.0962 13.7574 11.8033L18.5303 7.03033ZM0 7.25H18V5.75H0V7.25Z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div className="cs_contact_section_2 anim_div_ShowRightSide">
+              <div className="cs_google_map cs_bg">
+                <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.532095951836!2d21.907158!3d43.3240535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1b2d70f3799%3A0xa36aedab7f24a19a!2sPoliklinika%20Aviva!5e0!3m2!1sen!2srs!4v1757848634854!5m2!1sen!2srs" 
+                  allowFullScreen={true}></iframe>
+              </div>
+              <div className="cs_height_50 cs_height_lg_50"></div>
+            
             </div>
           </div>
         </div>

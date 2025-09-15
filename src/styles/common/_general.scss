@@ -473,6 +473,7 @@ hr {
 }
 
 
+
 .cs_btn.cs_style_2 {
     display: flex;
     gap: 20px;
@@ -1559,33 +1560,48 @@ label {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.cs_floating_icons {
+  position: fixed;
+  bottom: 30px; /* startni bottom za telefonsku ikonu */
+  right: 10px;
+  display: flex;
+  flex-direction: column-reverse; /* scroll dugme iznad telefonske ikone */
+  gap: 15px; /* razmak između ikonica */
+  z-index: 1000;
+}
+
+.cs_phone_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .cs_scrollup {
-    position: fixed;
-    bottom: -60px;
-    right: 40px;
-    color: #fff;
-    padding: 5px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    z-index: 10;
-    background-color: #000000;
-    box-shadow: 0px 1px 5px 1px rgba($black, 0.2);
-    border-radius: 50%;
-    &:hover {
-        background-color: $accent;
-        color: $white;
-    }
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 
 .cs_scrollup.cs_scrollup_show {
-    bottom: 50px;
-    z-index: 999999;
+  opacity: 1;
+  visibility: visible;
 }
+
 
 .cs_case_study {
     position: relative;

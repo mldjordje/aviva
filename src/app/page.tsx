@@ -29,11 +29,8 @@ const IndexPage = () => {
             <HeroHomeThree />
             <AboutHomeOne />
             <ServiceHomeOne />
-            <MarqueeAreaHomeOne />
             <Cenovnik />
             <PortfolioHomeOne />
-            
-            
             <FunFactHomeOne />
             <VideoHomeOne />
             
