@@ -54,7 +54,7 @@
 		font-size: 18px;
 		line-height: 1.6em;
 		margin-bottom: 0px;
-		color: --primary-color;
+		color: #c21c5b;
 		display: inline-block;
 
 		> svg,
@@ -525,82 +525,94 @@
 
 
 @media screen and (max-width: 767px) {
-	.cs_hero.cs_style1 {
-		.cs_hero_text_in {
-			padding-left: 0%;
-		}
-		.cs_hero_bg {
-			opacity: 0.2;
-			width: 100%;
-		}
-	}
-	.cs_section_heading_right {
-		padding-left: 44px;
-		
-		box-sizing: border-box;
-	}
-	.cs_hero.cs_style2 {
-		min-height: calc(100vh + 50px);
-		.cs_hero_text {
-			.cs_hero_title.cs_hero_title_lg {
-				font-size: 48px;
-				line-height: 60px;
-				padding-left: 44px;/* dovoljno prostora sa leve strane */
-			
-			}
-		}
-	}
-	.cs_hero.cs_style3.cs_bg_color {
-		min-height: 60vh;
-		.cs_hero_text {
-			.cs_hero_title {
-				font-size: 40px;
-			}
-			.cs_hero_subTitle {
-				font-size: 50px;
-			}
-			.cs_hero_p {
-				padding-right: 60px;
-			}
-		}
-	}
-	.cs_hero.cs_style4 {
-		.cs_text_hero {
-			padding-left: 12px;
-			padding-right: 12px;
-			margin-left: 0px;
-			.cs_title_text {
-				font-size: 48px;
-				.cs_detils_text {
-					margin-right: 0px;
-					float: none;
-				}
-			}
-			.cs_text_section_2 {
-				gap: 20px;
-			}
-		}
-	}
-	.cs_hero.cs_style5 {
-		.cs_marketing_agency_section.cs_style_1 {
-			.cs_text_img {
-				.cs_banner_text {
-					font-size: 52px;
-				}
-			}
-			.cs_text_btn {
-				flex-direction: column-reverse;
-				gap: 30px;
-				.cs_banner_text {
-					font-size: 20px;
-					&.cs_text_size {
-						font-size: 56px;
-					}
-				}
-			}
-		}
-	}
+  .cs_hero.cs_style1 {
+    .cs_hero_text_in {
+      padding-left: 0%;
+    }
+    .cs_hero_bg {
+      opacity: 0.2;
+      width: 100%;
+    }
+  }
+
+  /* Dugme na telefonu u ravni sa tekstom, lako podesivo */
+/* Dugme na telefonu u ravni sa tekstom, lako podesivo */
+.cs_section_heading_right {
+  margin-left: -2px;       // već postavljeno, možeš menjati
+  transform: translateY(-40px);  // pomeraš dugme gore, menjaš vrednost po potrebi
+  text-align: left;
+  box-sizing: border-box;
 }
+
+
+
+  .cs_hero.cs_style2 {
+    min-height: calc(100vh + 50px);
+    .cs_hero_text {
+      .cs_hero_title.cs_hero_title_lg {
+        font-size: 48px;
+        line-height: 60px;
+        padding-left: 12px; // ← isto kao dugme, lako menjaš
+      }
+    }
+  }
+
+  .cs_hero.cs_style3.cs_bg_color {
+    min-height: 60vh;
+    .cs_hero_text {
+      .cs_hero_title {
+        font-size: 40px;
+      }
+      .cs_hero_subTitle {
+        font-size: 50px;
+      }
+      .cs_hero_p {
+        padding-right: 60px;
+      }
+    }
+  }
+
+  .cs_hero.cs_style4 {
+    .cs_text_hero {
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-left: 0px;
+      .cs_title_text {
+        font-size: 48px;
+        .cs_detils_text {
+          margin-right: 0px;
+          float: none;
+        }
+      }
+      .cs_text_section_2 {
+        gap: 20px;
+      }
+    }
+  }
+
+  .cs_hero.cs_style5 {
+    .cs_marketing_agency_section.cs_style_1 {
+      .cs_text_img {
+        .cs_banner_text {
+          font-size: 52px;
+        }
+      }
+      .cs_text_btn {
+        flex-direction: column-reverse;
+        gap: 30px;
+        .cs_banner_text {
+          font-size: 20px;
+          &.cs_text_size {
+            font-size: 56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 
 @media screen and (max-width: 575px) {
 	.cs_hero.cs_style3.cs_bg_color {

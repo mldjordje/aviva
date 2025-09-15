@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import Link from "next/link";
 import { motion, useAnimation, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -42,10 +42,13 @@ const ServiceHomeOne = () => {
   return (
     <>
       <div className="cs_height_150 cs_height_lg_60"></div>
-      <section className="cs_primary_bg position-relative">
+      <section
+        className="position-relative"
+        style={{ backgroundColor: "#fbf2f0", color: "#000000" }}
+      >
         <div className="cs_height_150 cs_height_lg_60"></div>
         <div className="container">
-          <div className="cs_section_heading cs_style_1 cs_type_1 cs_color_1">
+          <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text">
               <div className="cs_section_subtitle anim_div_ShowZoom">
                 Estetske Usluge
@@ -55,7 +58,7 @@ const ServiceHomeOne = () => {
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
-              <Link href="/service" className="cs_btn cs_style_1 cs_color_1">
+              <Link href="/nase-usluge" className="cs_btn cs_style_1">
                 <span>Usluge</span>
                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none">
                   <path
@@ -72,7 +75,7 @@ const ServiceHomeOne = () => {
             {service_data.map((item, i) => (
               <motion.div
                 key={item.id}
-                className="cs_card cs_style_1 cs_color_1"
+                className="cs_card cs_style_1"
                 custom={i}
                 initial="hidden"
                 animate={controls}
@@ -100,7 +103,6 @@ const ServiceHomeOne = () => {
             ))}
           </div>
         </div>
-        <div className="cs_height_100 cs_height_lg_30"></div>
       </section>
     </>
   );
