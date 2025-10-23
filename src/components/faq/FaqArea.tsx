@@ -115,6 +115,21 @@ const faq_data: DataType[] = [
     ans: "Da, jer se koristi sopstveni materijal – nema rizika od alergije ili neprirodnog izgleda."
   },
   {
+    id: "TwentyOneA",
+    question: "Ko je idealan kandidat za PRP tretman?",
+    ans: "PRP je namenjen osobama sa ranim znacima starenja, opuštenim tonusom ili neravnomernom teksturom koje žele prirodan način podmlađivanja bez invazivnih procedura."
+  },
+  {
+    id: "TwentyOneB",
+    question: "Šta je Cellular Matrix tretman?",
+    ans: "To je napredni PRP protokol koji plazmi dodaje matrične komponente za snažniju regeneraciju kože, naročito kod dubljih ožiljaka ili izraženije atrofije."
+  },
+  {
+    id: "TwentyOneC",
+    question: "Koji su mogući neželjeni efekti nakon PRP tretmana?",
+    ans: "Mogu se javiti blago crvenilo, sitne modrice ili otok koji brzo prolaze. Pre tretmana proveravaju se terapije i kontraindikacije kako bi procedura bila što bezbednija."
+  },
+  {
     id: "TwentyTwo",
     question: "Šta je Profhilo/LOLA tretman?",
     ans: "To je tretman koji ne menja crte lica, već poboljšava kvalitet kože – hidrira, zateže i vraća prirodan sjaj."
