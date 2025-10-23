@@ -80,21 +80,21 @@ const ServiceAreaDetailsLipoliza = () => {
                 </div>
               </div>
               <div className="col-lg-5">
-                <div className="cs_service_details_thumb cs_radius_20 cs_primary_bg p-4">
+                <div className="cs_service_details_thumb cs_radius_20 cs_primary_bg cs_white_color p-4">
                   <div className="cs_section_heading cs_style_1 cs_color_1 mb-4">
                     <div className="cs_section_heading_text">
                       <h3 className="cs_section_title_4">Cene tretmana</h3>
                     </div>
                   </div>
-                  <ul className="cs_list_style_none cs_color_1">
+                  <ul className="cs_list_style_none cs_white_color">
                     {pricing.map((item) => (
                       <li key={item.name} className="d-flex justify-content-between align-items-start mb-3">
-                        <span className="fw-semibold">{item.name}</span>
-                        <span>{item.price}</span>
+                        <span className="fw-semibold cs_white_color">{item.name}</span>
+                        <span className="cs_white_color">{item.price}</span>
                       </li>
                     ))}
                   </ul>
-                  <p className="cs_color_1 mb-0">
+                  <p className="cs_white_color mb-0">
                     Nakon konsultacije dobijate preciznu procenu broja doza potrebnih za vašu regiju.
                   </p>
                 </div>
