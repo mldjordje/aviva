@@ -30,7 +30,7 @@ const service_data: DataType[] = [
   {
     id: '5',
     title: "Oporavak i rezultati",
-    description: `Većina pacijenata se vraća obavezama odmah po tretmanu; daju se saveti za negu, a efekti regeneracije postaju sve vidljiviji u nedeljama koje slede.`,
+    description: `Većina pacijenata se vraća obavezama odmah po tretmanu. Dajemo savete za negu narednih dana, pratimo reakcije kože i planiramo kontrole kako bi efekti regeneracije postali sve izraženiji u nedeljama koje slede.`,
   },
 ]
 

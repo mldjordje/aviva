@@ -25,7 +25,7 @@ const index = () => {
             <About2
               subtitle="PRP tretman u Nišu"
               title="PRP tretman – prirodno obnavljanje kože uz sopstvenu krvnu plazmu"
-              des="Želite blistaviju, čvršću i prirodno podmlađenu kožu bez invazivnih procedura? U Aviva Ageless klinici u Nišu PRP tretman počinje besplatnom konsultacijom i individualnim planom lekara. Koristimo vašu krvnu plazmu bogatu faktorima rasta kako bismo stimulisali regeneraciju kože, smanjili bore i vratili tonus i sjaj licu, vratu ili dekolteu."
+              des="Želite blistaviju, čvršću i prirodno podmlađenu kožu bez invazivnih procedura? U Aviva Ageless klinici u Nišu PRP tretman počinje besplatnom konsultacijom i individualnim planom lekara. Naš pristup je precizan, bezbedan i personalizovan: koristimo vašu krvnu plazmu bogatu faktorima rasta kako bismo stimulisali regeneraciju kože, smanjili bore i vratili tonus i sjaj licu, vratu ili dekolteu. Ako razmišljate o „vampirskom tretmanu“ lica ili Cellular Matrix unapređenju, na pravom ste mestu."
               images={["/assets/img1/1.jpg"]}
             />
 

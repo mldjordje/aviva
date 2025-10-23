@@ -48,10 +48,10 @@ const Cenovnik: React.FC<CenovnikProps> = ({ category }) => {
     { name: "Lemon Bottle", price: "10.000 RSD", category: "lipoliza" },
 
     // PRP
-    { name: "PRP", price: "12.000 RSD", category: "prp" },
-    { name: "PRP 3 tretmana", price: "30.000 RSD", category: "prp" },
-    { name: "Cellular Matrix", price: "20.000 RSD", category: "prp" },
-    { name: "PRP + hemijski piling paket (akcija)", price: "12.000 RSD", category: "prp" },
+    { name: "PRP", price: "12.000 RSD (100 €)", category: "prp" },
+    { name: "PRP 3 tretmana", price: "30.000 RSD (255 €)", category: "prp" },
+    { name: "Cellular Matrix", price: "20.000 RSD (170 €)", category: "prp" },
+    { name: "PRP + hemijski piling paket (akcija)", price: "12.000 RSD (100 €)", category: "prp" },
 
     // Mezoterapija
     { name: "Mezoterapija", price: "6.000 RSD", category: "mezoterapija" },

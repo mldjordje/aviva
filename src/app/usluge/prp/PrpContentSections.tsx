@@ -6,6 +6,42 @@ const PrpContentSections = () => {
       <div className="cs_height_120 cs_height_lg_60"></div>
       <section>
         <div className="container">
+          <div className="row gy-4 align-items-center">
+            <div className="col-lg-6 anim_div_ShowLeftSide">
+              <div className="cs_section_heading cs_style_1">
+                <div className="cs_section_heading_text">
+                  <h3 className="cs_section_title_3 anim_heading_title">
+                    Zašto odabrati PRP tretman u Aviva Ageless Niš
+                  </h3>
+                </div>
+              </div>
+              <div className="cs_height_20"></div>
+              <p className="cs_text_style_1">
+                Naš PRP protokol je precizan, bezbedan i u potpunosti prilagođen vašoj koži. Svaku proceduru započinjemo
+                besplatnom konsultacijom i detaljnom procenom kako bismo kreirali plan koji odgovara vašim ciljevima
+                podmlađivanja.
+              </p>
+            </div>
+            <div className="col-lg-6 anim_div_ShowRightSide">
+              <div className="cs_text_style_1">
+                <p>
+                  Ako razmišljate o „vampirskom tretmanu“ lica, kod nas dobijate prirodne rezultate zahvaljujući sopstvenoj
+                  krvnoj plazmi koja aktivira procese regeneracije. Idealna je opcija za smanjenje bora, poboljšanje tonusa i
+                  vraćanje svežine licu, vratu ili dekolteu.
+                </p>
+                <p>
+                  Sertifikovani stručnjaci Aviva Ageless tima izvode tretmane u sterilnim uslovima i prate reakcije kože,
+                  kako bi efekat bio postepen, prirodan i u skladu sa vašim crtama lica.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="cs_height_120 cs_height_lg_60"></div>
+      <section>
+        <div className="container">
           <div className="cs_section_heading cs_style_1">
             <div className="cs_section_heading_text">
               <h3 className="cs_section_title_3 anim_heading_title">
@@ -101,8 +137,9 @@ const PrpContentSections = () => {
               <h3 className="cs_section_title_3">Sigurnost i neželjeni efekti</h3>
               <p>
                 PRP koristi vašu sopstvenu krv, tako da je rizik od alergijskih reakcija minimalan. Moguće su kratkotrajno
-                crvenilo, blage modrice ili otok koji brzo prolaze. Pre tretmana razgovaramo o terapijama koje koristite i
-                mogućim kontraindikacijama poput aktivnih infekcija ili težih sistemskih oboljenja.
+                crvenilo, blage modrice ili otok koji brzo prolaze. Pre tretmana razgovaramo o terapijama koje koristite, po
+                potrebi proveravamo krvni panel ili alergije i prolazimo kroz sve kontraindikacije kako bismo obezbedili maksimalnu
+                bezbednost.
               </p>
             </div>
             <div className="col-lg-6 anim_div_ShowRightSide">
@@ -127,7 +164,8 @@ const PrpContentSections = () => {
           <p>
             Ako razmišljate o PRP tretmanu ili Cellular Matrix proceduri, kontaktirajte naš tim kako biste dobili profesionalnu
             procenu i personalizovan plan. Vaša koža zaslužuje tretman koji deluje iznutra – prirodno, sa merom i uz stalnu
-            podršku stručnjaka Aviva Ageless klinike.
+            podršku stručnjaka Aviva Ageless klinike. Pozovite nas ili pošaljite poruku i rezervišite termin za besplatnu
+            konsultaciju.
           </p>
         </div>
       </section>
