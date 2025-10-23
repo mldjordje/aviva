@@ -1,9 +1,14 @@
-"use client";
-
 import React from "react";
+import type { Metadata } from "next";
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
+
+export const metadata: Metadata = {
+  title: "Lipoliza u Nišu | Aviva Ageless",
+  description:
+    "Injekciona lipoliza i Lemon Bottle tretmani u Aviva Ageless ordinaciji u Nišu: cene, kandidati, tok procedure, sigurnost i česta pitanja.",
+};
 
 const LipolizaPage = () => {
   return (
@@ -13,11 +18,11 @@ const LipolizaPage = () => {
         <div id="smooth-content">
           <main>
             <div className="cs_height_219 cs_height_lg_120" />
-            <section>
+            <section aria-labelledby="lipoliza-naslov">
               <div className="container">
                 <div className="cs_section_heading cs_style_1 cs_type_1">
                   <div className="cs_section_heading_text">
-                    <h1 className="cs_section_title anim_text_writting">
+                    <h1 id="lipoliza-naslov" className="cs_section_title anim_text_writting">
                       Lipoliza u Nišu: brzo oblikovanje bez operacije
                     </h1>
                   </div>
@@ -35,7 +40,7 @@ const LipolizaPage = () => {
                       </p>
                     </div>
                     <div className="cs_height_60 cs_height_lg_40" />
-                    <section>
+                    <section id="sta-je-lipoliza">
                       <h2>Šta je injekciona lipoliza</h2>
                       <p>
                         Injekciona lipoliza znači ubrizgavanje specifičnog rastvora u podkožno masno tkivo kako bi se ciljano
@@ -45,15 +50,21 @@ const LipolizaPage = () => {
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="cene-lipolize">
                       <h2>Cene</h2>
-                      <ul>
-                        <li>Lipoliza (jedna doza) – 6.000 RSD (50 evra)</li>
-                        <li>Lemon Bottle – 10.000 RSD (85 evra)</li>
-                      </ul>
+                      <dl>
+                        <div>
+                          <dt>Lipoliza (jedna doza)</dt>
+                          <dd>6.000 RSD (50 evra)</dd>
+                        </div>
+                        <div>
+                          <dt>Lemon Bottle</dt>
+                          <dd>10.000 RSD (85 evra)</dd>
+                        </div>
+                      </dl>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="prednosti-lipolize">
                       <h2>Prednosti injekcione lipolize</h2>
                       <ul>
                         <li>Ciljano delovanje: tretira se tačno određena regija, na primer lipoliza stomaka ili lipoliza podbratka.</li>
@@ -64,7 +75,7 @@ const LipolizaPage = () => {
                       </ul>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="kandidati-lipoliza">
                       <h2>Kome je lipoliza namenjena</h2>
                       <ul>
                         <li>Osobama sa malim do umerenim lokalnim masnim naslagama koje žele bolju konturu tela.</li>
@@ -78,7 +89,7 @@ const LipolizaPage = () => {
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="tretman-u-aviva-ageless">
                       <h2>Kako izgleda tretman u Aviva Ageless</h2>
                       <ol>
                         <li>Prva konsultacija: lekar procenjuje stanje, meri regiju i diskutuje o ciljevima uz postavljanje realnih očekivanja.</li>
@@ -91,49 +102,49 @@ const LipolizaPage = () => {
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="lemon-bottle">
                       <h2>Lemon Bottle: čemu služi i zašto ga nudimo</h2>
                       <p>
                         Lemon Bottle je specifičan protokol injekcione lipolize koji kombinuje delovanje aktivnih supstanci sa prilagođenom tehnikom aplikacije. Često pruža odličan balans između efikasnosti i komfora, posebno na regijama gde je cilj delikatno oblikovanje. Cena Lemon Bottle tretmana u Aviva Ageless iznosi 10.000 RSD.
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="sigurnost-lipolize">
                       <h2>Sigurnost i kontraindikacije</h2>
                       <p>
                         Vaše zdravlje je prioritet. Pre tretmana sprovodimo detaljan razgovor o anamnezi i procenu stanja sa pitanjima o alergijama, prethodnim intervencijama, trudnoći ili aktivnim infekcijama na koži. Tako utvrđujemo da li ste vi i vaše telo spremni za proceduru.
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="odrzavanje-rezultata">
                       <h2>Očekivanja i održavanje rezultata</h2>
                       <p>
                         Jednom uništene masne ćelije se ne vraćaju, pa su rezultati dugotrajni sve dok ne dođe do značajnog povećanja telesne mase. Za optimalan ishod važno je održavanje zdravog stila života.
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="lipoliza-i-celulit">
                       <h2>Lipoliza i tretman celulita</h2>
                       <p>
                         Lipoliza može poboljšati izgled površinske masnoće i time smanjiti vidljivost celulita, naročito u ranim fazama. Za kompleksnije slučajeve preporučujemo kombinovani pristup koji uključuje fizikalne tretmane, tretmane za zatezanje kože i promene u ishrani.
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="broj-tretmana">
                       <h2>Koliko tretmana je potrebno</h2>
                       <p>
                         U većini slučajeva potrebne su najmanje dve sesije za vidljiv rezultat. Raspored i broj tretmana prilagođavaju se pojedinačno, a razmak između aplikacija je nekoliko nedelja kako bi se organizam oporavio i pokazao efekat prethodnog tretmana.
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="nezeljene-reakcije">
                       <h2>Moguće neželjene reakcije</h2>
                       <p>
                         Neželjeni efekti su uglavnom blagi i prolazni: crvenilo, otok, modrice i blagi bol na mestima uboda. Alergijske reakcije su retke, a ozbiljnije komplikacije su izuzetno retke i najčešće povezane sa nekvalitetnim supstancama ili nepravilnim uslovima rada – zato insistiramo na profesionalnoj primeni u kliničkom okruženju.
                       </p>
                     </section>
                     <div className="cs_height_50 cs_height_lg_40" />
-                    <section>
+                    <section id="faq-lipoliza">
                       <h2>Često postavljana pitanja</h2>
                       <div className="cs_accordion cs_style_2">
                         <div className="cs_accordion_item">
