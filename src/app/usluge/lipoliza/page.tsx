@@ -1,16 +1,20 @@
-"use client";
-import React from "react";
+import type { Metadata } from "next";
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
-import ServiceTeam from "@/components/service/ServiceTeam";
-
-import TeamDetailsArea from "@/components/details/TeamDetailsArea";
-import ServiceAreaDetailsLipoliza from "./ServiceAreaDetailsLipoliza";
 import About2 from "@/components/about/About2";
+import TeamDetailsArea from "@/components/details/TeamDetailsArea";
 import AboutUs from "@/components/about/AboutUs";
+import ServiceTeam from "@/components/service/ServiceTeam";
+import ServiceAreaDetailsLipoliza from "./ServiceAreaDetailsLipoliza";
 
-const index = () => {
+export const metadata: Metadata = {
+  title: "Lipoliza u Nišu | Aviva Ageless",
+  description:
+    "Injekciona lipoliza i Lemon Bottle tretmani u Aviva Ageless ordinaciji u Nišu: cene, kandidati, tok procedure, sigurnost i česta pitanja.",
+};
+
+const LipolizaPage = () => {
   return (
     <Wrapper>
       <HeaderOne />
@@ -18,12 +22,11 @@ const index = () => {
         <div id="smooth-content">
           <main>
             <About2
-              subtitle="Lipoliza"
-              title="Lipoliza – efikasno uklanjanje lokalizovanih masnih naslaga"
-              des="Lipoliza je minimalno invazivna metoda koja razgrađuje masne ćelije ubrizgavanjem specijalnih supstanci direktno u problematične regije tela."
+              subtitle="Lipoliza u Nišu"
+              title="Brzo oblikovanje bez operacije"
+              des="Ciljano uklanjamo manje masne naslage na stomaku, bokovima ili podbratku uz standardnu injekcionu lipolizu i Lemon Bottle protokol. Na konsultaciji definišemo plan tretmana i vodimo vas kroz siguran oporavak."
               images={["/assets/img1/1.jpg"]}
             />
-
             <ServiceAreaDetailsLipoliza />
             <TeamDetailsArea />
             <AboutUs />
@@ -36,4 +39,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LipolizaPage;
