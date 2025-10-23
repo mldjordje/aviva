@@ -91,28 +91,53 @@ const faq_data: DataType[] = [
   },
   {
     id: "Seventeen",
-    question: "Šta je PRP tretman?",
-    ans: "Koristi se vaša sopstvena krvna plazma bogata faktorima rasta, koja stimuliše regeneraciju kože i kose."
+    question: "Šta je PRP tretman i kako funkcioniše?",
+    ans: "PRP (platelet rich plasma) koristi sopstvenu krvnu plazmu obogaćenu trombocitima i faktorima rasta koji stimulišu stvaranje kolagena, poboljšavaju elastičnost kože i ubrzavaju regeneraciju."
   },
   {
     id: "Eighteen",
     question: "Za šta se koristi PRP?",
-    ans: "Za podmlađivanje kože, redukciju finih bora, tretman područja oko očiju, kao i za jačanje rasta kose."
+    ans: "Za prirodno podmlađivanje kože, smanjenje finih bora i podočnjaka, ujednačavanje tonusa lica, ali i za jačanje rasta kose kod osoba sa proređenjem vlasišta."
   },
   {
     id: "Nineteen",
     question: "Kada se vide rezultati PRP tretmana?",
-    ans: "Već posle 2–3 nedelje koža izgleda svežije, a pravi efekat dolazi posle više tretmana."
+    ans: "Prvi znaci svežine primećuju se nakon 2–3 nedelje, dok se pun efekat regeneracije obično procenjuje posle 1–3 meseca, kada se formira nova kolagena mreža."
   },
   {
     id: "Twenty",
     question: "Koliko PRP tretmana je potrebno?",
-    ans: "Preporuka je 3–4 tretmana mesečno, a zatim održavanje."
+    ans: "Najčešće preporučujemo seriju od 2 do 3 tretmana u razmaku od nekoliko nedelja, a zatim održavanje prema planu koji odredi lekar."
   },
   {
     id: "TwentyOne",
     question: "Da li je PRP tretman prirodan i bezbedan?",
     ans: "Da, jer se koristi sopstveni materijal – nema rizika od alergije ili neprirodnog izgleda."
+  },
+  {
+    id: "TwentyOneA",
+    question: "Ko je idealan kandidat za PRP tretman?",
+    ans: "PRP je namenjen osobama sa ranim znacima starenja, opuštenim tonusom ili neravnomernom teksturom koje žele prirodan način podmlađivanja bez invazivnih procedura."
+  },
+  {
+    id: "TwentyOneB",
+    question: "Šta je Cellular Matrix tretman?",
+    ans: "To je napredni PRP protokol koji plazmi dodaje matrične komponente za snažniju regeneraciju kože, naročito kod dubljih ožiljaka ili izraženije atrofije."
+  },
+  {
+    id: "TwentyOneC",
+    question: "Koji su mogući neželjeni efekti nakon PRP tretmana?",
+    ans: "Mogu se javiti blago crvenilo, sitne modrice ili otok koji brzo prolaze. Pre tretmana proveravaju se terapije i kontraindikacije kako bi procedura bila što bezbednija."
+  },
+  {
+    id: "TwentyOneD",
+    question: "Da li PRP tretman boli?",
+    ans: "Većina pacijenata oseća samo blagu nelagodnost tokom uboda. Koristimo fine iglice i po potrebi lokalnu anesteziju kako bi iskustvo bilo što komfornije."
+  },
+  {
+    id: "TwentyOneE",
+    question: "Koliko traje jedan PRP tretman?",
+    ans: "Prosečno trajanje je 30–60 minuta. U tom vremenu obavljamo konsultaciju, uzimanje krvi, pripremu plazme i aplikaciju u ciljane regije lica, vrata, dekoltea ili vlasišta."
   },
   {
     id: "TwentyTwo",

@@ -10,27 +10,27 @@ const service_data: DataType[] = [
   {
     id: '1',
     title: "Konzultacija",
-    description: `Detaljan pregled i razgovor sa lekarom kako bismo odredili da li ste idealan kandidat za PRP tretman i definisali plan procedure.`,
+    description: `Detaljna, besplatna konsultacija na kojoj lekar procenjuje stanje kože, upoznaje se sa vašim ciljevima i kreira personalizovan plan tretmana.`,
   },
   {
     id: '2',
     title: "Uzimanje krvi",
-    description: `Mala količina krvi se uzima iz vene, slično kao kod običnih laboratorijskih analiza.`,
+    description: `Uzima se mala količina krvi u sterilnim uslovima, kao pri standardnim laboratorijskim analizama.`,
   },
   {
     id: '3',
     title: "Priprema plazme",
-    description: `Krv se stavlja u centrifugu radi odvajanja plazme obogaćene trombocitima (PRP) koja sadrži faktore rasta.`,
+    description: `U zatvorenoj centrifugi pažljivo odvajamo plazmu obogaćenu trombocitima (PRP) bogatu faktorima rasta.`,
   },
   {
     id: '4',
     title: "Aplikacija PRP-a",
-    description: `Plazma se nežno ubrizgava u ciljane regije (lice, vrat, dekolte ili vlasište) tankim iglicama, uz prethodnu lokalnu anesteziju.`,
+    description: `Koncentrovana plazma se injektuje u ciljane zone lica, vrata, dekoltea ili vlasišta tankim iglicama uz lokalnu anesteziju.`,
   },
   {
     id: '5',
     title: "Oporavak i rezultati",
-    description: `Koža je blago crvena prvih nekoliko sati, a potpuni efekat regeneracije i osveženja postaje vidljiv u narednim nedeljama.`,
+    description: `Većina pacijenata se vraća obavezama odmah po tretmanu. Dajemo savete za negu narednih dana, pratimo reakcije kože i planiramo kontrole kako bi efekti regeneracije postali sve izraženiji u nedeljama koje slede.`,
   },
 ]
 
