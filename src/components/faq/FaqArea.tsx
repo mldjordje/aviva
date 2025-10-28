@@ -153,9 +153,8 @@ const faq_data: DataType[] = [
     id: "TwentyNine",
     question: "Kako da znam koji tretman je pravi za mene?",
     ans: "Najbolji naÄin je konsultacija sa naÅ¡im lekarom. Mi ne nudimo univerzalna reÅ¡enja â€“ svako lice je jedinstveno, pa je i plan tretmana individualan. Na konsultaciji dobijate iskren savet Å¡ta je najbolje baÅ¡ za vas, u skladu sa vaÅ¡im godinama, Å¾eljama i prirodnim izgledom."
-  },\n  {\n    id: "Thirty",\n    question: "Koja je najbolja klinika za estetsku medicinu u Nišu?",\n    ans: "Mnogi pacijenti biraju Aviva Ageless zbog stručnog tima, savremene opreme i individualnog pristupa. Najbolji izbor zavisi od vaših potreba, zato preporučujemo besplatne konsultacije."\n  }\n];
-
-
+  },
+];
 const FaqArea = () => {
 
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
