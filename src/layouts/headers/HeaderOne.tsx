@@ -9,6 +9,7 @@ import DarkLightToggle from '@/components/common/DarkLightToggle';
 import Image from "next/image";
 import logo from "@/assets/img1/logo4.png";
 import Logo_white from "@/assets/img1/logo3.png";
+import { CONTACT } from "@/data/contact";
 
 interface DataType {
 	id: number;
@@ -225,12 +226,11 @@ const HeaderOne = () => {
 												d="M7 0.0195312C3.14027 0.0195312 0 3.01027 0 6.68621C0 7.78973 0.289693 8.88387 0.840408 9.85434L6.6172 17.8047C6.69411 17.9373 6.84065 18.0195 7 18.0195C7.15935 18.0195 7.30589 17.9373 7.3828 17.8047L13.1617 9.85105C13.7103 8.88387 14 7.78969 14 6.68617C14 3.01027 10.8597 0.0195312 7 0.0195312ZM7 10.0195C5.07014 10.0195 3.50002 8.52418 3.50002 6.68621C3.50002 4.84824 5.07014 3.35289 7 3.35289C8.92986 3.35289 10.5 4.84824 10.5 6.68621C10.5 8.52418 8.92986 10.0195 7 10.0195Z"
 												fill="white"></path>
 										</svg>
-										<span className="ms-2">46 JOHN ST TORONTO ON <br />
-											&nbsp; &nbsp; &nbsp; &nbsp; M5V 3W2</span>
+                    <span className="ms-2">{`${CONTACT.address.streetAddress}, ${CONTACT.address.addressLocality}`}</span>
 									</p>
 
-									<h4 className="cs_phone_number">
-										<a href="tel:(406)555-0120">
+                    <h4 className="cs_phone_number">
+                        <a href={`tel:${CONTACT.phone}`}>
 											<svg width="35" height="35" viewBox="0 0 18 19" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path
@@ -242,7 +242,7 @@ const HeaderOne = () => {
 												<path
 													d="M15.1294 2.93344C13.5338 1.33791 11.5151 0.330398 9.28656 0.0195312L9.0918 1.40907C11.0169 1.67874 12.7623 2.55141 14.1406 3.92597C15.4477 5.23311 16.3054 6.88483 16.6163 8.70134L17.9983 8.46538C17.635 6.36047 16.6425 4.45033 15.1294 2.93344Z"
 													fill="white"></path>
-											</svg><span className="ms-2">(406)555-0120</span></a>
+                        </svg><span className="ms-2">{CONTACT.phone}</span></a>
 									</h4>
 
 									<ul className="cs_social_link">
@@ -253,10 +253,9 @@ const HeaderOne = () => {
 									</ul>
 
 									<hr className="mt-2 me-5 mb-2" />
-									<h2>
-										<a href="mailto:info@email.com" className="cs_primary_font cs_text_btn"><span
-											className="cs_black">info@email.com</span></a>
-									</h2>
+                    <h2>
+                        <a href={`mailto:${CONTACT.email}`} className="cs_primary_font cs_text_btn"><span className="cs_black">{CONTACT.email}</span></a>
+                    </h2>
 								</div>
 							</div>
 						</div>
