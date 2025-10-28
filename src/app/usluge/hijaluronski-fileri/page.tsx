@@ -1,6 +1,7 @@
 ﻿"use client";
 import React from "react";
 import FooterOne from "@/layouts/footers/FooterOne";
+import Wrapper from "@/layouts/Wrapper";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 
 import Mila from "@/components/tim/Mila";
