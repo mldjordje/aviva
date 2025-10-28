@@ -97,7 +97,7 @@ const ServiceHomeOne = () => {
               >
                 <div className="cs_card_left">
                   <div className="cs_card_icon">
-                    <img src={item.icon} alt={item.title} />
+                    <img src={item.icon} alt={item.title} loading="lazy" />
                   </div>
                 </div>
                 <div className="cs_card_right">
