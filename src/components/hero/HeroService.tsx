@@ -35,7 +35,7 @@ const HeroService = () => {
           </div>
           <div className="cs_height_100 cs_height_lg_60"></div>
           <div className="cs_card_1_list">
-            {banner_data.map((item, i) =>
+            {banner_data.filter((b) => b.link !== "/usluge/anti-aging").map((item, i) =>
               <div key={i} className="cs_card cs_style_1 anim_div_ShowDowns">
                 <div className="cs_card_left">
                   <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url('/assets/img/hero_img_1.jpg')` }}>

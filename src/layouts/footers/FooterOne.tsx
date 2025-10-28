@@ -1,8 +1,9 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import footer_logo from "@/assets/img1/aviva logo-01.png";
 import { CopyRight, SocialLinks } from '@/components/common/SocialLinks';
+import { CONTACT } from '@/data/contact';
 
 interface DataType {
   email: string;
@@ -16,10 +17,10 @@ interface DataType {
 }
 
 const footer_data: DataType = {
-  email: `info@avivaageless.rs`,
-  phone: `0653502771`,
-  location: `Bulevar Nemanjića 12, Niš`,
-  footer_info: `Aviva Ageless - stručna anti-aging klinika za podmlađivanje lica i tela.`,
+  email: CONTACT.email,
+  phone: CONTACT.phone,
+  location: `${CONTACT.address.streetAddress}, ${CONTACT.address.addressLocality}`,
+  footer_info: `Aviva Ageless - stručna klinika za estetsku medicinu i negu kože.`,
   links: [
     { title: `POČETNA`, link: "/" },
     { title: `O NAMA`, link: "/about" },
@@ -56,7 +57,7 @@ const FooterOne = () => {
               <div className="cs_footer_info">
                 <Image 
                   src={footer_logo} 
-                  alt="Logo" 
+                  alt="Aviva Ageless logo" 
                   width={250} 
                   height={50} 
                   priority

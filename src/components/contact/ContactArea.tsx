@@ -1,6 +1,7 @@
-'use client'
+﻿'use client'
 
 import React from 'react';
+import { CONTACT } from '@/data/contact';
 
 const ContactArea = () => {
 
@@ -34,13 +35,13 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Adresa</h6>
-                      <p className="cs_icon_subtitle">📍 Bulevar Nemanjića 12, Niš</p>
+                      <p className="cs_icon_subtitle">{`${CONTACT.address.streetAddress}, ${CONTACT.address.addressLocality}`}</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="cs_icon">
-                    <a href="tel:0653502771" className="cs_icon_style">
+                    <a href={`tel:${CONTACT.phone}`} className="cs_icon_style">
                       <i>
                         <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -52,13 +53,13 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Telefon</h6>
-                      <p className="cs_icon_subtitle">📲 0653502771</p>
+                      <p className="cs_icon_subtitle">{CONTACT.phone}</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="cs_icon">
-                    <a href="mailto:vixan@email.com" className="cs_icon_style">
+                    <a href={`mailto:${CONTACT.email}`} className="cs_icon_style">
                       <i>
                         <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +74,7 @@ const ContactArea = () => {
                     </a>
                     <div className="cs_icon_text">
                       <h6 className="cs_icon_title">Email</h6>
-                      <p className="cs_icon_subtitle">aviva@email.com</p>
+                      <p className="cs_icon_subtitle">{CONTACT.email}</p>
                     </div>
                   </div>
                 </div>

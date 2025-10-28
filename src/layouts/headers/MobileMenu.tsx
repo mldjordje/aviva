@@ -45,7 +45,6 @@ const menu_data: DataType[] = [
       { id: 4, title: "PRP tretman", link: "/usluge/prp" },
       { id: 5, title: "Lipoliza", link: "/usluge/lipoliza" },
       { id: 6, title: "Mezoterapija", link: "/usluge/mezoterapija" },
-      { id: 7, title: "Anti-aging", link: "/usluge/anti-aging" },
       { id: 8, title: "Savetovanja", link: "/usluge/savetovanja" },
     ],
   },

@@ -42,14 +42,14 @@ const FunFactHomeOne = ({style_2, style_3} :any) => {
           {counter_data.map((item, i) =>
             <div key={i} className="col-lg-3">
               <div className="cs_funfact cs_style1">
-                <div className={`cs_funfact_number  me-4 ${style_2 ? 'cs_stroke_normal' : 'cs_stroke_text'}`}>
+                <div className={`cs_funfact_number   me-4 ${style_2 ? 'cs_stroke_normal' : 'cs_stroke_text'}`}>
                   <div className="amin_auto_count">
                     <Count number={item.number} add_style={true} />
                   </div>
                   {i === 0 && <span></span>}
                   {i === 1 && <span></span>}
                 </div>
-                <div className={`cs_funfact_text cs_primary_font ${style_2 ? 'cs_color_1' : ''}`}>
+                <div className={`cs_funfact_text cs_secondary_font ${style_2 ? 'cs_color_1' : ''}`}>
                   <p>{item.title}</p>
                 </div>
               </div>

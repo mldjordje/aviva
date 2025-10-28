@@ -72,7 +72,7 @@ const ServiceHomeOne = () => {
 
           <div className="cs_height_50 cs_height_lg_10"></div>
           <div ref={ref} className="cs_card_1_list">
-            {service_data.map((item, i) => (
+            {service_data.filter((s) => s.slug !== 'anti-aging').map((item, i) => (
               <motion.div
                 key={item.id}
                 className="cs_card cs_style_1"
@@ -83,7 +83,7 @@ const ServiceHomeOne = () => {
               >
                 <div className="cs_card_left">
                   <div className="cs_card_icon">
-                    <img src={item.icon} alt={item.title} />
+                    <img src={item.icon} alt={item.title} loading="lazy" />
                   </div>
                 </div>
                 <div className="cs_card_right">

@@ -6,6 +6,11 @@
   .cs_funfact_number {
     display: flex;
     align-items: center;
+    font-family: var(--heading-font-family); // koristi Gaela font
+    font-weight: 700;
+     transform: scaleX(1.2); // širi tekst horizontalno
+    transform-origin: left; // da ne “beži” sa centra
+    line-height: 1;
     > span + span {
       position: relative;
       top: -3px;
