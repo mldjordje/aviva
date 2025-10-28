@@ -1,13 +1,5 @@
 ﻿"use client";
 import React from "react";
-import type { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: 'Lipoliza – Aviva Ageless Niš',
-  description: 'Neinvazivno smanjenje lokalnih masnih naslaga – precizan i efikasan tretman.',
-  alternates: { canonical: 'https://www.avivaageless.rs/usluge/lipoliza' },
-  openGraph: { title: 'Lipoliza – Aviva Ageless Niš', description: 'Neinvazivno smanjenje lokalnih masnih naslaga – precizan i efikasan tretman.', url: 'https://www.avivaageless.rs/usluge/lipoliza', type: 'website' },
-  twitter: { card: 'summary_large_image', title: 'Lipoliza – Aviva Ageless Niš', description: 'Neinvazivno smanjenje lokalnih masnih naslaga – precizan i efikasan tretman.' },
-};
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
@@ -45,4 +37,5 @@ const index = () => {
 };
 
 export default index;
+
 

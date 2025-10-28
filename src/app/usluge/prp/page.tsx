@@ -1,13 +1,5 @@
-'use client'
+﻿'use client'
 import React from 'react';
-import type { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: 'PRP tretman – Aviva Ageless Niš',
-  description: 'Regeneracija kože sopstvenom plazmom – prirodan pristup bezbednim rezultatima.',
-  alternates: { canonical: 'https://www.avivaageless.rs/usluge/prp' },
-  openGraph: { title: 'PRP tretman – Aviva Ageless Niš', description: 'Regeneracija kože sopstvenom plazmom – prirodan pristup bezbednim rezultatima.', url: 'https://www.avivaageless.rs/usluge/prp', type: 'website' },
-  twitter: { card: 'summary_large_image', title: 'PRP tretman – Aviva Ageless Niš', description: 'Regeneracija kože sopstvenom plazmom – prirodan pristup bezbednim rezultatima.' },
-};
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
@@ -31,8 +23,8 @@ const index = () => {
           <main>
             <About2
               subtitle="PRP tretman"
-              title="PRP tretman – prirodna regeneracija kože koja vraća mladost i svežinu."
-              des="Iskoristite moć sopstvene plazme za podmlađivanje i regeneraciju kože. PRP tretman stimuliše prirodnu proizvodnju kolagena i vraća elastičnost, tonus i sjaj vašem licu, vratu ili dekolteu."
+              title="PRP tretman â€“ prirodna regeneracija koÅ¾e koja vraÄ‡a mladost i sveÅ¾inu."
+              des="Iskoristite moÄ‡ sopstvene plazme za podmlaÄ‘ivanje i regeneraciju koÅ¾e. PRP tretman stimuliÅ¡e prirodnu proizvodnju kolagena i vraÄ‡a elastiÄnost, tonus i sjaj vaÅ¡em licu, vratu ili dekolteu."
               images={[
                 "/assets/img1/1.jpg"
               ]}
@@ -51,3 +43,4 @@ const index = () => {
 };
 
 export default index;
+

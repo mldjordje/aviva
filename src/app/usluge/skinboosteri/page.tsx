@@ -1,13 +1,5 @@
 ﻿"use client";
 import React from "react";
-import type { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: 'Skinboosteri – Aviva Ageless Niš',
-  description: 'Dubinska hidratacija i revitalizacija kože uz skinboostere.',
-  alternates: { canonical: 'https://www.avivaageless.rs/usluge/skinboosteri' },
-  openGraph: { title: 'Skinboosteri – Aviva Ageless Niš', description: 'Dubinska hidratacija i revitalizacija kože uz skinboostere.', url: 'https://www.avivaageless.rs/usluge/skinboosteri', type: 'website' },
-  twitter: { card: 'summary_large_image', title: 'Skinboosteri – Aviva Ageless Niš', description: 'Dubinska hidratacija i revitalizacija kože uz skinboostere.' },
-};
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
@@ -45,4 +37,5 @@ const index = () => {
 };
 
 export default index;
+
 
