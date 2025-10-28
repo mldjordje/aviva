@@ -1,14 +1,5 @@
-"use client";
+﻿"use client";
 import React from "react";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Hijaluronski fileri – Aviva Ageless Niš",
-  description: "Prirodno isticanje lepote uz hijaluronske filere: usne, konture, bore – individualni pristup i sigurni rezultati.",
-  alternates: { canonical: "https://www.avivaageless.rs/usluge/hijaluronski-fileri" },
-  openGraph: { title: "Hijaluronski fileri – Aviva Ageless Niš", description: "Prirodno isticanje lepote uz hijaluronske filere.", url: "https://www.avivaageless.rs/usluge/hijaluronski-fileri", type: "website" },
-  twitter: { card: "summary_large_image", title: "Hijaluronski fileri – Aviva Ageless Niš", description: "Prirodno isticanje lepote uz hijaluronske filere." },
-};
-import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 
@@ -27,10 +18,10 @@ const index = () => {
         <div id="smooth-content">
           <main>
             <About2
-              subtitle="Hijaluronski fileri Niš – Prirodna lepota u stručnim rukama"
-              title="U Avivi Ageless, naš cilj je jednostavan: da sačuvamo i istaknemo vašu prirodnu lepotu na potpuno prirodan način."
-              des="Na čelu našeg tima je Dr Mila Đorđević, zajedno sa grupom iskusnih lekara specijalista estetske medicine.
- Naši tretmani hijaluronskim filerima kombinuju sigurnost, efikasnost i personalizovan pristup, tako da svaka osoba dobije rezultate prilagođene svom licu."
+              subtitle="Hijaluronski fileri NiÅ¡ â€“ Prirodna lepota u struÄnim rukama"
+              title="U Avivi Ageless, naÅ¡ cilj je jednostavan: da saÄuvamo i istaknemo vaÅ¡u prirodnu lepotu na potpuno prirodan naÄin."
+              des="Na Äelu naÅ¡eg tima je Dr Mila ÄorÄ‘eviÄ‡, zajedno sa grupom iskusnih lekara specijalista estetske medicine.
+ NaÅ¡i tretmani hijaluronskim filerima kombinuju sigurnost, efikasnost i personalizovan pristup, tako da svaka osoba dobije rezultate prilagoÄ‘ene svom licu."
               images={[
                 "/assets/img1/1.jpg",
                 "/assets/img1/2.jpg",
