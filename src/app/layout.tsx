@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   icons: [ { rel: "icon", url: "/assets/img1/logo3.png" }, { rel: "shortcut icon", url: "/assets/img1/logo1.png" } ],
   robots: { index: true, follow: true },
+  verification: { google: (process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION as string) },
 };
 
 export default function RootLayout({
@@ -27,3 +28,4 @@ export default function RootLayout({
     </html>
   );
 }
+
