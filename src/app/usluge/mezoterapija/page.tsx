@@ -1,5 +1,13 @@
-"use client";
+﻿"use client";
 import React from "react";
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Mezoterapija – Aviva Ageless Niš',
+  description: 'Vitamini, minerali i hijaluron za osvežen, zdrav ten i elastičnost kože.',
+  alternates: { canonical: 'https://www.avivaageless.rs/usluge/mezoterapija' },
+  openGraph: { title: 'Mezoterapija – Aviva Ageless Niš', description: 'Vitamini, minerali i hijaluron za osvežen, zdrav ten i elastičnost kože.', url: 'https://www.avivaageless.rs/usluge/mezoterapija', type: 'website' },
+  twitter: { card: 'summary_large_image', title: 'Mezoterapija – Aviva Ageless Niš', description: 'Vitamini, minerali i hijaluron za osvežen, zdrav ten i elastičnost kože.' },
+};
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
@@ -19,8 +27,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Mezoterapija"
-              title="Mezoterapija – intenzivna hidratacija i podmlađivanje kože"
-              des="Mezoterapija podrazumeva mikroinjekcije koktela vitamina, minerala i hijalurona direktno u srednji sloj kože, čime se postiže osvežen izgled i poboljšava tonus kože."
+              title="Mezoterapija â€“ intenzivna hidratacija i podmlaÄ‘ivanje koÅ¾e"
+              des="Mezoterapija podrazumeva mikroinjekcije koktela vitamina, minerala i hijalurona direktno u srednji sloj koÅ¾e, Äime se postiÅ¾e osveÅ¾en izgled i poboljÅ¡ava tonus koÅ¾e."
               images={["/assets/img1/1.jpg"]}
             />
 
@@ -37,3 +45,4 @@ const index = () => {
 };
 
 export default index;
+

@@ -1,5 +1,13 @@
-"use client";
+﻿"use client";
 import React from "react";
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Lipoliza – Aviva Ageless Niš',
+  description: 'Neinvazivno smanjenje lokalnih masnih naslaga – precizan i efikasan tretman.',
+  alternates: { canonical: 'https://www.avivaageless.rs/usluge/lipoliza' },
+  openGraph: { title: 'Lipoliza – Aviva Ageless Niš', description: 'Neinvazivno smanjenje lokalnih masnih naslaga – precizan i efikasan tretman.', url: 'https://www.avivaageless.rs/usluge/lipoliza', type: 'website' },
+  twitter: { card: 'summary_large_image', title: 'Lipoliza – Aviva Ageless Niš', description: 'Neinvazivno smanjenje lokalnih masnih naslaga – precizan i efikasan tretman.' },
+};
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
@@ -19,8 +27,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Lipoliza"
-              title="Lipoliza – efikasno uklanjanje lokalizovanih masnih naslaga"
-              des="Lipoliza je minimalno invazivna metoda koja razgrađuje masne ćelije ubrizgavanjem specijalnih supstanci direktno u problematične regije tela."
+              title="Lipoliza â€“ efikasno uklanjanje lokalizovanih masnih naslaga"
+              des="Lipoliza je minimalno invazivna metoda koja razgraÄ‘uje masne Ä‡elije ubrizgavanjem specijalnih supstanci direktno u problematiÄne regije tela."
               images={["/assets/img1/1.jpg"]}
             />
 
@@ -37,3 +45,4 @@ const index = () => {
 };
 
 export default index;
+

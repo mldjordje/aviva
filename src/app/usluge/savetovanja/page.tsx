@@ -1,5 +1,13 @@
-'use client'
+﻿'use client'
 import React from 'react';
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Savetovanja – Aviva Ageless Niš',
+  description: 'Stručni pregledi i personalizovane preporuke tretmana estetske medicine.',
+  alternates: { canonical: 'https://www.avivaageless.rs/usluge/savetovanja' },
+  openGraph: { title: 'Savetovanja – Aviva Ageless Niš', description: 'Stručni pregledi i personalizovane preporuke.', url: 'https://www.avivaageless.rs/usluge/savetovanja', type: 'website' },
+  twitter: { card: 'summary_large_image', title: 'Savetovanja – Aviva Ageless Niš', description: 'Stručni pregledi i personalizovane preporuke.' },
+};
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
@@ -19,8 +27,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Konsultacije sa lekarom"
-              title="Prvi korak ka zdravijoj i lepšoj koži – stručne konsultacije"
-              des="Konsultacije omogućavaju da zajedno sa stručnjakom definišete ciljeve, dobijete personalizovane savete i saznate koje tretmane je najbolje primeniti za vaš tip kože."
+              title="Prvi korak ka zdravijoj i lepÅ¡oj koÅ¾i â€“ struÄne konsultacije"
+              des="Konsultacije omoguÄ‡avaju da zajedno sa struÄnjakom definiÅ¡ete ciljeve, dobijete personalizovane savete i saznate koje tretmane je najbolje primeniti za vaÅ¡ tip koÅ¾e."
               images={["/assets/img1/1.jpg"]}
             />
 
@@ -37,3 +45,4 @@ const index = () => {
 };
 
 export default index;
+

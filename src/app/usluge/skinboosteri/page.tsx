@@ -1,5 +1,13 @@
-"use client";
+﻿"use client";
 import React from "react";
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Skinboosteri – Aviva Ageless Niš',
+  description: 'Dubinska hidratacija i revitalizacija kože uz skinboostere.',
+  alternates: { canonical: 'https://www.avivaageless.rs/usluge/skinboosteri' },
+  openGraph: { title: 'Skinboosteri – Aviva Ageless Niš', description: 'Dubinska hidratacija i revitalizacija kože uz skinboostere.', url: 'https://www.avivaageless.rs/usluge/skinboosteri', type: 'website' },
+  twitter: { card: 'summary_large_image', title: 'Skinboosteri – Aviva Ageless Niš', description: 'Dubinska hidratacija i revitalizacija kože uz skinboostere.' },
+};
 import Wrapper from "@/layouts/Wrapper";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
@@ -19,8 +27,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Skinboosteri"
-              title="Skinboosteri – dubinska hidratacija i revitalizacija kože"
-              des="Skinboosteri su tretmani na bazi hijalurona koji se unose u kožu kako bi joj vratili elastičnost, sjaj i svežinu. Namenjeni su prevenciji starenja i poboljšanju kvaliteta kože."
+              title="Skinboosteri â€“ dubinska hidratacija i revitalizacija koÅ¾e"
+              des="Skinboosteri su tretmani na bazi hijalurona koji se unose u koÅ¾u kako bi joj vratili elastiÄnost, sjaj i sveÅ¾inu. Namenjeni su prevenciji starenja i poboljÅ¡anju kvaliteta koÅ¾e."
               images={["/assets/img1/1.jpg"]}
             />
 
@@ -37,3 +45,4 @@ const index = () => {
 };
 
 export default index;
+
