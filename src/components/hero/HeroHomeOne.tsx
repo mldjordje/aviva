@@ -1,7 +1,9 @@
-'use client'
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion';
 
 interface DataType {
   img: string;
@@ -14,44 +16,52 @@ interface DataType {
 
 const hero_slider: DataType[] = [
   {
-    img: `/assets/img1/3.jpg`, // slika doktorki
-    sub_title: "Aviva Ageless",
-    title: "Anti-age tretmani",
-    des: `Stručnjaci u anti-age medicini sa višegodišnjim iskustvom. Hijaluronski fileri, Botox, Skinboosteri, Lipoliza, PRP tretmani. Otkrijte prirodnu lepotu uz individualan pristup.`,
-    button_text: "Kontaktiraj nas",
-    button_link: "/contact",
+    img: `/assets/img1/3.jpg`,
+    sub_title: 'Aviva Ageless',
+    title: 'Anti-age tretmani',
+    des: `Stručnjaci u anti-age medicini sa višegodišnjim iskustvom. Hijaluronski fileri, botoks, skinboosteri, lipoliza i PRP tretmani — otkrijte prirodnu lepotu uz individualan pristup.`,
+    button_text: 'Kontaktiraj nas',
+    button_link: '/contact',
   },
   {
-    img: `/assets/img1/4.jpg`, // slika klinike
-    sub_title: "Anti-Age Klinika",
-    title: "Savremena ordinacija u centru Niša",
-    des: `Nalazimo se u srcu grada – Bulevar Nemanjića 12. Savremena oprema i prijatna atmosfera za vrhunsko estetsko iskustvo. Posetite nas i obnovite svoj sjaj.`,
-    button_text: "Naše usluge",
-    button_link: "/nase-usluge",
+    img: `/assets/img1/4.jpg`,
+    sub_title: 'Anti-age klinika',
+    title: 'Savremena ordinacija u centru Niša',
+    des: `Nalazimo se u srcu grada — Bulevar Nemanjića 12. Savremena oprema i prijatna atmosfera za vrhunsko estetsko iskustvo.`,
+    button_text: 'Naše usluge',
+    button_link: '/nase-usluge',
   },
   {
-    img: `/assets/img1/6.jpg`, // doktorke u radu
-    sub_title: "Estetski Tretmani",
-    title: "Preciznost. Znanje. Rezultati.",
+    img: `/assets/img1/6.jpg`,
+    sub_title: 'Estetski tretmani',
+    title: 'Preciznost. Znanje. Rezultati.',
     des: `Naš tim kombinuje stručnost i savremene tehnike za postizanje prirodnih rezultata. Zakoračite u svet zdravog, podmlađenog izgleda uz Aviva Ageless.`,
-    button_text: "Naš tim",
-    button_link: "/team",
+    button_text: 'Naš tim',
+    button_link: '/team',
   },
 ];
 
 const HeroHomeOne = () => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const heroClass = prefersReducedMotion
+    ? 'cs_hero cs_style1 cs_center'
+    : 'cs_hero cs_style1 cs_center cs_parallax';
+
   return (
     <>
       <Swiper
-        loop={true}
+        loop
         slidesPerView={1}
-        autoplay={{ delay: 3000 }}
+        autoplay={
+          prefersReducedMotion ? false : { delay: 4000, disableOnInteraction: false }
+        }
         pagination={{ clickable: true }}
+        speed={prefersReducedMotion ? 500 : 1000}
         className="cs_slider cs_slider_1"
       >
-        {hero_slider.map((item, index) =>
+        {hero_slider.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
-            <div className="cs_hero cs_style1 cs_center cs_parallax">
+            <div className={heroClass}>
               <div
                 className="cs_hero_bg cs_bg cs_parallax_bg"
                 style={{ backgroundImage: `url(${item.img})` }}
@@ -59,28 +69,29 @@ const HeroHomeOne = () => {
               <div className="container">
                 <div className="cs_hero_text">
                   <div className="cs_hero_mini_title cs_hero_text_in">
-                    <svg width="134" height="12" viewBox="0 0 134 12" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                      width="134"
+                      height="12"
+                      viewBox="0 0 134 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M133.53 6.53033C133.823 6.23744 133.823 5.76256 133.53 5.46967L128.757 0.696699C128.464 0.403806 127.99 0.403806 127.697 0.696699C127.404 0.989593 127.404 1.46447 127.697 1.75736L131.939 6L127.697 10.2426C127.404 10.5355 127.404 11.0104 127.697 11.3033C127.99 11.5962 128.464 11.5962 128.757 11.3033L133.53 6.53033ZM0 6.75H133V5.25H0V6.75Z"
-                        fill="#c21b2b"/>
+                        fill="#c21b2b"
+                      />
                     </svg>
                     {item.sub_title}
                   </div>
                   <div className="cs_height_20 cs_height_lg_20"></div>
-                  <h1 className="cs_hero_title cs_hero_text_in">
-                    {item.title}
-                  </h1>
+                  <h1 className="cs_hero_title cs_hero_text_in">{item.title}</h1>
                   <div className="cs_height_70 cs_height_lg_60"></div>
                   <div className="cs_hero_text_in">
-                    <div className="cs_hero_subtitle">
-                      {item.des}
-                    </div>
+                    <div className="cs_hero_subtitle">{item.des}</div>
                     <div className="cs_height_65 cs_height_lg_40"></div>
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
-                        <Link href={item.button_link}
-                          className="cs_hero_btn cs_round_btn btn-item">
+                        <Link href={item.button_link} className="cs_hero_btn cs_round_btn btn-item">
                           <span></span>
                           {item.button_text}
                         </Link>
@@ -91,7 +102,7 @@ const HeroHomeOne = () => {
               </div>
             </div>
           </SwiperSlide>
-        )}
+        ))}
         <div className="cs_pagination cs_style1"></div>
       </Swiper>
     </>

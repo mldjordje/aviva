@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { motion, Variants } from 'framer-motion';
+import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion';
 
 interface DataType {
   img: string;
@@ -17,7 +18,7 @@ const about_slider: DataType[] = [
     img: "/assets/img1/2.jpg",
     sub_title: "Naša misija",
     title: `Negujemo prirodnu lepotu`,
-    des: `U Aviva Ageless klinici verujemo da svaka žena zaslužuje da se oseća lepo, samopouzdano i negovano. Naš cilj je da kroz stručne tretmane podmlađivanja istaknemo Vašu prirodnu lepotu uz individualan pristup i vrhunsku negu.`,
+    des: `U Aviva Ageless klinici verujemo da svaka žena zaslužuje da se oseća lepo, samopouzdano i negovano. Naš cilj je da kroz stručne tretmane podmlađivanja istaknemo vašu prirodnu lepotu uz individualan pristup i vrhunsku negu.`,
   },
   {
     img: "/assets/img1/6.jpg",
@@ -47,41 +48,57 @@ const imgVariants: Variants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
 };
 
-const AnimatedSlide = ({ item, isActive }: { item: DataType; isActive: boolean }) => {
+const noMotionTextVariants: Variants = {
+  hidden: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const noMotionImgVariants: Variants = {
+  hidden: { opacity: 1, scale: 1 },
+  visible: { opacity: 1, scale: 1 },
+};
+
+type SlideProps = {
+  item: DataType;
+  isActive: boolean;
+  prefersReducedMotion: boolean;
+  textMotion: Variants;
+  imageMotion: Variants;
+};
+
+const AnimatedSlide = ({
+  item,
+  isActive,
+  prefersReducedMotion,
+  textMotion,
+  imageMotion,
+}: SlideProps) => {
+  const animateState = prefersReducedMotion ? "visible" : isActive ? "visible" : "hidden";
+  const initialState = prefersReducedMotion ? "visible" : "hidden";
+
   return (
     <div className="cs_about cs_style_1">
       <motion.div
         className="cs_about_bg cs_bg"
         style={{ backgroundImage: `url(${item.img})` }}
-        initial="hidden"
-        animate={isActive ? "visible" : "hidden"}
-        variants={imgVariants}
+        initial={initialState}
+        animate={animateState}
+        variants={imageMotion}
       />
       <div className="container">
         <motion.div
-          initial="hidden"
-          animate={isActive ? "visible" : "hidden"}
+          initial={initialState}
+          animate={animateState}
           className="cs_about_text"
+          variants={textMotion}
         >
-          <motion.div
-            className="cs_section_subtitle"
-            custom={1}
-            variants={textVariants}
-          >
+          <motion.div className="cs_section_subtitle" custom={1} variants={textMotion}>
             {item.sub_title}
           </motion.div>
-          <motion.h2
-            className="cs_section_title"
-            custom={2}
-            variants={textVariants}
-          >
+          <motion.h2 className="cs_section_title" custom={2} variants={textMotion}>
             {item.title}
           </motion.h2>
-          <motion.p
-            className="cs_m0"
-            custom={3}
-            variants={textVariants}
-          >
+          <motion.p className="cs_m0" custom={3} variants={textMotion}>
             {item.des}
           </motion.p>
         </motion.div>
@@ -92,13 +109,22 @@ const AnimatedSlide = ({ item, isActive }: { item: DataType; isActive: boolean }
 
 const AboutHomeOne = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  const motionConfigs = useMemo(
+    () => ({
+      text: prefersReducedMotion ? noMotionTextVariants : textVariants,
+      image: prefersReducedMotion ? noMotionImgVariants : imgVariants,
+    }),
+    [prefersReducedMotion]
+  );
 
   return (
     <>
       <div className="cs_height_130 cs_height_lg_60"></div>
       <Swiper
-        loop={true}
-        speed={1000}
+        loop
+        speed={prefersReducedMotion ? 400 : 1000}
         modules={[Navigation, Pagination]}
         navigation={{
           nextEl: ".cs_swiper_button_next",
@@ -116,7 +142,13 @@ const AboutHomeOne = () => {
       >
         {about_slider.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
-            <AnimatedSlide item={item} isActive={index === activeIndex} />
+            <AnimatedSlide
+              item={item}
+              isActive={index === activeIndex}
+              prefersReducedMotion={prefersReducedMotion}
+              textMotion={motionConfigs.text}
+              imageMotion={motionConfigs.image}
+            />
           </SwiperSlide>
         ))}
         <div className="container">
