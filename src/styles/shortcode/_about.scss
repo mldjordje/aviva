@@ -12,6 +12,8 @@
         right: 0;
         height: 100%;
         width: 55%;
+        background-size: cover;
+        background-position: center;
     }
 
     > *:not(.cs_about_bg) {
@@ -268,6 +270,8 @@
 
 @media screen and (max-width: 991px) {
     .cs_about.cs_style_1 {
+        padding: 80px 0;
+
         .cs_about_text {
             padding: 55px 20px 55px 0;
         }
@@ -275,6 +279,25 @@
 
     .cs_under_construction {
         padding: 120px 0;
+    }
+
+    .cs_about.cs_style_1 {
+        .cs_about_bg {
+            width: 100%;
+            height: 320px;
+            position: relative;
+            border-radius: 30px;
+            margin-bottom: 30px;
+        }
+
+        .cs_about_text {
+            margin: 0 auto;
+            padding: 35px 25px;
+        }
+
+        > *:not(.cs_about_bg) {
+            position: static;
+        }
     }
 
     .cs_detail_icon {
@@ -337,6 +360,19 @@
         }
     }
 
+    .cs_about.cs_style_1 {
+        padding: 60px 0;
+
+        .cs_about_bg {
+            height: 260px;
+            margin: 0 30px 25px;
+        }
+
+        .cs_about_text {
+            padding: 30px 22px;
+        }
+    }
+
     .cs_detail_heading {
         flex-direction: column;
         align-items: flex-start;
@@ -378,5 +414,16 @@
     .cs_detail_icon {
         width: 70px;
         height: 70px;
+    }
+    .cs_about.cs_style_1 {
+        .cs_about_bg {
+            height: 220px;
+            margin: 0 15px 20px;
+            border-radius: 24px;
+        }
+
+        .cs_about_text {
+            padding: 26px 18px;
+        }
     }
 }
