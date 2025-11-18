@@ -23,8 +23,8 @@ const index = () => {
           <main>
             <About2
               subtitle="PRP tretman"
-              title="PRP tretman â€“ prirodna regeneracija koÅ¾e koja vraÄ‡a mladost i sveÅ¾inu."
-              des="Iskoristite moÄ‡ sopstvene plazme za podmlaÄ‘ivanje i regeneraciju koÅ¾e. PRP tretman stimuliÅ¡e prirodnu proizvodnju kolagena i vraÄ‡a elastiÄnost, tonus i sjaj vaÅ¡em licu, vratu ili dekolteu."
+              title="PRP tretman – prirodna regeneracija kože koja vraća mladost i svežinu."
+              des="Iskoristite moć sopstvene plazme za podmlađivanje i regeneraciju kože. PRP tretman stimuliše prirodnu proizvodnju kolagena i vraća elastičnost, tonus i sjaj vašem licu, vratu ili dekolteu."
               images={[
                 "/assets/img1/1.jpg"
               ]}

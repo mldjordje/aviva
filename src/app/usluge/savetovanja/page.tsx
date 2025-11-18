@@ -19,8 +19,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Konsultacije sa lekarom"
-              title="Prvi korak ka zdravijoj i lepÅ¡oj koÅ¾i â€“ struÄne konsultacije"
-              des="Konsultacije omoguÄ‡avaju da zajedno sa struÄnjakom definiÅ¡ete ciljeve, dobijete personalizovane savete i saznate koje tretmane je najbolje primeniti za vaÅ¡ tip koÅ¾e."
+              title="Prvi korak ka zdravijoj i lepšoj koži – stručne konsultacije"
+              des="Konsultacije omogućavaju da zajedno sa stručnjakom definišete ciljeve, dobijete personalizovane savete i saznate koje tretmane je najbolje primeniti za vaš tip kože."
               images={["/assets/img1/1.jpg"]}
             />
 

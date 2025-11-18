@@ -19,8 +19,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Skinboosteri"
-              title="Skinboosteri â€“ dubinska hidratacija i revitalizacija koÅ¾e"
-              des="Skinboosteri su tretmani na bazi hijalurona koji se unose u koÅ¾u kako bi joj vratili elastiÄnost, sjaj i sveÅ¾inu. Namenjeni su prevenciji starenja i poboljÅ¡anju kvaliteta koÅ¾e."
+              title="Skinboosteri – dubinska hidratacija i revitalizacija kože"
+              des="Skinboosteri su tretmani na bazi hijalurona koji se unose u kožu kako bi joj vratili elastičnost, sjaj i svežinu. Namenjeni su prevenciji starenja i poboljšanju kvaliteta kože."
               images={["/assets/img1/1.jpg"]}
             />
 

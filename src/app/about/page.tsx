@@ -1,57 +1,103 @@
 
 'use client'
 
-import React, { useState } from 'react';
-import About from '@/components/about/About';
-import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
-import BannerAbout from '@/components/brand/BannerAbout';
-import BrandHomeOne from '@/components/brand/BrandHomeOne';
-import FunFactHomeOne from '@/components/funfact/FunFactHomeOne';
-import Gellary from '@/components/gellary/Gellary';
-import TeamHomeTwo from '@/components/team/TeamHomeTwo';
-import Testimonial from '@/components/testimonial/Testimonial';
-import VideoHomeOne from '@/components/video/VideoHomeOne';
+import React from 'react';
+import Link from 'next/link';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
-import VideoPopup from '@/components/modals/VideoPopup';
+import { CONTACT } from '@/data/contact';
 
-// export const metadata = {
-//   title: "About Vixan - Digital  Creative Agency Next js Template",
-// };
+const highlights = [
+  {
+    title: 'Nova priča u nastajanju',
+    description:
+      'Radimo na detaljnom predstavljanju naše istorije, vrednosti i ljudi koji stoje iza Aviva Ageless klinike.',
+  },
+  {
+    title: 'Dokumentujemo iskustva',
+    description:
+      'Prikupljamo fotografije pre i posle tretmana, iza kulisa i iskrene priče naših pacijenata.',
+  },
+  {
+    title: 'Usklađujemo vizuelni identitet',
+    description:
+      'Nova stranica će pratiti isti ton i eleganciju koju ste već videli na početnoj i stranicama usluga.',
+  },
+];
 
-const index = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
+const phoneLink = CONTACT.phone.startsWith('+')
+  ? CONTACT.phone
+  : `+381${CONTACT.phone.replace(/^0/, '')}`;
 
+const contactInfo = [
+  {
+    label: 'Pišite nam',
+    value: CONTACT.email,
+    href: `mailto:${CONTACT.email}`,
+  },
+  {
+    label: 'Pozovite nas',
+    value: CONTACT.phone,
+    href: `tel:${phoneLink}`,
+  },
+];
+
+const AboutPlaceholderPage = () => {
   return (
     <Wrapper>
       <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <BannerAbout />
-            <VideoHomeOne style_2={true} setIsVideoOpen={setIsVideoOpen} />
-            <FunFactHomeOne style_3={true} />
-            <About />
-            <TeamHomeTwo style_2={true} style_3={true} />
-            <AwardsHomeOne style_2={true} />
-            <Testimonial />
-            <Gellary style_2={true} />
-            <BrandHomeOne />
+            <section className="cs_under_construction">
+              <div className="container">
+                <p className="cs_under_construction_label">O nama</p>
+                <h1>Stranica je u izradi</h1>
+                <p className="cs_under_construction_lead">
+                  Privremeno smo isključili sadržaj kako bismo pripremili svež prikaz naše priče,
+                  stručnog tima i metoda rada. Hvala na strpljenju — želiš da bude perfektno kada
+                  ponovo bude online.
+                </p>
+
+                <div className="row cs_under_construction_highlights">
+                  {highlights.map((item) => (
+                    <div className="col-lg-4" key={item.title}>
+                      <div className="cs_under_construction_card">
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="cs_under_construction_actions">
+                  <Link href="/" className="cs_btn cs_style_1">
+                    Nazad na početnu
+                  </Link>
+                  <Link href="/contact" className="cs_btn cs_style_1 cs_color_1">
+                    Kontakt
+                  </Link>
+                </div>
+
+                <div className="row cs_under_construction_contact">
+                  {contactInfo.map((item) => (
+                    <div className="col-md-6" key={item.label}>
+                      <div className="cs_under_construction_contact_item">
+                        <p>{item.label}</p>
+                        <a href={item.href}>{item.value}</a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
           </main>
           <FooterOne />
         </div>
       </div>
-
-        {/* video modal start */}
-        <VideoPopup
-        isVideoOpen={isVideoOpen}
-        setIsVideoOpen={setIsVideoOpen}
-        videoId={"qmGYnJgCW1o"}
-      />
-      {/* video modal end */}
     </Wrapper>
   );
 };
 
-export default index;
+export default AboutPlaceholderPage;

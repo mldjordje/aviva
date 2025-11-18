@@ -19,8 +19,8 @@ const index = () => {
           <main>
             <About2
               subtitle="Lipoliza"
-              title="Lipoliza â€“ efikasno uklanjanje lokalizovanih masnih naslaga"
-              des="Lipoliza je minimalno invazivna metoda koja razgraÄ‘uje masne Ä‡elije ubrizgavanjem specijalnih supstanci direktno u problematiÄne regije tela."
+              title="Lipoliza – efikasno uklanjanje lokalizovanih masnih naslaga"
+              des="Lipoliza je minimalno invazivna metoda koja razgrađuje masne ćelije ubrizgavanjem specijalnih supstanci direktno u problematične regije tela."
               images={["/assets/img1/1.jpg"]}
             />
 

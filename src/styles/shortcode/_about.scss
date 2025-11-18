@@ -107,6 +107,90 @@
     font-weight: 600;
 }
 
+.cs_under_construction {
+    padding: 180px 0 140px;
+    background: #fff7f4;
+    text-align: center;
+
+    &_label {
+        font-size: 16px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #b16c55;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+    }
+
+    &_lead {
+        max-width: 760px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    &_highlights {
+        margin-top: 60px;
+        text-align: left;
+    }
+
+    &_card {
+        height: 100%;
+        border-radius: 30px;
+        padding: 30px;
+        background: #ffffff;
+        box-shadow: 0 15px 35px rgba(255, 170, 143, 0.25);
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &_actions {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &_contact {
+        margin-top: 70px;
+        text-align: left;
+    }
+
+    &_contact_item {
+        background: #ffffff;
+        padding: 26px 30px;
+        border-radius: 24px;
+        box-shadow: 0 10px 25px rgba(255, 170, 143, 0.25);
+        margin-bottom: 20px;
+
+        p {
+            margin-bottom: 5px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #b16c55;
+        }
+
+        a {
+            font-size: 24px;
+            font-weight: 600;
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
 .cs_modern_needs.cs_style {
     display: flex;
     width: 78vw;
@@ -164,6 +248,10 @@
         }
     }
 
+    .cs_under_construction {
+        padding: 120px 0;
+    }
+
     .cs_modern_needs.cs_style {
         width: 100%;
     }
@@ -201,6 +289,20 @@
     border-radius: 50%; /* potpuno okrugla slika */
 }
 
+    .cs_under_construction {
+        h1 {
+            font-size: 42px;
+        }
+
+        &_lead {
+            font-size: 16px;
+        }
+
+        &_contact_item a {
+            font-size: 20px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -213,5 +315,17 @@
     .cs_journey_stary span img {
         width: 38px;
     }
-}
 
+    .cs_under_construction {
+        padding: 90px 0;
+
+        h1 {
+            font-size: 34px;
+        }
+
+        &_card,
+        &_contact_item {
+            padding: 24px;
+        }
+    }
+}
