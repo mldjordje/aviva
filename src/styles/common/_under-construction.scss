@@ -1,0 +1,140 @@
+.under-construction {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #f6f7fb;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(245, 175, 193, 0.25), transparent 40%),
+    linear-gradient(135deg, #0c1729, #172c4d 55%, #0e1522);
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7, 11, 20, 0.7), rgba(12, 22, 39, 0.85));
+    z-index: 0;
+  }
+
+  &__content {
+    padding: 120px 0 100px;
+    max-width: 720px;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &__tag {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #c8d4f2;
+  }
+
+  h1 {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-size: clamp(32px, 4vw, 46px);
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  p {
+    margin-bottom: 28px;
+    font-size: 18px;
+    color: #d6def5;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 32px;
+
+    .btn {
+      border-radius: 12px;
+      font-weight: 600;
+      padding-inline: 22px;
+    }
+
+    .btn-outline-light:hover {
+      color: #0c1729;
+    }
+  }
+
+  &__meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    margin-bottom: 18px;
+
+    h6 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #c8d4f2;
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      margin: 0;
+      color: #f6f7fb;
+    }
+  }
+
+  &__links {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      color: #9ecbff;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: #d3e6ff;
+      }
+    }
+
+    .divider {
+      color: rgba(255, 255, 255, 0.5);
+      display: inline-block;
+      transform: translateY(-1px);
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__content {
+      padding: 110px 0 80px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    &__actions {
+      flex-direction: column;
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

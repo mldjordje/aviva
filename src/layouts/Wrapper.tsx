@@ -21,6 +21,10 @@ const Wrapper = ({ children }: any) => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+      if (isTouchDevice) {
+        return;
+      }
       ScrollSmoother.create({
         smooth: 1.35,
         effects: true,
