@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar_img_1 from "@/assets/img1/7.jpg";
+import avatar_img_1 from "@/assets/img1/nikola.jpg";
 import Image from 'next/image';
 
 interface DataType {
