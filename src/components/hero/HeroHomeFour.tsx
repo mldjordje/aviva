@@ -1,7 +1,7 @@
-
+﻿
 import React from 'react';
 import Image from 'next/image';
-import hero_img from '@/assets/img1/1.jpg';
+import hero_img from '@/assets/aviva-nove-slike/hero-landing-new.webp';
 
 const hero_data = {
   title_1: "Creative",
@@ -35,3 +35,4 @@ const HeroHomeFour = () => {
 };
 
 export default HeroHomeFour;
+

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import React from 'react';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
@@ -26,7 +26,7 @@ const index = () => {
               title="PRP tretman – prirodna regeneracija kože koja vraća mladost i svežinu."
               des="Iskoristite moć sopstvene plazme za podmlađivanje i regeneraciju kože. PRP tretman stimuliše prirodnu proizvodnju kolagena i vraća elastičnost, tonus i sjaj vašem licu, vratu ili dekolteu."
               images={[
-                "/assets/img1/1.jpg"
+                "/assets/aviva-nove-slike/hero-landing-new.webp"
                
               ]}
             />
@@ -44,3 +44,4 @@ const index = () => {
 };
 
 export default index;
+

@@ -1,5 +1,5 @@
-import React from 'react';
-import avatar_img_1 from "@/assets/img1/7.jpg";
+﻿import React from 'react';
+import avatar_img_1 from "@/assets/aviva-nove-slike/mila.webp";
 import Image from 'next/image';
 
 interface DataType {
@@ -28,15 +28,15 @@ inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne
     },
     {
       title: `Email:`,
-      des: `example@example.com`
+      des: `ageless@poliklinikaaviva.rs`
     },
     {
       title: `Phone:`,
-      des: `060 1450145`
+      des: `062400407`
     },
     {
       title: `Website:`,
-      des: `www.avivaageless.com`
+      des: `www.avivaageless.rs`
     },
   ]
 }
@@ -53,7 +53,7 @@ const TeamDetailsArea = () => {
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text anim_text_writting">
               <h2 className="cs_section_title">
-                Dr Mila Đorđević &nbsp;&bull;&nbsp; Specijalista estetske medicine
+                Dr Mila Đorđević &nbsp;&bull;&nbsp; doktor estetske medicine
               </h2>
             </div>
           </div>
@@ -99,3 +99,7 @@ const TeamDetailsArea = () => {
 };
 
 export default TeamDetailsArea;
+
+
+
+

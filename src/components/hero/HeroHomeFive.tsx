@@ -1,11 +1,11 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
 import facebook from "@/assets/img/fb_1.png"
 import linedin from "@/assets/img/linedin_1.png"
 import twitter from "@/assets/img/twitter_1.png"
-import dm_banner from "@/assets/img1/mila1.png"
+import dm_banner from "@/assets/aviva-nove-slike/mila.webp"
 
 interface DataType {
   title_1: string;
@@ -95,3 +95,4 @@ const HeroHomeFive = () => {
 };
 
 export default HeroHomeFive;
+

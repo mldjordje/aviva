@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import React from 'react';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
@@ -25,7 +25,7 @@ const index = () => {
               subtitle="Botox tretman"
               title="Botox – osvežen i podmlađen izgled bez bora."
               des="Botox je bezbedan i brz estetski tretman koji smanjuje mimične bore i vraća licu svežinu, bez promena u izrazu lica. Efekti traju do 6 meseci uz minimalnu nelagodnost."
-              images={["/assets/img1/1.jpg"]}
+              images={["/assets/aviva-nove-slike/hero-landing-new.webp"]}
             />
 
             <ServiceAreaDetailsBotox />
@@ -43,3 +43,5 @@ const index = () => {
 };
 
 export default index;
+
+

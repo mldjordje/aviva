@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useMemo, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,6 +8,7 @@ import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion';
 
 interface DataType {
   img: string;
+  bgPosition?: string;
   sub_title: string;
   title: string;
   des: string;
@@ -15,22 +16,25 @@ interface DataType {
 
 const about_slider: DataType[] = [
   {
-    img: "/assets/img1/2.jpg",
-    sub_title: "Naša misija",
-    title: `Negujemo prirodnu lepotu`,
-    des: `U Aviva Ageless klinici verujemo da svaka žena zaslužuje da se oseća lepo, samopouzdano i negovano. Naš cilj je da kroz stručne tretmane podmlađivanja istaknemo vašu prirodnu lepotu uz individualan pristup i vrhunsku negu.`,
+    img: '/assets/aviva-nove-slike/work.webp',
+    bgPosition: 'center center',
+    sub_title: 'Naša misija',
+    title: 'Negujemo prirodnu lepotu',
+    des: 'U Aviva Ageless klinici verujemo da svaka žena zaslužuje da se oseća lepo, samopouzdano i negovano. Naš cilj je da kroz stručne tretmane podmlađivanja istaknemo vašu prirodnu lepotu uz individualan pristup i vrhunsku negu.',
   },
   {
-    img: "/assets/img1/6.jpg",
-    sub_title: "Naš pristup",
-    title: `Stručnost i posvećenost pacijentu`,
-    des: `Dr Mila Đorđević i dr Marša Leone Papović primenjuju savremene metode estetske medicine uz poseban akcenat na sigurnost, prirodan rezultat i lični kontakt sa svakim pacijentom. Vaše poverenje nam je najvažnije.`,
+    img: '/assets/aviva-nove-slike/our-team.webp',
+    bgPosition: 'center 20%',
+    sub_title: 'Naš pristup',
+    title: 'Lekari',
+    des: 'Naš tim primenjuje savremene metode estetske medicine uz poseban akcenat na sigurnost, prirodan rezultat i lični kontakt sa svakim pacijentom. Vaše poverenje nam je najvažnije.',
   },
   {
-    img: "/assets/img1/7.jpg",
-    sub_title: "Zašto Aviva Ageless?",
-    title: `Savremena estetska medicina u srcu Niša`,
-    des: `Klinika je opremljena najnovijom tehnologijom, a naš tim se neprestano usavršava kako bi pružio najkvalitetnije tretmane poput hijaluronskih filera, botoksa, PRP terapije, skinboostera i lipolize.`,
+    img: '/assets/aviva-nove-slike/rad-mila-i-vladimir.webp',
+    bgPosition: 'center 18%',
+    sub_title: 'Zašto Aviva Ageless?',
+    title: 'Savremena estetska medicina u srcu Niša',
+    des: 'Naš tim se neprestano usavršava kako bi pružio najkvalitetnije tretmane poput hijaluronskih filera, botoksa, PRP terapije, skinboostera i lipolize.',
   },
 ];
 
@@ -39,7 +43,7 @@ const textVariants: Variants = {
   visible: (i: number = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.8, ease: "easeOut" },
+    transition: { delay: i * 0.2, duration: 0.8, ease: 'easeOut' },
   }),
 };
 
@@ -73,14 +77,14 @@ const AnimatedSlide = ({
   textMotion,
   imageMotion,
 }: SlideProps) => {
-  const animateState = prefersReducedMotion ? "visible" : isActive ? "visible" : "hidden";
-  const initialState = prefersReducedMotion ? "visible" : "hidden";
+  const animateState = prefersReducedMotion ? 'visible' : isActive ? 'visible' : 'hidden';
+  const initialState = prefersReducedMotion ? 'visible' : 'hidden';
 
   return (
     <div className="cs_about cs_style_1">
       <motion.div
         className="cs_about_bg cs_bg"
-        style={{ backgroundImage: `url(${item.img})` }}
+        style={{ backgroundImage: `url(${item.img})`, backgroundPosition: item.bgPosition || 'center center' }}
         initial={initialState}
         animate={animateState}
         variants={imageMotion}
@@ -127,13 +131,13 @@ const AboutHomeOne = () => {
         speed={prefersReducedMotion ? 400 : 1000}
         modules={[Navigation, Pagination]}
         navigation={{
-          nextEl: ".cs_swiper_button_next",
-          prevEl: ".cs_swiper_button_prev",
+          nextEl: '.cs_swiper_button_next',
+          prevEl: '.cs_swiper_button_prev',
         }}
         pagination={{
-          el: ".cs_pagination",
+          el: '.cs_pagination',
           clickable: true,
-          type: "fraction",
+          type: 'fraction',
           renderFraction: (currentClass, totalClass) =>
             `<span class="${currentClass}"></span> / <span class="${totalClass}"></span>`,
         }}

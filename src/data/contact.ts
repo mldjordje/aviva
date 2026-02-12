@@ -17,8 +17,8 @@ export const CONTACT: ContactInfo = {
   name: "Aviva Ageless",
   url: "https://www.avivaageless.rs",
   // Align with Contact page values
-  email: "aviva@email.com",
-  phone: "0653502771",
+  email: "ageless@poliklinikaaviva.rs",
+  phone: "062400407",
   address: {
     streetAddress: "Bulevar Nemanjića 12",
     addressLocality: "Niš",
@@ -50,4 +50,3 @@ export function organizationJsonLd(type: "Organization" | "MedicalClinic" = "Med
   };
   return JSON.stringify(data);
 }
-

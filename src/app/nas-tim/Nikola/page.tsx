@@ -6,7 +6,7 @@ import HeaderOne from '@/layouts/headers/HeaderOne';
 
 import AboutHomeFour from '@/components/about/AboutHomeFour';
 
-import Nikola from './Nikola';
+import Vladimir from './Nikola';
 
 // export const metadata = {
 //   title: "Team Details Vixan - Digital  Creative Agency Next js Template",
@@ -19,7 +19,7 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <Nikola />
+            <Vladimir />
             
             <AboutHomeFour />
           </main>

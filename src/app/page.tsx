@@ -4,8 +4,6 @@ import HeroHomeOne from "@/components/hero/HeroHomeOne";
 import HeroHomeThree from "@/components/hero/HeroHomeThree";
 import AboutHomeOne from "@/components/about/AboutHomeOne";
 import ServiceHomeOne from "@/components/service/ServiceHomeOne";
-import PortfolioHomeOne from "@/components/portfolio/PortfolioHomeOne";
-import FunFactHomeOne from "@/components/funfact/FunFactHomeOne";
 import VideoHomeOne from "@/components/video/VideoHomeOne";
 import BrandHomeOne from "@/components/brand/BrandHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
@@ -25,8 +23,6 @@ const IndexPage = () => {
             <AboutHomeOne />
             <ServiceHomeOne />
             <Cenovnik />
-            <PortfolioHomeOne />
-            <FunFactHomeOne />
             <VideoHomeOne />
             <TeamArea />
             <BrandHomeOne style_2={true} />

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useMemo, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,31 +15,31 @@ interface DataType {
 
 const about_slider: DataType[] = [
   {
-    img: "/assets/img1/2.jpg",
+    img: "/assets/aviva-nove-slike/work.webp",
     sub_title: "Hijaluronski fileri",
     title: `Šta su hijaluronski fileri i kako deluju`,
     des: `Hijaluronski fileri su prozirni, sterilni gelovi bazirani na hijaluronskoj kiselini, prirodnoj supstanci koja se već nalazi u koži svakog čoveka.`,
   },
   {
-    img: "/assets/img1/6.jpg",
+    img: "/assets/aviva-nove-slike/work2.webp",
     sub_title: "Njihova uloga je višestruka",
     title: `Hidracija i obnova kože`,
     des: `Jer hijaluron zadržava vodu u dubokim slojevima kože.`,
   },
   {
-    img: "/assets/img1/1.jpg",
+    img: "/assets/aviva-nove-slike/hero-landing-new.webp",
     sub_title: "Zašto Aviva Ageless?",
     title: `Povratak volumena i ublažavanje bora`,
     des: `Što pomaže u oblikovanju jagodica, obraza i usana.`,
   },
   {
-    img: "/assets/img1/2.jpg",
+    img: "/assets/aviva-nove-slike/work.webp",
     sub_title: "Šta su hijaluronski fileri i kako deluju",
     title: `Prirodna podloga za obnavljanje tonusa kože bez veštačkog efekta`,
     des: ``,
   },
   {
-    img: "/assets/img1/1.jpg",
+    img: "/assets/aviva-nove-slike/hero-landing-new.webp",
     sub_title: "Šta su hijaluronski fileri i kako deluju",
     title: `Fileri su razgradivi i kompatibilni sa organizmom, što značajno smanjuje rizik od alergijskih reakcija.`,
     des: ``,
@@ -186,3 +186,5 @@ const AboutHomeOne = () => {
 };
 
 export default AboutHomeOne;
+
+

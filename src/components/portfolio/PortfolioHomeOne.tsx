@@ -1,13 +1,13 @@
-'use client'
+﻿'use client'
 import React from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import portfolio_img_1 from '@/assets/img1/6.jpg';
-import portfolio_img_2 from '@/assets/img1/6.jpg';
-import portfolio_img_3 from '@/assets/img1/6.jpg';
+import portfolio_img_1 from '@/assets/aviva-nove-slike/work2.webp';
+import portfolio_img_2 from '@/assets/aviva-nove-slike/work2.webp';
+import portfolio_img_3 from '@/assets/aviva-nove-slike/work2.webp';
 
 interface DataType {
   img: StaticImageData;

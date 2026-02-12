@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 import React from 'react';
@@ -16,7 +16,7 @@ interface DataType {
 
 const hero_slider: DataType[] = [
   {
-    img: `/assets/img1/3.jpg`,
+    img: `/assets/aviva-nove-slike/model.webp`,
     sub_title: 'Aviva Ageless',
     title: 'Anti-age tretmani',
     des: `Stručnjaci u anti-age medicini sa višegodišnjim iskustvom. Hijaluronski fileri, botoks, skinboosteri, lipoliza i PRP tretmani — otkrijte prirodnu lepotu uz individualan pristup.`,
@@ -24,7 +24,7 @@ const hero_slider: DataType[] = [
     button_link: '/contact',
   },
   {
-    img: `/assets/img1/4.jpg`,
+    img: `/assets/aviva-nove-slike/model3.webp`,
     sub_title: 'Anti-age klinika',
     title: 'Savremena ordinacija u centru Niša',
     des: `Nalazimo se u srcu grada — Bulevar Nemanjića 12. Savremena oprema i prijatna atmosfera za vrhunsko estetsko iskustvo.`,
@@ -32,7 +32,7 @@ const hero_slider: DataType[] = [
     button_link: '/nase-usluge',
   },
   {
-    img: `/assets/img1/6.jpg`,
+    img: `/assets/aviva-nove-slike/work2.webp`,
     sub_title: 'Estetski tretmani',
     title: 'Preciznost. Znanje. Rezultati.',
     des: `Naš tim kombinuje stručnost i savremene tehnike za postizanje prirodnih rezultata. Zakoračite u svet zdravog, podmlađenog izgleda uz Aviva Ageless.`,
@@ -110,3 +110,5 @@ const HeroHomeOne = () => {
 };
 
 export default HeroHomeOne;
+
+

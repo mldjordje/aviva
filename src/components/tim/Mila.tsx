@@ -1,5 +1,5 @@
-import React from 'react';
-import avatar_img_1 from "@/assets/img1/7.jpg";
+﻿import React from 'react';
+import avatar_img_1 from "@/assets/aviva-nove-slike/mila.webp";
 import Image from 'next/image';
 
 interface DataType {
@@ -23,8 +23,8 @@ Od 2025. godine, Dr Mila Đorđević je ko-osnivač nove poliklinike Aviva Agele
 inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne i dugoročne rezultate.`,
   info: [
     { title: `Address:`, des: `📍Bulevar Nemanjića 12, Niš` },
-    { title: `Email:`, des: `office@aviva.com` },
-    { title: `Phone:`, des: `060 1450145` },
+    { title: `Email:`, des: `ageless@poliklinikaaviva.rs` },
+    { title: `Phone:`, des: `062400407` },
     { title: `Website:`, des: `www.aviva.com` },
   ]
 }
@@ -33,7 +33,7 @@ const { des, info } = team_content;
 
 const Mila = () => {
   // Random query parametar za osvežavanje slike
-  const imageSrc = `${avatar_img_1.src}?v=${new Date().getTime()}`;
+  
 
   return (
     <>
@@ -44,7 +44,7 @@ const Mila = () => {
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text anim_text_writting">
               <h2 className="cs_section_title">
-                Dr Mila Đorđević &nbsp;&bull;&nbsp; Specijalista estetske medicine
+                Dr Mila Đorđević &nbsp;&bull;&nbsp; doktor estetske medicine
               </h2>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Mila = () => {
         <div className="row align-items-center">
           <div className="col-md-5">
             <Image 
-              src={imageSrc} 
+              src={avatar_img_1} 
               alt="team_detalils" 
               width={500} 
               height={500} 
@@ -96,3 +96,8 @@ const Mila = () => {
 };
 
 export default Mila;
+
+
+
+
+

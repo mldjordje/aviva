@@ -21,7 +21,7 @@ const index = () => {
               subtitle="Lipoliza"
               title="Lipoliza – efikasno uklanjanje lokalizovanih masnih naslaga"
               des="Lipoliza je minimalno invazivna metoda koja razgrađuje masne ćelije ubrizgavanjem specijalnih supstanci direktno u problematične regije tela."
-              images={["/assets/img1/1.jpg"]}
+              images={["/assets/aviva-nove-slike/hero-landing-new.webp"]}
             />
 
             <ServiceAreaDetailsLipoliza />
@@ -37,5 +37,6 @@ const index = () => {
 };
 
 export default index;
+
 
 

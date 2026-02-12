@@ -1,10 +1,10 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import React from 'react';
 
-import journey_img_1 from "@/assets/img1/profhilo.png";
-import journey_img_2 from "@/assets/img1/2.jpg";
-import journey_img_3 from "@/assets/img1/3.jpg";
-import journey_img_4 from "@/assets/img1/4.jpg";
+import journey_img_1 from "@/assets/aviva-nove-slike/profhilo1.webp";
+import journey_img_2 from "@/assets/aviva-nove-slike/work.webp";
+import journey_img_3 from "@/assets/aviva-nove-slike/model.webp";
+import journey_img_4 from "@/assets/aviva-nove-slike/model3.webp";
 
 
 const JourneyHomeThree = () => {
@@ -40,3 +40,6 @@ const JourneyHomeThree = () => {
 };
 
 export default JourneyHomeThree;
+
+
+

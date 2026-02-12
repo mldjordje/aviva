@@ -1,5 +1,5 @@
-import React from 'react';
-import avatar_img_1 from "@/assets/img1/nikola.jpg";
+﻿import React from 'react';
+import avatar_img_1 from '@/assets/aviva-nove-slike/rad-mila-i-vladimir.webp';
 import Image from 'next/image';
 
 interface DataType {
@@ -7,25 +7,27 @@ interface DataType {
   info: {
     title: string;
     des: string;
+    href?: string;
   }[];
 }
 
 const team_content: DataType = {
-  des: `Dr Nikola Igić je diplomirao na Medicinskom fakultetu Univerziteta u Nisu 2023. godine. Nakon zavrsenih osnovnih studija, pocinje rad u privatnoj klinici za estetsku medicinu i plastičnu hrirguju, gde je uspešno radio 2 godine. Novembra 2024. upisuje specijalizaciju iz plastične, estetske i rekonstruktivne hirurgije, koja se uspešno odvija.
-Svoje radno iskustvo i vestine stekao je u privatnoj klinici, zatim na brojnim grupnim i individualnim edukacijama širom Srbije kod raznih stručnjaka iz oblasti estetske medicine, ali i u gradovima van nase drzave kao sto su UAE, Dubai i Sofia. Aktivni je ucesnik brojnih kongresa i seminara u zemlji i svetu.`,
+  des: `Dr Vladimir Sokolović je član tima Aviva Ageless i usmeren je na moderan, bezbedan i individualno prilagođen pristup estetskim tretmanima.
+Kroz kontinuirane edukacije i rad sa pacijentima razvija preciznost u planiranju i izvođenju procedura, sa fokusom na prirodan rezultat.
+
+U svakodnevnom radu kombinuje medicinsku procenu, stručnu tehniku i detaljnu komunikaciju sa pacijentom kako bi svaki tretman bio usklađen sa anatomijom i željenim efektom.`,
   info: [
-    { title: `Address:`, des: `📍Bulevar Nemanjića 12, Niš` },
-    { title: `Email:`, des: `office@aviva.com` },
-    { title: `Phone:`, des: `060 1450145` },
-    { title: `Website:`, des: `www.aviva.com` },
-  ]
-}
+    { title: 'Address:', des: 'Bulevar Nemanjića 12, Niš' },
+    { title: 'Email:', des: 'ageless@poliklinikaaviva.rs', href: 'mailto:ageless@poliklinikaaviva.rs' },
+    { title: 'Phone:', des: '062400407', href: 'tel:062400407' },
+    { title: 'Website:', des: 'www.avivaageless.rs', href: 'https://www.avivaageless.rs' },
+  ],
+};
 
 const { des, info } = team_content;
 
-const Mila = () => {
-  // Random query parametar za osvežavanje slike
-  const imageSrc = `${avatar_img_1.src}?v=${new Date().getTime()}`;
+const Vladimir = () => {
+  
 
   return (
     <>
@@ -36,7 +38,7 @@ const Mila = () => {
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text anim_text_writting">
               <h2 className="cs_section_title">
-                Dr Nikola Igić &nbsp;&bull;&nbsp; Specijalista estetske medicine
+                Dr Vladimir Sokolović &nbsp;&bull;&nbsp; specijalizant plastične, rekonstruktivne i estetske hirurgije
               </h2>
             </div>
           </div>
@@ -47,13 +49,7 @@ const Mila = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-5">
-            <Image 
-              src={imageSrc} 
-              alt="team_detalils" 
-              width={500} 
-              height={500} 
-              priority 
-            />
+            <Image src={avatar_img_1} alt="Dr Vladimir Sokolović" width={500} height={500} priority />
             <div className="cs_height_lg_30"></div>
           </div>
           <div className="col-md-7">
@@ -62,21 +58,31 @@ const Mila = () => {
                 <p>{des}</p>
                 <div className="cs_height_50 cs_height_lg_50"></div>
 
-                {info.map((item, i) =>
+                {info.map((item, i) => (
                   <div key={i} className="d-flex">
-                    <p className="col-md-2 col-4 cs_medium cs_primary_color">
-                      {item.title}
+                    <p className="col-md-2 col-4 cs_medium cs_primary_color">{item.title}</p>
+                    <p className="col-md-4 col-10">
+                      {item.href ? (
+                        <a href={item.href}>{item.des}</a>
+                      ) : (
+                        item.des
+                      )}
                     </p>
-                    <p className="col-md-4 col-10">{item.des}</p>
                   </div>
-                )}
+                ))}
               </div>
 
               <div className="cs_height_50 cs_height_lg_50"></div>
               <div className="cs_btn cs_style_2">
-                <a target='_blank' href="https://www.instagram.com/aviva_ageless/?hl=en" className="cs_center">Instagram</a>
-                <a target='_blank' href="https://www.facebook.com/avivaageless/" className="cs_center">Facebook</a>
-                <a target='_blank' href="https://youtube.com" className="cs_center">YouTube</a>
+                <a target="_blank" href="https://www.instagram.com/aviva_ageless/?hl=en" className="cs_center" rel="noreferrer">
+                  Instagram
+                </a>
+                <a target="_blank" href="https://www.facebook.com/avivaageless/" className="cs_center" rel="noreferrer">
+                  Facebook
+                </a>
+                <a target="_blank" href="https://youtube.com" className="cs_center" rel="noreferrer">
+                  YouTube
+                </a>
               </div>
             </div>
           </div>
@@ -87,4 +93,5 @@ const Mila = () => {
   );
 };
 
-export default Mila;
+export default Vladimir;
+

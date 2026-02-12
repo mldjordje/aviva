@@ -21,12 +21,12 @@ const index = () => {
             <About2
               subtitle="Hijaluronski fileri Niš – Prirodna lepota u stručnim rukama"
               title="U Avivi Ageless, naš cilj je jednostavan: da sačuvamo i istaknemo vašu prirodnu lepotu na potpuno prirodan način."
-              des="Na čelu našeg tima je Dr Mila Đorđević, zajedno sa grupom iskusnih lekara specijalista estetske medicine.
+              des="Na čelu našeg tima je Dr Mila Đorđević, zajedno sa grupom iskusnih lekara estetske medicine.
  Naši tretmani hijaluronskim filerima kombinuju sigurnost, efikasnost i personalizovan pristup, tako da svaka osoba dobije rezultate prilagođene svom licu."
               images={[
-                "/assets/img1/1.jpg",
-                "/assets/img1/2.jpg",
-                "/assets/img1/3.jpg",
+                "/assets/aviva-nove-slike/hijalurnski-fileri.webp",
+                "/assets/aviva-nove-slike/work2.webp",
+                "/assets/aviva-nove-slike/model.webp",
               ]}
             />
             <AboutHomeOne />

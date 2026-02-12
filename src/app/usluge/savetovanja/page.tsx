@@ -21,7 +21,7 @@ const index = () => {
               subtitle="Konsultacije sa lekarom"
               title="Prvi korak ka zdravijoj i lepšoj koži – stručne konsultacije"
               des="Konsultacije omogućavaju da zajedno sa stručnjakom definišete ciljeve, dobijete personalizovane savete i saznate koje tretmane je najbolje primeniti za vaš tip kože."
-              images={["/assets/img1/1.jpg"]}
+              images={["/assets/aviva-nove-slike/hero-landing-new.webp"]}
             />
 
             <ServiceAreaDetails />
@@ -37,5 +37,6 @@ const index = () => {
 };
 
 export default index;
+
 
 

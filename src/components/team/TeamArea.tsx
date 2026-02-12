@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -14,13 +14,10 @@ const TeamArea = () => {
       <div className="container">
         <div className="cs_section_heading cs_style_1 cs_type_1">
           <div className="cs_section_heading_text">
-            <h2 className="cs_section_title anim_text_writting">
-              Naš tim vrhunskih estetskih hirurga
-            </h2>
+            <h2 className="cs_section_title anim_text_writting">Naš tim vrhunskih doktora</h2>
             <p className="mt-4 text-lg text-gray-600">
-              U poliklinici Aviva Ageless, naš stručni tim doktora posvećen je
-              tome da vam pruži najviši nivo estetske nege i postigne prirodne,
-              sigurne i dugotrajne rezultate.
+              U poliklinici Aviva Ageless, naš stručni tim doktora posvećen je tome da vam pruži najviši nivo
+              estetske nege i postigne prirodne, sigurne i dugotrajne rezultate.
             </p>
           </div>
         </div>

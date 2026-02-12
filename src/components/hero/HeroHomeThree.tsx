@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import React, { useMemo, useRef } from "react";
@@ -44,7 +44,7 @@ const HeroHomeThree = () => {
           <motion.div
             className="cs_hero_bg cs_bg cs_parallax_bg"
             style={{
-              backgroundImage: "url(/assets/img1/6.jpg)",
+              backgroundImage: "url(/assets/aviva-nove-slike/work2.webp)",
               filter: "brightness(0.6)",
               position: "absolute",
               inset: 0,
@@ -144,3 +144,5 @@ const HeroHomeThree = () => {
 };
 
 export default HeroHomeThree;
+
+

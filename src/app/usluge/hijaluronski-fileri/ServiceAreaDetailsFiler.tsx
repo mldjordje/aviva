@@ -34,7 +34,7 @@ const postupak_data: DataType[] = [
   {
     id: "2",
     title: "Priprema kože i anestezija",
-    description: `Koža se čisti, a lokalna krema uklanja nelagodnost.`,
+    description: `Koža se čisti, čišćenje lica i dezinfekcija kože, a lokalna krema uklanja nelagodnost.`,
   },
   {
     id: "3",
@@ -71,7 +71,7 @@ const regije_data: DataType[] = [
   },
   {
     id: "5",
-    title: "Ruke",
+    title: "Jawline i brada",
     description: `Podmlađivanje kože i vraćanje punoće.`,
   },
   {

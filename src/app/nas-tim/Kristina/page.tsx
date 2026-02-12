@@ -5,7 +5,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import ServiceTeam from '@/components/service/ServiceTeam';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
-import TeamDetailsArea from '@/components/details/TeamDetailsArea';
+import Petra from './Kristina';
 
 
 // export const metadata = {
@@ -19,7 +19,7 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <TeamDetailsArea />
+            <Petra />
             <ServiceTeam />
             <AboutHomeFour />
           </main>
