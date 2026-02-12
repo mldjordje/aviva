@@ -1,21 +1,13 @@
- 
 'use client'
 
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-import AvivaGallery from '@/components/gallery/AvivaGallery';
+import React from 'react';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
-import React from 'react';
+import AboutHomeFour from '@/components/about/AboutHomeFour';
+import AvivaGallery from '@/components/gallery/AvivaGallery';
 
-
-
-// export const metadata = {
-//   title: "Portfolio Vixan - Digital  Creative Agency Next js Template",
-// };
-
-
-const index = () => {
+const GalerijaPage = () => {
   return (
     <Wrapper>
       <HeaderOne />
@@ -32,4 +24,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default GalerijaPage;

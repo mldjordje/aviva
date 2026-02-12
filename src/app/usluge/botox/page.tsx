@@ -25,7 +25,7 @@ const index = () => {
               subtitle="Botox tretman"
               title="Botox – osvežen i podmlađen izgled bez bora."
               des="Botox je bezbedan i brz estetski tretman koji smanjuje mimične bore i vraća licu svežinu, bez promena u izrazu lica. Efekti traju do 6 meseci uz minimalnu nelagodnost."
-              images={["/assets/aviva-nove-slike/hero-landing-new.webp"]}
+              images={["/assets/aviva-nove-slike2/botox.webp"]}
             />
 
             <ServiceAreaDetailsBotox />

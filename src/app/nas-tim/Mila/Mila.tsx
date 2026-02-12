@@ -1,6 +1,7 @@
 ﻿import React from 'react';
-import avatar_img_1 from '@/assets/aviva-nove-slike/mila.webp';
+import avatar_img_1 from '@/assets/aviva-nove-slike2/mila.webp';
 import Image from 'next/image';
+import TeamMemberGallery from '@/components/team/TeamMemberGallery';
 
 interface DataType {
   des: string;
@@ -32,6 +33,11 @@ inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne
 };
 
 const { des, info } = team_content;
+const gallery_items = [
+  { src: '/assets/aviva-nove-slike2/mila.webp', alt: 'Dr Mila Đorđević - portret' },
+  { src: '/assets/aviva-nove-slike2/work-mila.webp', alt: 'Dr Mila Đorđević - rad sa pacijentima' },
+  { src: '/assets/aviva-nove-slike2/mila-work2.webp', alt: 'Dr Mila Đorđević - tretman u ordinaciji' },
+];
 
 const Mila = () => {
   
@@ -97,7 +103,8 @@ const Mila = () => {
           </div>
         </div>
       </div>
-      <div className="cs_height_150 cs_height_lg_60"></div>
+      <div className="cs_height_100 cs_height_lg_50"></div>
+      <TeamMemberGallery title="Galerija - Dr Mila Đorđević" items={gallery_items} />
     </>
   );
 };

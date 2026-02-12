@@ -44,7 +44,7 @@ const ServiceHomeOne = () => {
       <div className="cs_height_150 cs_height_lg_60"></div>
       <section
         className="position-relative"
-        style={{ backgroundColor: "#fbf2f0", color: "#000000" }}
+        style={{ backgroundColor: "#f6eeec", color: "#bb274a" }}
       >
         <div className="cs_height_150 cs_height_lg_60"></div>
         <div className="container">

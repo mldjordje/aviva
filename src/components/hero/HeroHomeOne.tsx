@@ -17,7 +17,7 @@ interface DataType {
 
 const hero_slider: DataType[] = [
   {
-    img: `/assets/aviva-nove-slike/model.webp`,
+    img: `/assets/aviva-nove-slike2/hero-new.webp`,
     sub_title: 'Aviva Ageless',
     title: 'Anti-age tretmani',
     des: `Stručnjaci u anti-age medicini sa višegodišnjim iskustvom. Hijaluronski fileri, botoks, skinboosteri, lipoliza i PRP tretmani — otkrijte prirodnu lepotu uz individualan pristup.`,
@@ -33,7 +33,7 @@ const hero_slider: DataType[] = [
     button_link: '/nase-usluge',
   },
   {
-    img: `/assets/aviva-nove-slike/work2.webp`,
+    img: `/assets/aviva-nove-slike2/somewhere-on-landing.webp`,
     sub_title: 'Estetski tretmani',
     title: 'Preciznost. Znanje. Rezultati.',
     des: `Naš tim kombinuje stručnost i savremene tehnike za postizanje prirodnih rezultata. Zakoračite u svet zdravog, podmlađenog izgleda uz Aviva Ageless.`,

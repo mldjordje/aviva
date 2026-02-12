@@ -31,11 +31,11 @@ const about_slider: DataType[] = [
     des: 'Naš tim primenjuje savremene metode estetske medicine uz poseban akcenat na sigurnost, prirodan rezultat i lični kontakt sa svakim pacijentom. Vaše poverenje nam je najvažnije.',
   },
   {
-    img: '/assets/aviva-nove-slike/rad-mila-i-vladimir.webp',
-    bgPosition: 'center 18%',
+    img: '/assets/aviva-nove-slike2/somewhere-on-landing.webp',
+    bgPosition: 'center top',
     sub_title: 'Zašto Aviva Ageless?',
     title: 'Savremena estetska medicina u srcu Niša',
-    des: 'Naš tim se neprestano usavršava kako bi pružio najkvalitetnije tretmane poput hijaluronskih filera, botoksa, PRP terapije, skinboostera i lipolize.',
+    des: 'Naš tim se neprestano usavršava kako bi pružio najkvalitetnije tretmane uz bezbedan rad, prirodne rezultate i individualan pristup svakom pacijentu.',
   },
 ];
 

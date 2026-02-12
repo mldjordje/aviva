@@ -52,7 +52,7 @@ const ServiceAreaDetails = () => {
           <div className="cs_height_80 cs_height_lg_40"></div>
           <div>
             <div className="cs_work cs_work_1">
-              <div className="cs_card_work cs_style_1">
+              <div className="cs_card_work cs_style_1 cs_steps_spaced">
                 {service_data.map((item, i) => (
                   <div key={i} className="cs_card cs_mt_nthchild_0 anim_div_ShowLeftSide">
                     <div className="cs_card cs_style_1">

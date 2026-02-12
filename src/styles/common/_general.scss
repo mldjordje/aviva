@@ -234,7 +234,7 @@ hr {
 
 .dark {
     .cs_gray_bg_20 {
-        background: #000000;
+        background: #c5545e;
     }
 }
 
@@ -558,7 +558,7 @@ hr {
     height: 40px;
     width: 40px;
     border-radius: 5px;
-    background-color: #000;
+    background-color: #bb274a;
     &.active {
         background-color: $accent;
         color: #fff;
@@ -778,7 +778,7 @@ label {
         .circle {
             width: 20px;
             height: 20px;
-            background: black;
+            background: #bb274a;
             border-radius: 50%;
             position: absolute;
             top: 0;
@@ -1025,7 +1025,7 @@ label {
         width: 100%;
         left: 0%;
         top: 0%;
-        background-color: #000;
+        background-color: #c5545e;
     }
 }
 
@@ -1466,7 +1466,7 @@ label {
 .cs_tab_links.cs_style1 {
     display: inline-flex;
     padding: 5px;
-    background-color: #000;
+    background-color: #c5545e;
     border-radius: 10px;
     a {
         padding: 7px 20px;
@@ -1581,7 +1581,7 @@ label {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #bb274a;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1593,7 +1593,7 @@ label {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #bb274a;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1681,7 +1681,7 @@ label {
 
 .cs_faq_nav {
     height: 100%;
-    background-color: #000;
+    background-color: #c5545e;
     padding: 45px 35px;
     .cs_faq_nav_title {
         font-size: 30px;

@@ -294,6 +294,65 @@
     }
 }
 
+.aviva-gallery-head {
+    text-align: center;
+}
+
+.aviva-gallery-kicker {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #bb274a;
+    font-weight: 600;
+}
+
+.aviva-gallery-subtitle {
+    max-width: 780px;
+    margin: 14px auto 0;
+}
+
+.aviva-gallery-filters {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aviva-gallery-filter-btn {
+    border-color: #c5545e;
+    color: #bb274a;
+    background: rgba(255, 255, 255, 0.6);
+    &.active {
+        background: #bb274a;
+        color: #fff;
+    }
+}
+
+.aviva-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.aviva-gallery-card {
+    border: 1px solid rgba(197, 84, 94, 0.28);
+    overflow: hidden;
+    background: #f6eeec;
+}
+
+@media screen and (max-width: 1199px) {
+    .aviva-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .aviva-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* end Some Recent Project */
 

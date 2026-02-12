@@ -20,7 +20,7 @@ const index = () => {
             <About2
               subtitle="Mezoterapija"
               title="Mezoterapija – intenzivna hidratacija i podmlađivanje kože"
-              des="Mezoterapija podrazumeva mikroinjekcije koktela vitamina, minerala i hijalurona direktno u srednji sloj kože, čime se postiže osvežen izgled i poboljšava tonus kože."
+              des="Mezoterapija podrazumeva mikroinjekcije koktela vitamina i minerala direktno u srednji sloj kože, čime se postiže osvežen izgled i poboljšava tonus kože."
               images={["/assets/aviva-nove-slike/hero-landing-new.webp"]}
             />
 
@@ -37,6 +37,7 @@ const index = () => {
 };
 
 export default index;
+
 
 
 

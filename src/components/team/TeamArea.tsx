@@ -37,7 +37,14 @@ const TeamArea = () => {
                 viewport={{ once: true }}
               >
                 <Link href={item.link}>
-                  <Image src={item.img} alt={item.avatar_name} />
+                  <Image
+                    src={item.img}
+                    alt={item.avatar_name}
+                    width={900}
+                    height={1100}
+                    sizes="(max-width: 991px) 100vw, 33vw"
+                    style={{ width: "100%", height: "auto" }}
+                  />
                   <div className="cs_portfolio_overlay"></div>
                 </Link>
 

@@ -21,7 +21,7 @@ const index = () => {
               subtitle="Skinboosteri"
               title="Skinboosteri – dubinska hidratacija i revitalizacija kože"
               des="Skinboosteri su tretmani na bazi hijalurona koji se unose u kožu kako bi joj vratili elastičnost, sjaj i svežinu. Namenjeni su prevenciji starenja i poboljšanju kvaliteta kože."
-              images={["/assets/aviva-nove-slike/hero-landing-new.webp"]}
+              images={["/assets/aviva-nove-slike2/profhilo-skinbooster.webp"]}
             />
 
             <ServiceAreaDetails />

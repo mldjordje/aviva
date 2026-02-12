@@ -3,10 +3,12 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import { CONTACT } from '@/data/contact';
+import PaletteGlowSection from '@/components/ui/PaletteGlowSection';
 
 const highlights = [
   {
@@ -50,8 +52,17 @@ const AboutPlaceholderPage = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <section className="cs_under_construction">
-              <div className="container">
+            <section className="cs_under_construction cs_under_construction_with_bg">
+              <Image
+                src="/assets/aviva-nove-slike2/outsiide-clinic.webp"
+                alt="Aviva Ageless klinika spolja"
+                fill
+                quality={68}
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+              />
+              <div className="cs_under_construction_overlay" />
+              <div className="container position-relative">
                 <p className="cs_under_construction_label">O nama</p>
                 <h1>Stranica je u izradi</h1>
                 <p className="cs_under_construction_lead">
@@ -63,10 +74,10 @@ const AboutPlaceholderPage = () => {
                 <div className="row cs_under_construction_highlights">
                   {highlights.map((item) => (
                     <div className="col-lg-4" key={item.title}>
-                      <div className="cs_under_construction_card">
+                      <PaletteGlowSection className="cs_under_construction_card">
                         <h3>{item.title}</h3>
                         <p>{item.description}</p>
-                      </div>
+                      </PaletteGlowSection>
                     </div>
                   ))}
                 </div>
@@ -83,10 +94,10 @@ const AboutPlaceholderPage = () => {
                 <div className="row cs_under_construction_contact">
                   {contactInfo.map((item) => (
                     <div className="col-md-6" key={item.label}>
-                      <div className="cs_under_construction_contact_item">
+                      <PaletteGlowSection className="cs_under_construction_contact_item">
                         <p>{item.label}</p>
                         <a href={item.href}>{item.value}</a>
-                      </div>
+                      </PaletteGlowSection>
                     </div>
                   ))}
                 </div>

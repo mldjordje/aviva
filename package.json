@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/react": "^2.8.8",
     "@studio-freight/lenis": "^1.0.42",
     "@types/react-modal-video": "^1.2.3",
     "bootstrap": "^5.3.2",
@@ -33,6 +34,7 @@
     "@types/node": "^20.11.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "pdf-parse": "^2.4.5",
     "typescript": "^5"
   }
 }

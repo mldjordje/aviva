@@ -54,7 +54,14 @@ const TeamHomeTwo = ({ style_2, style_3 }: any) => {
             {team_data.slice(0, 4).map((item, i) =>
               <div key={i} className="cs_team_img">
                 <Link href="/team-details">
-                  <Image src={item.img} alt="Thumb" />
+                  <Image
+                    src={item.img}
+                    alt={item.avatar_name}
+                    width={900}
+                    height={1100}
+                    sizes="(max-width: 991px) 100vw, 33vw"
+                    style={{ width: "100%", height: "auto" }}
+                  />
                   <div className="cs_portfolio_overlay"></div>
                 </Link>
                 <div className="cs_team_text">

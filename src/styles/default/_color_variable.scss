@@ -3,39 +3,39 @@
 ----------------------------------------------------------------*/
 
 $white: #ffffff;
-$black: #000000;
-$primary: #101010;       // Dark pink
-$secondary: #d07978;     // Pink
-$ternary: #e8c2b6;       // Light pink (pozadina)
+$black: #bb274a;
+$primary: #c5545e;
+$secondary: #d07978;
+$ternary: #e8c2b6;
 $border: #bb274a;
-$gray: #181818;
+$gray: #da9b94;
 $hrcOlor: #d07978;
 $cr_banner: #e8c2b6;
 $accent: #bb274a;
-$gray_sc: #565656;
+$gray_sc: #c5545e;
 
 :root {
     --body-font-family: "Kanit", sans-serif;
     --heading-font-family: "Inter Tight", sans-serif;
 
     --accent-color: #bb274a;
-    --body-color: #e8c2b6;
+    --body-color: #f6eeec;
     --heading-color: #bb274a;
     --primary-color: #bb274a;
     --cr_banner-color: #e8c2b6;
-    --border-color: #bb274a;
+    --border-color: #c5545e;
     --common-color-white: #ffffff;
-    --common-color-black: #000000;
+    --common-color-black: #bb274a;
     --drak-color: #ffffff;
 }
 
 .dark {
-    --drak-color: #181818;
-    --cr_banner-color: #181818;
+    --drak-color: #c5545e;
+    --cr_banner-color: #c5545e;
     --accent-color: #bb274a;
-    --body-color: #e8c2b6;
+    --body-color: #f6eeec;
     --heading-color: #ffffff;
     --primary-color: #ffffff;
-    --common-color-white: #000000;
+    --common-color-white: #bb274a;
     --common-color-black: #ffffff;
 }

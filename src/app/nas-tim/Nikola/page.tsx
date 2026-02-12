@@ -1,33 +1,7 @@
-'use client'
-import React from 'react';
-import Wrapper from '@/layouts/Wrapper';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderOne from '@/layouts/headers/HeaderOne';
+import { redirect } from "next/navigation";
 
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-
-import Vladimir from './Nikola';
-
-// export const metadata = {
-//   title: "Team Details Vixan - Digital  Creative Agency Next js Template",
-// };
-
-const index = () => {
-  return (
-    <Wrapper>
-      <HeaderOne />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main>
-            <Vladimir />
-            
-            <AboutHomeFour />
-          </main>
-          <FooterOne />
-        </div>
-      </div>
-    </Wrapper>
-  );
+const NikolaRedirectPage = () => {
+  redirect("/nas-tim/Vladimir");
 };
 
-export default index;
+export default NikolaRedirectPage;

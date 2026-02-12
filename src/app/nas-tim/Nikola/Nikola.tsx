@@ -1,6 +1,7 @@
 ﻿import React from 'react';
-import avatar_img_1 from '@/assets/aviva-nove-slike/rad-mila-i-vladimir.webp';
+import avatar_img_1 from '@/assets/aviva-nove-slike2/vlada-main-photo.webp';
 import Image from 'next/image';
+import TeamMemberGallery from '@/components/team/TeamMemberGallery';
 
 interface DataType {
   des: string;
@@ -25,6 +26,10 @@ U svakodnevnom radu kombinuje medicinsku procenu, stručnu tehniku i detaljnu ko
 };
 
 const { des, info } = team_content;
+const gallery_items = [
+  { src: '/assets/aviva-nove-slike2/vlada-main-photo.webp', alt: 'Dr Vladimir Sokolović - portret' },
+  { src: '/assets/aviva-nove-slike2/vlada-work.webp', alt: 'Dr Vladimir Sokolović - rad sa pacijentima' },
+];
 
 const Vladimir = () => {
   
@@ -88,7 +93,8 @@ const Vladimir = () => {
           </div>
         </div>
       </div>
-      <div className="cs_height_150 cs_height_lg_60"></div>
+      <div className="cs_height_100 cs_height_lg_50"></div>
+      <TeamMemberGallery title="Galerija - Dr Vladimir Sokolović" items={gallery_items} />
     </>
   );
 };

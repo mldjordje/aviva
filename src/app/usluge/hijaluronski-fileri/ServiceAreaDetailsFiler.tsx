@@ -11,17 +11,17 @@ const pristup_data: DataType[] = [
   {
     id: "1",
     title: "Naglašavanje kontura usana",
-    description: `Oblikujemo ih tako da prirodno prate liniju lica.`,
+    description: "Oblikujemo ih tako da prirodno prate liniju lica.",
   },
   {
     id: "2",
     title: "Blago povećanje volumena",
-    description: `Bez preterivanja, tako da rezultat izgleda suptilno i prirodno.`,
+    description: "Bez preterivanja, tako da rezultat izgleda suptilno i prirodno.",
   },
   {
     id: "3",
     title: "Ujednačenost i simetrija",
-    description: `Svaka usna se tretira prema njenoj individualnoj anatomiji.`,
+    description: "Svaka usna se tretira prema njenoj individualnoj anatomiji.",
   },
 ];
 
@@ -29,55 +29,57 @@ const postupak_data: DataType[] = [
   {
     id: "1",
     title: "Konsultacije i planiranje",
-    description: `Dr Mila Đorđević i tim zajedno sa vama definišu koliko filera je potrebno i gde ga primeniti.`,
+    description:
+      "Dr Mila Đorđević i tim zajedno sa vama definišu koliko filera je potrebno i gde ga primeniti.",
   },
   {
     id: "2",
     title: "Priprema kože i anestezija",
-    description: `Koža se čisti, čišćenje lica i dezinfekcija kože, a lokalna krema uklanja nelagodnost.`,
+    description:
+      "Koža se čisti, radi se čišćenje lica i dezinfekcija kože, a lokalna krema smanjuje nelagodnost.",
   },
   {
     id: "3",
     title: "Precizna aplikacija",
-    description: `Filer se ubrizgava tankim iglicama ili kanilama na ciljane tačke.`,
+    description: "Filer se ubrizgava tankim iglicama ili kanilama na ciljane tačke.",
   },
   {
     id: "4",
     title: "Rezultat i oporavak",
-    description: `Vidljiv odmah, sa blagim otokom koji se povlači u par dana.`,
+    description: "Vidljiv odmah, sa blagim otokom koji se povlači u par dana.",
   },
 ];
 
 const regije_data: DataType[] = [
   {
     id: "1",
-    title: "Jagodice i obraze",
-    description: `Vraćanje volumena i konturiranje.`,
+    title: "Jagodice i obrazi",
+    description: "Vraćanje volumena i konturiranje.",
   },
   {
     id: "2",
     title: "Podočnjaci",
-    description: `Uklanjanje umornog izgleda.`,
+    description: "Uklanjanje umornog izgleda.",
   },
   {
     id: "3",
     title: "Nazolabijalne bore i sitne linije",
-    description: `Blago popunjavanje.`,
+    description: "Blago popunjavanje.",
   },
   {
     id: "4",
     title: "Deo vrata i dekoltea",
-    description: `Osveženje kože i tonus.`,
+    description: "Osveženje kože i tonus.",
   },
   {
     id: "5",
     title: "Jawline i brada",
-    description: `Podmlađivanje kože i vraćanje punoće.`,
+    description: "Podmlađivanje kože i vraćanje punoće.",
   },
   {
     id: "6",
     title: "Blage korekcije nosa",
-    description: `Neinvazivno oblikovanje.`,
+    description: "Neinvazivno oblikovanje.",
   },
 ];
 
@@ -101,7 +103,7 @@ const ServiceAreaDetails = () => {
                 loading="lazy"
                 className="cs_detail_icon"
               />
-              Hijaluronski fileri za usne – ključ za prirodnu lepoticu
+              Hijaluronski fileri za usne - ključ za prirodnu lepotu
             </h4>
             <p className="cs_mp0 anim_text">
               Usne su jedan od najvažnijih elemenata lica, jer definišu osmeh i izražavaju emocije. U Aviva
@@ -176,8 +178,8 @@ const ServiceAreaDetails = () => {
             </h4>
             <p className="cs_mp0 anim_text">
               Hijaluronski fileri za usne omogućavaju senzualan, ali prirodan izgled. Naši pacijenti često traže
-              diskretno popunjavanje ili naglašavanje oblika usana – uvek sa ciljem da se naglasi prirodna lepota, a
-              ne da se promeni izražaj lica.
+              diskretno popunjavanje ili naglašavanje oblika usana - uvek sa ciljem da se naglasi prirodna lepota, a
+              ne da se promeni izgled lica.
             </p>
           </motion.div>
 

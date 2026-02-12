@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import avatar_img_1 from '@/assets/aviva-nove-slike/petra-kordinator-klinike2.webp';
 import Image from 'next/image';
+import TeamMemberGallery from '@/components/team/TeamMemberGallery';
 
 interface DataType {
   des: string;
@@ -25,6 +26,12 @@ Njen fokus je da svaki pacijent dobije precizne smernice, pravovremenu podršku 
 };
 
 const { des, info } = team_content;
+const gallery_items = [
+  { src: '/assets/aviva-nove-slike/petra-kordinator-klinike.webp', alt: 'Petra - kordinatorka klinike' },
+  { src: '/assets/aviva-nove-slike/petra-kordinator-klinike2.webp', alt: 'Petra - rad u klinici' },
+  { src: '/assets/aviva-nove-slike2/petra1.webp', alt: 'Petra - konsultacije sa pacijentima' },
+  { src: '/assets/aviva-nove-slike2/petra2.webp', alt: 'Petra - koordinacija u klinici' },
+];
 
 const Petra = () => {
   
@@ -86,7 +93,8 @@ const Petra = () => {
           </div>
         </div>
       </div>
-      <div className="cs_height_150 cs_height_lg_60"></div>
+      <div className="cs_height_100 cs_height_lg_50"></div>
+      <TeamMemberGallery title="Galerija - Petra" items={gallery_items} />
     </>
   );
 };

@@ -3,7 +3,7 @@
 ----------------------------------------------------------------*/
 
 .cs_footer {
-  color: #c1c1c1;
+  color: #f6eeec;
 }
 
 .cs_footer_in {
@@ -12,7 +12,7 @@
 
 .cs_copyright {
   font-size: 18px;
-  border-top: 1px solid #454545;
+  border-top: 1px solid rgba(246, 238, 236, 0.35);
   padding: 35px 0;
 }
 
@@ -38,7 +38,7 @@
   grid-template-columns: repeat(3, 1fr);
   color: #fff;
   a {
-    border: 1px solid #454545;
+    border: 1px solid rgba(246, 238, 236, 0.35);
     padding: 10px 15px;
     min-height: 70px;
     &:hover {
@@ -78,7 +78,7 @@
   a {
     font-size: 55px;
     display: inline-block;
-    color: $white;
+    color: #f6eeec;
     font-weight: 900;
     line-height: 1.2em;
     &:hover {

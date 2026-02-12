@@ -61,3 +61,36 @@
     }
   }
 }
+
+.cs_work.cs_work_1 {
+  .cs_card_work.cs_style_1.cs_steps_spaced {
+    gap: 24px;
+    justify-content: flex-start;
+
+    .cs_card {
+      flex-basis: calc(20% - 20px);
+      min-width: 200px;
+
+      @media screen and (max-width: 1199px) {
+        flex-basis: calc(33.333% - 16px);
+      }
+
+      @media screen and (max-width: 991px) {
+        flex-basis: calc(50% - 12px);
+      }
+
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+      }
+
+      .cs_work_title {
+        margin-top: 34px;
+        line-height: 1.25;
+      }
+
+      .cs_work_subtitle {
+        line-height: 1.6;
+      }
+    }
+  }
+}

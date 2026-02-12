@@ -113,6 +113,8 @@
     padding: 180px 0 140px;
     background: #fff7f4;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 
     &_label {
         font-size: 16px;
@@ -191,6 +193,41 @@
             text-decoration: none;
         }
     }
+}
+
+.cs_under_construction_with_bg {
+    color: #fff;
+    min-height: 780px;
+}
+
+.cs_under_construction_overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        130deg,
+        rgba(187, 39, 74, 0.76) 0%,
+        rgba(197, 84, 94, 0.64) 45%,
+        rgba(232, 194, 182, 0.48) 100%
+    );
+    z-index: 1;
+}
+
+.cs_under_construction_with_bg .container {
+    z-index: 2;
+}
+
+.cs_under_construction_with_bg .cs_under_construction_label,
+.cs_under_construction_with_bg h1,
+.cs_under_construction_with_bg .cs_under_construction_lead {
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(78, 21, 31, 0.35);
+}
+
+.cs_under_construction_with_bg .cs_under_construction_card h3,
+.cs_under_construction_with_bg .cs_under_construction_card p,
+.cs_under_construction_with_bg .cs_under_construction_contact_item p,
+.cs_under_construction_with_bg .cs_under_construction_contact_item a {
+    color: #bb274a;
 }
 
 .cs_detail_heading {

@@ -11,7 +11,7 @@ const AboutUs = ({ style_2 }: any) => {
       <section>
         <div className="cs_bg cs_bg_img_about_titile" style={{ position: "relative", overflow: "hidden" }}>
           <Image
-            src="/assets/aviva-nove-slike/work2.webp"
+            src="/assets/aviva-nove-slike2/outsiide-clinic.webp"
             alt="CTA pozadina"
             fill
             quality={66}
@@ -22,7 +22,8 @@ const AboutUs = ({ style_2 }: any) => {
             style={{
               position: "absolute",
               inset: 0,
-              background: "rgba(0, 0, 0, 0.52)",
+              background:
+                "linear-gradient(125deg, rgba(187,39,74,0.64) 0%, rgba(197,84,94,0.42) 55%, rgba(232,194,182,0.28) 100%)",
               zIndex: 1,
             }}
           />
@@ -30,7 +31,7 @@ const AboutUs = ({ style_2 }: any) => {
             <div className="cs_learning_project" style={{ position: "relative", zIndex: 2 }}>
               <div className="cs_section_heading cs_style_1">
                 <div className="cs_section_heading_text">
-                  <h3 className="cs_section_title_3 cs_color_2 anim_heading_title" style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}>
+                  <h3 className="cs_section_title_3 cs_color_2 anim_heading_title" style={{ textShadow: "0 2px 14px rgba(88, 20, 33, 0.45)" }}>
                     Dođite na konsultacije i otkrijte šta vam najviše odgovara.
                   </h3>
                 </div>
