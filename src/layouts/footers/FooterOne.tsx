@@ -121,7 +121,15 @@ const FooterOne = () => {
           </ul>
         </div>
         <div className="cs_copyright text-center">
-          <div className="container"> <CopyRight /> </div>
+          <div className="container">
+            <CopyRight />
+            <p className="cs_footer_credit">
+              Izradio web aplikaciju{" "}
+              <a href="https://adspire.rs" target="_blank" rel="noreferrer">
+                Adspire Niš
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </>

@@ -16,6 +16,21 @@
   padding: 35px 0;
 }
 
+.cs_footer_credit {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #f6eeec;
+  opacity: 0.95;
+  a {
+    color: #f3ded9;
+    font-weight: 600;
+    text-decoration: underline;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
 .cs_footer_nav {
   list-style: none;
   padding: 0 0 40px 0;

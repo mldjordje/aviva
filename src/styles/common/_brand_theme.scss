@@ -90,3 +90,52 @@ body {
 .cs_gradient_bg_1 {
   background: linear-gradient(267.18deg, #c5545e 0%, #bb274a 100%);
 }
+
+.cs_brand_mobile_grid {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .cs_brand_section_title {
+    font-size: clamp(44px, 12vw, 64px);
+    line-height: 1.04;
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cs_brand_desktop {
+    display: none;
+  }
+
+  .aviva-brand-section {
+    padding: 0 12px;
+  }
+
+  .cs_brand_mobile_grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .cs_brand_mobile_item {
+    min-height: 88px;
+    border: 1px solid rgba(197, 84, 94, 0.25);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+  }
+
+  .cs_brand_mobile_item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cs_partner_logo {
+    padding: 10px 20px;
+  }
+}
