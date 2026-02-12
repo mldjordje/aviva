@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion';
 
@@ -62,10 +63,17 @@ const HeroHomeOne = () => {
         {hero_slider.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             <div className={heroClass}>
-              <div
-                className="cs_hero_bg cs_bg cs_parallax_bg"
-                style={{ backgroundImage: `url(${item.img})` }}
-              ></div>
+              <div className="cs_hero_bg cs_bg cs_parallax_bg">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  priority={index === 0}
+                  quality={72}
+                  sizes="100vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
               <div className="container">
                 <div className="cs_hero_text">
                   <div className="cs_hero_mini_title cs_hero_text_in">
@@ -110,5 +118,3 @@ const HeroHomeOne = () => {
 };
 
 export default HeroHomeOne;
-
-

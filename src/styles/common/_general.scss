@@ -179,6 +179,12 @@ hr {
     background-position: center;
 }
 
+/* Skip expensive paint/layout work for below-the-fold homepage blocks */
+.cs_home_defer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 900px;
+}
+
 .cs_vertical_middle {
     display: flex;
     align-items: center;

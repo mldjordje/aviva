@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import React, { useMemo, useState } from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { motion, Variants } from 'framer-motion';
@@ -65,6 +66,7 @@ const noMotionImgVariants: Variants = {
 type SlideProps = {
   item: DataType;
   isActive: boolean;
+  index: number;
   prefersReducedMotion: boolean;
   textMotion: Variants;
   imageMotion: Variants;
@@ -73,6 +75,7 @@ type SlideProps = {
 const AnimatedSlide = ({
   item,
   isActive,
+  index,
   prefersReducedMotion,
   textMotion,
   imageMotion,
@@ -84,11 +87,20 @@ const AnimatedSlide = ({
     <div className="cs_about cs_style_1">
       <motion.div
         className="cs_about_bg cs_bg"
-        style={{ backgroundImage: `url(${item.img})`, backgroundPosition: item.bgPosition || 'center center' }}
         initial={initialState}
         animate={animateState}
         variants={imageMotion}
-      />
+      >
+        <Image
+          src={item.img}
+          alt={item.title}
+          fill
+          quality={70}
+          priority={index === 0}
+          sizes="(max-width: 991px) 100vw, 55vw"
+          style={{ objectFit: 'cover', objectPosition: item.bgPosition || 'center center' }}
+        />
+      </motion.div>
       <div className="container">
         <motion.div
           initial={initialState}
@@ -148,6 +160,7 @@ const AboutHomeOne = () => {
           <SwiperSlide key={index} className="swiper-slide">
             <AnimatedSlide
               item={item}
+              index={index}
               isActive={index === activeIndex}
               prefersReducedMotion={prefersReducedMotion}
               textMotion={motionConfigs.text}

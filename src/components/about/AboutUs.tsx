@@ -1,6 +1,7 @@
 ﻿
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const AboutUs = ({ style_2 }: any) => {
   return (
@@ -8,16 +9,25 @@ const AboutUs = ({ style_2 }: any) => {
       {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
 
       <section>
-        <div
-          className="cs_bg cs_bg_img_about_titile"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(/assets/aviva-nove-slike/work2.webp)",
-            backgroundPosition: "center center",
-          }}
-        >
+        <div className="cs_bg cs_bg_img_about_titile" style={{ position: "relative", overflow: "hidden" }}>
+          <Image
+            src="/assets/aviva-nove-slike/work2.webp"
+            alt="CTA pozadina"
+            fill
+            quality={66}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center center", zIndex: 0 }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "rgba(0, 0, 0, 0.52)",
+              zIndex: 1,
+            }}
+          />
           <div className="container">
-            <div className="cs_learning_project">
+            <div className="cs_learning_project" style={{ position: "relative", zIndex: 2 }}>
               <div className="cs_section_heading cs_style_1">
                 <div className="cs_section_heading_text">
                   <h3 className="cs_section_title_3 cs_color_2 anim_heading_title" style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}>

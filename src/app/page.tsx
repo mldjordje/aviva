@@ -19,13 +19,27 @@ const IndexPage = () => {
         <div id="smooth-content">
           <main>
             <HeroHomeOne />
-            <HeroHomeThree />
-            <AboutHomeOne />
-            <ServiceHomeOne />
-            <Cenovnik />
-            <VideoHomeOne />
-            <TeamArea />
-            <BrandHomeOne style_2={true} />
+            <div className="cs_home_defer">
+              <HeroHomeThree />
+            </div>
+            <div className="cs_home_defer">
+              <AboutHomeOne />
+            </div>
+            <div className="cs_home_defer">
+              <ServiceHomeOne />
+            </div>
+            <div className="cs_home_defer">
+              <Cenovnik />
+            </div>
+            <div className="cs_home_defer">
+              <VideoHomeOne />
+            </div>
+            <div className="cs_home_defer">
+              <TeamArea />
+            </div>
+            <div className="cs_home_defer">
+              <BrandHomeOne style_2={true} />
+            </div>
           </main>
           <FooterOne />
         </div>

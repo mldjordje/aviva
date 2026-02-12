@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useMemo, useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
 
@@ -44,14 +45,22 @@ const HeroHomeThree = () => {
           <motion.div
             className="cs_hero_bg cs_bg cs_parallax_bg"
             style={{
-              backgroundImage: "url(/assets/aviva-nove-slike/work2.webp)",
               filter: "brightness(0.6)",
               position: "absolute",
               inset: 0,
               zIndex: 1,
               scale: backgroundScale,
             }}
-          />
+          >
+            <Image
+              src="/assets/aviva-nove-slike/work2.webp"
+              alt="FAQ pozadina"
+              fill
+              quality={68}
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
+            />
+          </motion.div>
 
           <div className="textupdowns">
             <div className="cs_left_text">
