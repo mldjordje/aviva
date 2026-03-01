@@ -306,6 +306,32 @@
 }
 
 @media screen and (max-width: 991px) {
+    .cs_slider_2 {
+        .cs_swiper_controll {
+            margin-top: 18px;
+            top: 0;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .cs_pagination.cs_style2 {
+            width: auto;
+            min-width: 78px;
+            font-size: 30px;
+        }
+
+        .cs_swiper_navigation_wrap {
+            .cs_swiper_button_prev {
+                margin-top: 0;
+            }
+
+            .cs_swiper_button_next {
+                margin-bottom: 0;
+                margin-left: 18px;
+            }
+        }
+    }
+
     .cs_about.cs_style_1 {
         padding: 80px 0;
 
@@ -425,6 +451,29 @@
 }
 
 @media screen and (max-width: 576px) {
+    .cs_slider_2 {
+        .cs_swiper_controll {
+            margin-top: 12px;
+            gap: 10px;
+        }
+
+        .cs_pagination.cs_style2 {
+            min-width: 64px;
+            font-size: 24px;
+        }
+
+        .cs_swiper_navigation_wrap {
+            .cs_swiper_button_next {
+                margin-left: 12px;
+            }
+
+            svg {
+                width: 64px;
+                height: 18px;
+            }
+        }
+    }
+
     .cs_journey_stary h2 {
         font-size: 22px;
         line-height: 1.4;
