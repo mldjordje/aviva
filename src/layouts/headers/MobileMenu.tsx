@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import DarkLightToggle from '@/components/common/DarkLightToggle'; 
 
 
@@ -79,13 +79,30 @@ const menu_data: DataType[] = [
 
 
 const MobileMenu = ({active, navTitle, openMobileMenu} : any) => {
+  const handleParentMenuClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    menu: DataType
+  ) => {
+    if (!menu.has_dropdown) {
+      return;
+    }
+
+    event.preventDefault();
+    openMobileMenu(menu.title);
+  };
 
   return (
     <>
       <ul className="cs_nav_list" style={{ display: active ? "block" : "none" }}>
         {menu_data.map((menu) => (
           <li key={menu.id} className={`${menu.has_dropdown ? "menu-item-has-children" : ""} ${navTitle === menu.title ? "active" : ""}`}>
-            <Link href={menu.link}>{menu.title}</Link>
+            <Link
+              href={menu.link}
+              onClick={(event) => handleParentMenuClick(event, menu)}
+              aria-expanded={menu.has_dropdown ? navTitle === menu.title : undefined}
+            >
+              {menu.title}
+            </Link>
             {menu.has_dropdown && (
               <>
               <ul className="cs_mega_wrapper" style={{ display: navTitle === menu.title ? "block" : "none", }}>
@@ -95,7 +112,10 @@ const MobileMenu = ({active, navTitle, openMobileMenu} : any) => {
                   </li>
                 ))}
               </ul>
-              <span onClick={() => openMobileMenu(menu.title)} className={`cs_munu_dropdown_toggle ${navTitle === menu.title ? "active" : ""}`}></span>               
+              <span
+                onClick={() => openMobileMenu(menu.title)}
+                className={`cs_munu_dropdown_toggle ${navTitle === menu.title ? "active" : ""}`}
+              ></span>               
               </>
             )}
           </li>

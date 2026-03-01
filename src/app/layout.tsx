@@ -2,6 +2,7 @@
 import { organizationJsonLd } from "@/data/contact";
 import type { Metadata } from "next";
 import HeroUIRootProvider from "@/components/providers/HeroUIRootProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.avivaageless.rs"),
@@ -34,6 +35,7 @@ export default function RootLayout({
       </head>
       <body>
         <HeroUIRootProvider>{children}</HeroUIRootProvider>
+        <Analytics />
       </body>
     </html>
   );
