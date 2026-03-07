@@ -1,13 +1,32 @@
-import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
+import { getServiceJsonLd, getServiceSeoEntry } from "@/data/service_seo";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+
+const service = getServiceSeoEntry("botox");
 
 export const metadata: Metadata = {
-  title: 'Botox – Aviva Ageless Niš',
-  description: 'Osvežen izgled bez bora: bezbedan i brz tretman botoksom uz prirodan rezultat.',
-  alternates: { canonical: 'https://www.avivaageless.rs/usluge/botox' },
-  openGraph: { title: 'Botox – Aviva Ageless Niš', description: 'Osvežen izgled bez bora – prirodan rezultat.', url: 'https://www.avivaageless.rs/usluge/botox', type: 'website' },
-  twitter: { card: 'summary_large_image', title: 'Botox – Aviva Ageless Niš', description: 'Osvežen izgled bez bora – prirodan rezultat.' },
+  title: `${service.name} - Aviva Ageless Nis`,
+  description: service.description,
+  keywords: service.keywords,
+  alternates: { canonical: service.url },
+  openGraph: {
+    title: `${service.name} - Aviva Ageless Nis`,
+    description: service.description,
+    url: service.url,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${service.name} - Aviva Ageless Nis`,
+    description: service.description,
+  },
 };
 
-export default function Layout({ children }: { children: ReactNode }) { return children; }
-
+export default function Layout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: getServiceJsonLd("botox") }} />
+      {children}
+    </>
+  );
+}
