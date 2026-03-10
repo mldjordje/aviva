@@ -28,6 +28,11 @@ const CLINIC = {
   url: BASE_URL,
   telephone: "+38162400407",
   email: "ageless@poliklinikaaviva.rs",
+  hasMap: "https://www.google.com/maps/place/Poliklinika+Aviva/@43.3240535,21.907158,17z",
+  geo: {
+    latitude: 43.3240535,
+    longitude: 21.907158,
+  },
   address: {
     streetAddress: "Bulevar Nemanjica 12",
     addressLocality: "Nis",
@@ -282,6 +287,12 @@ export function getServiceJsonLd(slug: ServiceSlug): string {
           addressRegion: CLINIC.address.addressRegion,
           addressCountry: CLINIC.address.addressCountry,
         },
+        hasMap: CLINIC.hasMap,
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: CLINIC.geo.latitude,
+          longitude: CLINIC.geo.longitude,
+        },
         areaServed: {
           "@type": "City",
           name: "Nis",
@@ -297,6 +308,10 @@ export function getServiceJsonLd(slug: ServiceSlug): string {
         areaServed: {
           "@type": "City",
           name: "Nis",
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `${service.url}#webpage`,
         },
         provider: {
           "@id": CLINIC.id,

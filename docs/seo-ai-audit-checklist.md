@@ -1,6 +1,6 @@
 # SEO + AI Discoverability Checklist (Aviva Ageless)
 
-Last updated: 2026-03-07
+Last updated: 2026-03-10
 Scope: Local discoverability for estetska medicina in Nis
 
 ## 1) Implemented now
@@ -17,8 +17,8 @@ Scope: Local discoverability for estetska medicina in Nis
 - [x] `src/app/usluge/savetovanja/layout.tsx`
 
 ## 2) High priority next
-- [ ] Add explicit internal links between related services (contextual links in body copy).
-- [ ] Expand FAQ structured data on `/faq` page with full question set (currently limited JSON-LD).
+- [x] Add explicit internal links between related services (contextual links in body copy).
+- [x] Expand FAQ structured data on `/faq` page with full question set.
 - [ ] Add or verify `Review`/`AggregateRating` schema only if compliant and backed by visible first-party data.
 - [ ] Publish stronger treatment-specific content blocks (candidate profile, contraindications, aftercare).
 - [ ] Ensure every service page has unique hero image `alt` text aligned to target query.

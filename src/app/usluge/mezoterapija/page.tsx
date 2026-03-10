@@ -9,6 +9,7 @@ import TeamDetailsArea from "@/components/details/TeamDetailsArea";
 import ServiceAreaDetails from "./ServiceAreaDetailsMezoterapija";
 import About2 from "@/components/about/About2";
 import AboutUs from "@/components/about/AboutUs";
+import RelatedServiceLinks from "@/components/service/RelatedServiceLinks";
 
 const index = () => {
   return (
@@ -25,6 +26,7 @@ const index = () => {
             />
 
             <ServiceAreaDetails />
+            <RelatedServiceLinks current="mezoterapija" />
             <TeamDetailsArea />
             <AboutUs />
             <ServiceTeam />

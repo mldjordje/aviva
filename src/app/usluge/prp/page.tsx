@@ -10,6 +10,7 @@ import ServiceAreaDetailsPrp from './ServiceAreaDetailsPrp';
 
 import About2 from '@/components/about/About2';
 import AboutUs from '@/components/about/AboutUs';
+import RelatedServiceLinks from '@/components/service/RelatedServiceLinks';
 // export const metadata = {
 //   title: "Team Details Vixan - Digital  Creative Agency Next js Template",
 // };
@@ -31,6 +32,7 @@ const index = () => {
             />
             
             <ServiceAreaDetailsPrp />
+            <RelatedServiceLinks current="prp" />
             <TeamDetailsArea />
             <AboutUs />
             <ServiceTeam />

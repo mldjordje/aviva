@@ -11,6 +11,7 @@ import AboutUs from "@/components/about/AboutUs";
 import AboutHomeOne from "./AboutHome";
 import Zastofiler from "./Zastofiler";
 import Cenovnik from "@/components/cenovnik/Cenovnik";
+import RelatedServiceLinks from "@/components/service/RelatedServiceLinks";
 const index = () => {
   return (
     <Wrapper>
@@ -32,6 +33,7 @@ const index = () => {
             <AboutHomeOne />
             <ServiceAreaDetailsFiler />
             <Zastofiler />
+            <RelatedServiceLinks current="hijaluronski-fileri" />
             <Cenovnik category="fileri" />
             <Mila />
             <AboutUs />

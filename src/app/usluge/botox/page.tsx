@@ -10,6 +10,7 @@ import ServiceAreaDetailsBotox from './ServiceAreaDetailsBotox';
 import About2 from '@/components/about/About2';
 import AboutUs from '@/components/about/AboutUs';
 import Cenovnik from '@/components/cenovnik/Cenovnik';
+import RelatedServiceLinks from '@/components/service/RelatedServiceLinks';
 // export const metadata = {
 //   title: "Team Details Vixan - Digital  Creative Agency Next js Template",
 // };
@@ -29,6 +30,7 @@ const index = () => {
             />
 
             <ServiceAreaDetailsBotox />
+            <RelatedServiceLinks current="botox" />
             <Cenovnik category="botoks" />
 
             <TeamDetailsArea />
