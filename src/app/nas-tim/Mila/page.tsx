@@ -10,12 +10,12 @@ import Mila from './Mila';
 
 
 export const metadata = {
-  title: "Dr Mila Đorđević - Estetski hirurg | Aviva Ageless",
-  description: "Dr Mila Đorđević je vrhunski estetski hirurg u poliklinici Aviva Ageless. Nudimo prirodne i sigurne estetske tretmane prilagođene vašim potrebama.",
+  title: "Dr Mila ÄorÄ‘eviÄ‡ - Estetski hirurg | Aviva Ageless",
+  description: "Dr Mila ÄorÄ‘eviÄ‡ je vrhunski estetski hirurg u poliklinici Aviva Ageless. Nudimo prirodne i sigurne estetske tretmane prilagoÄ‘ene vaĹˇim potrebama.",
   openGraph: {
-    title: "Dr Mila Đorđević - Estetski hirurg | Aviva Ageless",
-    description: "Dr Mila Đorđević je vrhunski estetski hirurg u poliklinici Aviva Ageless. Nudimo prirodne i sigurne estetske tretmane prilagođene vašim potrebama.",
-    url: "https://www.avivaageless.rs/nas-tim/mila",
+    title: "Dr Mila ÄorÄ‘eviÄ‡ - Estetski hirurg | Aviva Ageless",
+    description: "Dr Mila ÄorÄ‘eviÄ‡ je vrhunski estetski hirurg u poliklinici Aviva Ageless. Nudimo prirodne i sigurne estetske tretmane prilagoÄ‘ene vaĹˇim potrebama.",
+    url: "https://ageless.rs/nas-tim/mila",
     type: "profile",
   },
 };

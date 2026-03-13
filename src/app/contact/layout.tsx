@@ -1,14 +1,14 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: 'Kontakt – Aviva Ageless Niš',
   description: 'Kontaktirajte Aviva Ageless u Nišu: Bulevar Nemanjića 12, 062400407, ageless@poliklinikaaviva.rs.',
-  alternates: { canonical: 'https://www.avivaageless.rs/contact' },
+  alternates: { canonical: 'https://ageless.rs/contact' },
   openGraph: {
     title: 'Kontakt – Aviva Ageless Niš',
     description: 'Kontakt informacije i lokacija.',
-    url: 'https://www.avivaageless.rs/contact',
+    url: 'https://ageless.rs/contact',
     type: 'website',
   },
   twitter: {

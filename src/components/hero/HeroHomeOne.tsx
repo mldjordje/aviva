@@ -38,7 +38,7 @@ const hero_slider: DataType[] = [
     title: 'Preciznost. Znanje. Rezultati.',
     des: `Naš tim kombinuje stručnost i savremene tehnike za postizanje prirodnih rezultata. Zakoračite u svet zdravog, podmlađenog izgleda uz Aviva Ageless.`,
     button_text: 'Naš tim',
-    button_link: '/team',
+    button_link: '/nas-tim',
   },
 ];
 

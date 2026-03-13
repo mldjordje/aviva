@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "FAQ - Aviva Ageless Nis",
     description:
       "Odgovori na najcesca pitanja o tretmanima estetske medicine u Nisu i pripremi za tretman.",
-    url: "https://www.avivaageless.rs/faq",
+    url: "https://ageless.rs/faq",
     type: "website",
   },
 };

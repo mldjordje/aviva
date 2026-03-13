@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import avatar_img_1 from "@/assets/aviva-nove-slike/mila.webp";
 import Image from 'next/image';
 
@@ -36,7 +36,7 @@ inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne
     },
     {
       title: `Website:`,
-      des: `www.avivaageless.rs`
+      des: `ageless.rs`
     },
   ]
 }

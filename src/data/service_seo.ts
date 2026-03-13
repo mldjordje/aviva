@@ -21,7 +21,7 @@ type ServiceSeoEntry = {
   faqs: FaqItem[];
 };
 
-const BASE_URL = "https://www.avivaageless.rs";
+const BASE_URL = "https://ageless.rs";
 const CLINIC = {
   id: `${BASE_URL}#medical-clinic`,
   name: "Aviva Ageless",

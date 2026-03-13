@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import avatar_img_1 from '@/assets/aviva-nove-slike2/mila.webp';
 import Image from 'next/image';
 import TeamMemberGallery from '@/components/team/TeamMemberGallery';
@@ -28,7 +28,7 @@ inovativne tretmane i individualan pristup kako bi pacijentima pružila prirodne
     { title: 'Address:', des: 'Bulevar Nemanjića 12, Niš' },
     { title: 'Email:', des: 'ageless@poliklinikaaviva.rs', href: 'mailto:ageless@poliklinikaaviva.rs' },
     { title: 'Phone:', des: '0601450145', highlight: true, href: 'tel:0601450145' },
-    { title: 'Website:', des: 'www.avivaageless.rs', href: 'https://www.avivaageless.rs' },
+    { title: 'Website:', des: 'ageless.rs', href: 'https://ageless.rs' },
   ],
 };
 

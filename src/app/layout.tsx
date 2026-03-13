@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.avivaageless.rs"),
+  metadataBase: new URL("https://ageless.rs"),
   title: { default: "Aviva Ageless - Estetska medicina Nis", template: "%s | Aviva Ageless" },
   description:
     "Aviva Ageless u Nisu - estetski tretmani (botoks, fileri, PRP, skinboosteri, mezoterapija) uz strucni tim i individualni pristup.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    url: "https://www.avivaageless.rs/",
+    url: "https://ageless.rs/",
     siteName: "Aviva Ageless",
     locale: "sr_RS",
     title: "Aviva Ageless - Estetska medicina Nis",
@@ -54,8 +54,8 @@ export default function RootLayout({
   return (
     <html lang="sr">
       <head>
-        <link rel="alternate" type="text/plain" href="https://www.avivaageless.rs/llms.txt" />
-        <link rel="alternate" type="text/plain" href="https://www.avivaageless.rs/llms-full.txt" />
+        <link rel="alternate" type="text/plain" href="https://ageless.rs/llms.txt" />
+        <link rel="alternate" type="text/plain" href="https://ageless.rs/llms-full.txt" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: organizationJsonLd("MedicalClinic") }}

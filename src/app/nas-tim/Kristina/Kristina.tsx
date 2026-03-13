@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import avatar_img_1 from '@/assets/aviva-nove-slike/petra-kordinator-klinike2.webp';
 import Image from 'next/image';
 import TeamMemberGallery from '@/components/team/TeamMemberGallery';
@@ -21,7 +21,7 @@ Njen fokus je da svaki pacijent dobije precizne smernice, pravovremenu podršku 
     { title: 'Address:', des: 'Bulevar Nemanjića 12, Niš' },
     { title: 'Email:', des: 'ageless@poliklinikaaviva.rs', href: 'mailto:ageless@poliklinikaaviva.rs' },
     { title: 'Phone:', des: '062400407', href: 'tel:062400407' },
-    { title: 'Website:', des: 'www.avivaageless.rs', href: 'https://www.avivaageless.rs' },
+    { title: 'Website:', des: 'ageless.rs', href: 'https://ageless.rs' },
   ],
 };
 

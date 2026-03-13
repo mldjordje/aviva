@@ -19,18 +19,18 @@ export interface ContactInfo {
 }
 
 export const SERVICE_URLS = [
-  "https://www.avivaageless.rs/usluge/hijaluronski-fileri",
-  "https://www.avivaageless.rs/usluge/botox",
-  "https://www.avivaageless.rs/usluge/skinboosteri",
-  "https://www.avivaageless.rs/usluge/prp",
-  "https://www.avivaageless.rs/usluge/lipoliza",
-  "https://www.avivaageless.rs/usluge/mezoterapija",
-  "https://www.avivaageless.rs/usluge/savetovanja",
+  "https://ageless.rs/usluge/hijaluronski-fileri",
+  "https://ageless.rs/usluge/botox",
+  "https://ageless.rs/usluge/skinboosteri",
+  "https://ageless.rs/usluge/prp",
+  "https://ageless.rs/usluge/lipoliza",
+  "https://ageless.rs/usluge/mezoterapija",
+  "https://ageless.rs/usluge/savetovanja",
 ];
 
 export const CONTACT: ContactInfo = {
   name: "Aviva Ageless",
-  url: "https://www.avivaageless.rs",
+  url: "https://ageless.rs",
   email: "ageless@poliklinikaaviva.rs",
   phone: "062400407",
   address: {
